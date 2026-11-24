@@ -75,10 +75,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 4. VIP Booking Form Submission
+  // 4. VIP Booking Form Submission (Wired to Edge /api/lead & Conversion Analytics)
   const bookingForm = document.getElementById("vipBookingForm");
   if (bookingForm) {
-    bookingForm.addEventListener("submit", (e) => {
+    bookingForm.addEventListener("submit", async (e) => {
       e.preventDefault();
       const honeypot = document.getElementById("bookHoneypot");
       if (honeypot && honeypot.value.trim() !== "") {
@@ -89,7 +89,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const cluster = document.getElementById("bookingClusterSelect").value;
       const date = document.getElementById("bookDate").value;
 
-      showToast(`Appointment Confirmed! Our VIP Concierge will coordinate your chauffeur for ${date}. Welcome, ${name}!`);
+      const payload = { name, phone, cluster, date, source: "vip_booking_section", _gotcha_sec: "" };
+      let refId = "";
+      if (window.PrideAnalytics && typeof window.PrideAnalytics.submitLead === "function") {
+        const res = await window.PrideAnalytics.submitLead(payload);
+        refId = res && res.referenceId ? ` (Ref: ${res.referenceId})` : "";
+      }
+
+      showToast(`Appointment Confirmed${refId}! Our VIP Concierge will coordinate your chauffeur for ${date}. Welcome, ${name}!`);
       bookingForm.reset();
     });
   }

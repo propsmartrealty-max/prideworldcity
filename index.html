@@ -37,12 +37,10 @@
   <meta name="twitter:description" content="Experience 400-acre master-planned luxury in Charholi, Pune. Featuring Valencia, Miami, Wellington, Montreal, and Boston. 10 mins to airport.">
   <meta name="twitter:image" content="https://prideworld.city/assets/images/og-share.jpg">
 
-  <!-- Search Engine Webmaster Verification Tags -->
-  <meta name="google-site-verification" content="GSC_VERIFICATION_TOKEN">
-  <meta name="msvalidate.01" content="BING_VERIFICATION_TOKEN">
+  <!-- Webmaster Verification: Use Cloudflare DNS TXT record verification (recommended) or insert live site-verification tokens -->
 
   <!-- ==================== STRUCTURED DATA (SCHEMA.ORG JSON-LD) ==================== -->
-  <!-- 1. RealEstateAgent & ApartmentComplex Master Schema -->
+  <!-- 1. RealEstateAgent, ApartmentComplex, OfferCatalog & Grounded Reviews Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -55,7 +53,7 @@
         "url": "https://prideworld.city/",
         "logo": "https://prideworld.city/assets/images/pride-world-city-logo.svg",
         "image": "https://prideworld.city/assets/images/pride-world-city-Bird-eye-view.jpeg.bv.webp",
-        "description": "Pride World City is a 400-acre integrated mega township in Charholi Budruk, Pune, developed by Pride Group. Featuring 11 residential clusters including Valencia, Miami, Wellington, Montreal, and Boston, plus Pride Tech Park and Global Indian International School.",
+        "description": "Pride World City is a 400-acre integrated mega township in Charholi Budruk, Pune, developed by Pride Group. Featuring 12 residential and live-work clusters including Valencia, Miami, Wellington, Montreal, and Boston, plus Pride Tech Park and Global Indian International School.",
         "telephone": "+919158000111",
         "email": "sales@prideworldcity.com",
         "priceRange": "₹ 54 Lacs - ₹ 3.50 Cr",
@@ -72,20 +70,98 @@
           "latitude": 18.6366,
           "longitude": 73.8967
         },
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 18.6366,
+            "longitude": 73.8967
+          },
+          "geoRadius": "15000"
+        },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
           "opens": "09:30",
           "closes": "19:30"
         },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.85",
-          "reviewCount": "840",
-          "bestRating": "5",
-          "worstRating": "1"
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Pride+World+City+Charholi+Budruk+Pune",
+        "review": [
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Capt. Atul Sinha" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Moving to Kingsbury changed our family's pace of life. My kids walk directly to school inside gates while I reach Pune airport in 10 minutes flat."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Pushpraj & Family" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "The 7-acre central lake promenade feels like a private resort every morning. Having sports arenas, gyms and green parks makes this the smartest property choice in Pune."
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Pride World City Residential & Commercial Enclaves",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Pride Valencia — 2 & 3 BHK Sun-Side Homes (New Launch)",
+              "url": "https://prideworld.city/valencia",
+              "priceCurrency": "INR",
+              "price": "9249000",
+              "availability": "https://schema.org/InStock"
+            },
+            {
+              "@type": "Offer",
+              "name": "Pride Miami — 2, 3 & 4.5 BHK Waterfront Residences",
+              "url": "https://prideworld.city/miami",
+              "priceCurrency": "INR",
+              "price": "9200000",
+              "availability": "https://schema.org/InStock"
+            },
+            {
+              "@type": "Offer",
+              "name": "Pride Wellington — Resort 2 & 3 BHK on 7-Acre Podium",
+              "url": "https://prideworld.city/wellington",
+              "priceCurrency": "INR",
+              "price": "8600000",
+              "availability": "https://schema.org/InStock"
+            },
+            {
+              "@type": "Offer",
+              "name": "Pride Montreal — Smart 2, 3 BHK & 4 BHK Duplexes",
+              "url": "https://prideworld.city/montreal",
+              "priceCurrency": "INR",
+              "price": "7400000",
+              "availability": "https://schema.org/InStock"
+            },
+            {
+              "@type": "Offer",
+              "name": "Pride Boston Central — 2X Advantage 2 BHK Homes",
+              "url": "https://prideworld.city/boston",
+              "priceCurrency": "INR",
+              "price": "6800000",
+              "availability": "https://schema.org/InStock"
+            },
+            {
+              "@type": "Offer",
+              "name": "Pride Kingsbury — Ready High-Rise 2 & 3 BHK Residences",
+              "url": "https://prideworld.city/kingsbury",
+              "priceCurrency": "INR",
+              "price": "7800000",
+              "availability": "https://schema.org/InStock"
+            },
+            {
+              "@type": "Offer",
+              "name": "Pride Brooklyn — Urban 1 & 2 BHK Residences",
+              "url": "https://prideworld.city/brooklyn",
+              "priceCurrency": "INR",
+              "price": "5400000",
+              "availability": "https://schema.org/InStock"
+            }
+          ]
         },
-        "hasMap": "https://maps.google.com/?q=Pride+World+City+Charholi+Budruk+Pune",
         "parentOrganization": {
           "@type": "Organization",
           "name": "Pride Group",
@@ -621,6 +697,31 @@
 
       <div class="transit-grid" id="connectivityGrid">
         <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Interactive Google Maps Pin & Experience Center Directions -->
+      <div class="seo-matrix-card" style="margin-top: 2.5rem; padding: 1.5rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <h3 style="color: #fff; font-size: 1.25rem; margin: 0 0 0.25rem 0;"><i class="fa-solid fa-location-dot text-gold"></i> Interactive Location Map — Pride World City, Charholi Budruk</h3>
+            <p style="color: var(--text-dim); font-size: 0.85rem; margin: 0;">Adjacent to D.Y. Patil Knowledge City • 4.8 km (10 mins) to Pune Airport • 1.8 km to PMRDA Ring Road</p>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Pride+World+City+Charholi+Budruk+Pune" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold" style="font-size: 0.82rem; padding: 0.55rem 1rem;">
+            <i class="fa-solid fa-diamond-turn-right"></i> Open Directions in Google Maps
+          </a>
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: #0f172a;">
+          <iframe
+            title="Pride World City Charholi Budruk Pune Google Map"
+            src="https://www.google.com/maps?q=Pride+World+City+Charholi+Budruk+Pune&output=embed"
+            width="100%"
+            height="340"
+            style="border: 0; display: block;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -1866,6 +1967,7 @@
   <script src="js/tour.js"></script>
   <script src="js/calculator.js"></script>
   <script src="js/concierge.js"></script>
+  <script src="js/analytics.js"></script>
   <script src="js/enquiry-modal.js"></script>
   <script src="js/app.js"></script>
 </body>

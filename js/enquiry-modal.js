@@ -259,7 +259,7 @@
     }
   }
 
-  function handleVipFormSubmit(e) {
+  async function handleVipFormSubmit(e) {
     e.preventDefault();
 
     const name = document.getElementById("vipGuestName").value || "Valued Guest";
@@ -268,9 +268,24 @@
     const date = document.getElementById("vipGuestDate").value;
     const whatsapp = document.getElementById("vipWhatsappConsent") ? document.getElementById("vipWhatsappConsent").checked : true;
 
-    // Generate unique VIP Reference Pass ID
-    const randomNum = Math.floor(1000 + Math.random() * 9000);
-    const passCode = `PWC-VIP-${randomNum}`;
+    let passCode = `PWC-VIP-${Math.floor(1000 + Math.random() * 9000)}`;
+    if (window.PrideAnalytics && typeof window.PrideAnalytics.submitLead === "function") {
+      const res = await window.PrideAnalytics.submitLead({
+        name,
+        phone,
+        email,
+        cluster: selectedEnclave,
+        typology: selectedTypology,
+        budget: selectedBudget,
+        date,
+        timeSlot: selectedTimeSlot,
+        whatsappConsent: whatsapp,
+        source: "vip_experience_modal"
+      });
+      if (res && res.referenceId) {
+        passCode = res.referenceId;
+      }
+    }
 
     // Update Confirmation Screen
     const successPanel = document.getElementById("vipSuccessPanel");

@@ -56,6 +56,9 @@ Allow: /sitemap.xml
 # 3. General Public Bots
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /functions/
+Disallow: /google-ads-page-feed.csv
 Disallow: /scratch/
 Disallow: /tmp/
 Disallow: /*.json$
