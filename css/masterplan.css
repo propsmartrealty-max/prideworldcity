@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Pride World City - Masterplan Interactive SVG & Vector Radar Styles
+   ========================================================================== */
+
+.masterplan-svg-root {
+  width: 100%;
+  height: 100%;
+  max-height: 580px;
+  display: block;
+  transition: transform 0.4s ease;
+  user-select: none;
+}
+
+.map-zone-polygon {
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center;
+}
+
+.map-zone-polygon:hover, .map-zone-polygon.active {
+  filter: brightness(1.3) drop-shadow(0 0 16px var(--accent-gold-glow));
+  stroke-width: 3.5px;
+  stroke: #ffffff;
+}
+
+.masterplan-lake-layer {
+  fill: url(#lakeGradient);
+  filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.4));
+  animation: wavePulse 6s ease-in-out infinite alternate;
+}
+
+@keyframes wavePulse {
+  0% { opacity: 0.85; }
+  100% { opacity: 1; filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.7)); }
+}
+
+.masterplan-road-network {
+  stroke: rgba(255, 255, 255, 0.18);
+  stroke-width: 4px;
+  stroke-dasharray: 6 3;
+  fill: none;
+}
+
+.masterplan-boulevard {
+  stroke: rgba(197, 160, 89, 0.5);
+  stroke-width: 6px;
+  fill: none;
+}
+
+.masterplan-bg-rect {
+  fill: #111827;
+  transition: fill 0.4s ease;
+}
+
+body.mode-night .masterplan-bg-rect {
+  fill: #080d19;
+}
+
+.masterplan-contour-line {
+  stroke: rgba(184, 134, 11, 0.22);
+}
+
+body.mode-night .masterplan-contour-line {
+  stroke: rgba(255, 255, 255, 0.04);
+}
+
+.beacon-pulse {
+  transform-origin: center;
+  animation: beaconRings 2.2s infinite;
+}
+
+@keyframes beaconRings {
+  0% { r: 6px; opacity: 1; }
+  100% { r: 24px; opacity: 0; }
+}
+
+.map-pin-group {
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.map-pin-group:hover {
+  transform: translateY(-4px) scale(1.1);
+}
+
+.map-pin-label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  fill: #ffffff;
+  text-anchor: middle;
+  pointer-events: none;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+.map-tooltip-box {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(10, 15, 29, 0.95);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 0.9rem;
+  color: #fff;
+  font-size: 0.8rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  z-index: 50;
+  opacity: 0;
+  transform: translate(-50%, -120%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.map-tooltip-box.visible {
+  opacity: 1;
+  transform: translate(-50%, -100%);
+}
+
+.map-tooltip-title {
+  font-weight: 700;
+  color: var(--accent-gold-light);
+  margin-bottom: 2px;
+}
+
+.map-tooltip-sub {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
+/* 360 Scene Visuals */
+.tour-hotspot-pin {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(197, 160, 89, 0.85);
+  color: #0c0f17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+  box-shadow: 0 0 18px var(--accent-gold-glow);
+  animation: floatHotspot 3s ease-in-out infinite alternate;
+  transition: transform 0.25s;
+}
+
+.tour-hotspot-pin:hover {
+  transform: scale(1.25);
+  background: #fff;
+}
+
+@keyframes floatHotspot {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+.tour-hotspot-pin .hotspot-popup {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(7, 10, 19, 0.95);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.8rem;
+  color: #fff;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.tour-hotspot-pin:hover .hotspot-popup {
+  opacity: 1;
+}
