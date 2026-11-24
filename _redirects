@@ -1,0 +1,5 @@
+# Cloudflare Pages Redirects
+# Canonical Domain Enforcement (www to apex)
+https://www.prideworld.city/* https://prideworld.city/:splat 301!
+http://www.prideworld.city/* https://prideworld.city/:splat 301!
+http://prideworld.city/* https://prideworld.city/:splat 301!

@@ -80,6 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (bookingForm) {
     bookingForm.addEventListener("submit", (e) => {
       e.preventDefault();
+      const honeypot = document.getElementById("bookHoneypot");
+      if (honeypot && honeypot.value.trim() !== "") {
+        return false;
+      }
       const name = document.getElementById("bookName").value;
       const phone = document.getElementById("bookPhone").value;
       const cluster = document.getElementById("bookingClusterSelect").value;

@@ -74,7 +74,11 @@ class PrideConcierge {
   addMessage(text, sender) {
     const bubble = document.createElement("div");
     bubble.className = `chat-bubble ${sender}`;
-    bubble.innerHTML = text;
+    if (sender === "user") {
+      bubble.textContent = text;
+    } else {
+      bubble.innerHTML = text;
+    }
     this.chatBody.appendChild(bubble);
     this.scrollToBottom();
   }
