@@ -4,13 +4,34 @@ https://www.prideworld.city/* https://prideworld.city/:splat 301!
 http://www.prideworld.city/* https://prideworld.city/:splat 301!
 http://prideworld.city/* https://prideworld.city/:splat 301!
 
-# 2. Clean URL Rewrites for Dedicated SEO Pillar & Legal Pages
+# 2. Clean URL Rewrites for All Residential & Commercial Cluster Pillar Pages
 /valencia /valencia.html 200
 /miami /miami.html 200
 /wellington /wellington.html 200
 /montreal /montreal.html 200
 /boston /boston.html 200
+/kingsbury /kingsbury.html 200
+/brooklyn /brooklyn.html 200
+/manhattan /manhattan.html 200
+/atlantic /atlantic.html 200
+/notting-hill /notting-hill.html 200
+/long-island /long-island.html 200
+/soho /soho.html 200
+/pride-tech-park /pride-tech-park.html 200
 /charholi-pune-real-estate /charholi-pune-real-estate.html 200
+
+# 3. Clean URL Rewrites for Editorial Articles & FAQ Encyclopedia
+/faq /faq.html 200
+/faqs /faq 301
+/articles /articles.html 200
+/guides /articles 301
+/pride-world-city-vs-pune-townships /pride-world-city-vs-pune-townships.html 200
+/pride-world-city-price-list-cost-sheet-guide /pride-world-city-price-list-cost-sheet-guide.html 200
+/pride-world-city-resale-rental-yield-guide /pride-world-city-resale-rental-yield-guide.html 200
+/which-cluster-to-buy-pride-world-city /which-cluster-to-buy-pride-world-city.html 200
+/charholi-airport-ring-road-infrastructure-report /charholi-airport-ring-road-infrastructure-report.html 200
+
+# 4. Clean URL Rewrites for Legal & Compliance Pages
 /privacy /privacy.html 200
 /terms /terms.html 200
 /disclaimer /terms.html 301

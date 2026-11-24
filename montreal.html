@@ -9,6 +9,8 @@
   <link rel="canonical" href="https://prideworld.city/montreal">
   <link rel="alternate" hreflang="en-in" href="https://prideworld.city/montreal">
   <link rel="alternate" hreflang="x-default" href="https://prideworld.city/montreal">
+  <link rel="alternate" type="application/rss+xml" title="Pride World City Research &amp; Updates" href="/feed.xml">
+  <link rel="alternate" type="text/plain" title="LLMs Grounding" href="/llms.txt">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="theme-color" content="#fbfcfb">
 
@@ -35,7 +37,7 @@
         "RealEstateAgent",
         "ApartmentComplex"
       ],
-      "name": "Pride Montreal Pune",
+      "name": "Pride Montreal",
       "url": "https://prideworld.city/montreal",
       "image": "https://prideworld.city/assets/images/montreal-hero-banner.webp",
       "description": "Explore Pride Montreal at Pride World City, Charholi Pune. Smart home automation 2 & 3 BHK flats and double-height 4 BHK Duplex Sky Villas (740 - 1,850 sq.ft). MahaRERA P52100077138.",
@@ -68,7 +70,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Montreal",
+          "name": "Pride Montreal",
           "item": "https://prideworld.city/montreal"
         }
       ]
@@ -172,25 +174,36 @@
       color: var(--accent-gold);
       text-decoration: none;
     }
+    .editorial-lead-box {
+      background: rgba(212, 175, 55, 0.04);
+      border-left: 3px solid var(--accent-gold);
+      padding: 1.5rem 1.75rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
     .silo-links-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1.5rem;
+      gap: 0.65rem;
+      margin-top: 1.25rem;
     }
     .silo-link-chip {
-      padding: 0.55rem 1rem;
+      padding: 0.5rem 0.95rem;
       background: rgba(255,255,255,0.03);
       border: 1px solid var(--border-subtle);
       border-radius: 999px;
       color: var(--text-muted);
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       text-decoration: none;
       transition: all 0.2s;
     }
-    .silo-link-chip:hover {
+    .silo-link-chip:hover, .silo-link-chip.current {
       border-color: var(--accent-gold);
       color: #fff;
+      background: rgba(212, 175, 55, 0.12);
     }
     @media (max-width: 900px) {
       .pillar-hero-grid { grid-template-columns: 1fr; }
@@ -212,8 +225,8 @@
         <li><a href="/miami" class="nav-link">MIAMI</a></li>
         <li><a href="/wellington" class="nav-link">WELLINGTON</a></li>
         <li><a href="/montreal" class="nav-link">MONTREAL</a></li>
-        <li><a href="/boston" class="nav-link">BOSTON</a></li>
-        <li><a href="/charholi-pune-real-estate" class="nav-link">PUNE MARKET</a></li>
+        <li><a href="/articles" class="nav-link">RESEARCH GUIDES</a></li>
+        <li><a href="/faq" class="nav-link">36 FAQS</a></li>
       </ul>
       <div class="nav-actions">
         <a href="/#vip-booking" class="btn btn-gold btn-nav-vip">
@@ -226,12 +239,12 @@
   <section class="pillar-hero">
     <div class="container">
       <div class="breadcrumb-bar">
-        <a href="/">Pride World City</a> &rsaquo; <a href="/charholi-pune-real-estate">Charholi Budruk, Pune</a> &rsaquo; <span>Montreal</span>
+        <a href="/">Pride World City</a> &rsaquo; <a href="/charholi-pune-real-estate">Charholi Budruk, Pune</a> &rsaquo; <span>Pride Montreal</span>
       </div>
       <div class="pillar-hero-grid">
         <div>
           <span class="section-kicker">SMART HOME AUTOMATION &amp; 4 BHK DUPLEXES</span>
-          <h1 style="font-size: clamp(2rem, 4vw, 3.1rem); line-height: 1.15; margin: 0.75rem 0 1rem 0; color: #fff;">Pride Montreal — <span class='text-gold-gradient'>Smart Tech</span> &amp; 4 BHK Duplexes</h1>
+          <h1 style="font-size: clamp(2rem, 4vw, 3.05rem); line-height: 1.15; margin: 0.75rem 0 1rem 0; color: #fff;">Pride Montreal — <span class='text-gold-gradient'>Smart Tech</span> &amp; 4 BHK Duplexes</h1>
           <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.75rem;">European contemporary design fused with touch-panel home automation, acoustic soundproofing, and double-height 4 BHK duplex residences in North Pune.</p>
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
             <a href="/#vip-booking" class="btn btn-gold"><i class="fa-solid fa-car-side"></i> Book VIP Chauffeur Tour</a>
@@ -244,19 +257,23 @@
       </div>
 
       <div class="pillar-specs-strip">
-        <div class="pillar-spec-box"><span>Starting Price</span><strong>₹ 74 Lacs* Onwards</strong></div>
+        <div class="pillar-spec-box"><span>Indicative Pricing</span><strong>₹ 74 Lacs* Onwards</strong></div>
         <div class="pillar-spec-box"><span>Carpet Area</span><strong>740 - 1,850 sq. ft.</strong></div>
-        <div class="pillar-spec-box"><span>Configurations</span><strong>2 BHK, 3 BHK &amp; 4 BHK Duplex</strong></div>
+        <div class="pillar-spec-box"><span>Offerings</span><strong>2 BHK, 3 BHK &amp; 4 BHK Duplex</strong></div>
         <div class="pillar-spec-box"><span>MahaRERA No.</span><strong>P52100077138 &amp; P52100021650</strong></div>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <div class="container" style="max-width: 1100px;">
+    <div class="container" style="max-width: 1120px;">
       <div class="seo-matrix-card">
+        <div class="editorial-lead-box">
+          Built for millennial families and software architects, <strong>Pride Montreal</strong> pairs European architectural symmetry with native smart-home automation (digital door locks, touch-panel lighting/climate controls, and acoustic glass insulation). Alongside sleek 2 &amp; 3 BHK smart apartments, Montreal is renowned across Pune for its villa-style <strong>4 BHK Double-Height Duplexes</strong> featuring private family lounges and panoramic open sky terraces.
+        </div>
+
         <h2 style="color: #fff; font-size: 1.5rem; margin-top: 0;">Floor Plans, Configurations &amp; Pricing Matrix</h2>
-        <p style="color: var(--text-dim); font-size: 0.9rem;">Official layouts and indicative valuations across 8 Smart Automation Towers. Pre-approved by SBI, HDFC, ICICI &amp; Axis Bank.</p>
+        <p style="color: var(--text-dim); font-size: 0.9rem;">Official specifications across 8 Smart Automation Towers. Pre-approved for home loans by SBI, HDFC Bank, ICICI Bank &amp; Axis Bank.</p>
         <div class="seo-table-responsive">
           <table class="seo-table">
             <thead>
@@ -286,24 +303,37 @@
       </div>
 
       <div class="seo-matrix-card">
-        <h2 style="color: #fff; font-size: 1.5rem; margin-top: 0;">Frequently Asked Questions</h2>
-        <div style="margin-top: 1.5rem;">
+        <h2 style="color: #fff; font-size: 1.5rem; margin-top: 0;">Frequently Asked Questions — Pride Montreal</h2>
+        <div style="margin-top: 1.25rem;">
           <div style='border-bottom: 1px solid var(--border-subtle); padding: 1.15rem 0;'><h3 style='color: #fff; font-size: 1.05rem; margin: 0 0 0.5rem 0;'>What is the price of Pride Montreal 4 BHK duplex apartments?</h3><p style='color: var(--text-muted); font-size: 0.92rem; margin: 0; line-height: 1.6;'>Double-height 4 BHK Duplex Sky Villas (1,850 sq. ft. carpet + 210 sq. ft. terrace) in Pride Montreal start from ₹1.65 Cr*.</p></div>
 <div style='border-bottom: 1px solid var(--border-subtle); padding: 1.15rem 0;'><h3 style='color: #fff; font-size: 1.05rem; margin: 0 0 0.5rem 0;'>What is the MahaRERA registration number for Pride Montreal?</h3><p style='color: var(--text-muted); font-size: 0.92rem; margin: 0; line-height: 1.6;'>Pride Montreal is registered under MahaRERA numbers P52100077138, P52100021650, and P52100053272.</p></div>
 <div style='border-bottom: 1px solid var(--border-subtle); padding: 1.15rem 0;'><h3 style='color: #fff; font-size: 1.05rem; margin: 0 0 0.5rem 0;'>What makes Montreal different from Miami at Pride World City?</h3><p style='color: var(--text-muted); font-size: 0.92rem; margin: 0; line-height: 1.6;'>Montreal focuses on smart-home automation and double-height 4 BHK duplex layouts, whereas Miami offers South Beach art-deco waterfront towers with 4.5 BHK single-level sky penthouses.</p></div>
         </div>
+        <div style="margin-top: 1.5rem;">
+          <a href="/faq" class="btn btn-outline-gold" style="font-size: 0.85rem;"><i class="fa-solid fa-circle-question"></i> Read All 36 Township FAQs</a>
+        </div>
       </div>
 
       <div class="seo-matrix-card">
-        <h3 style="color: #fff; margin-top: 0;">Explore All Enclaves Inside 400-Acre Pride World City</h3>
+        <h3 style="color: #fff; margin-top: 0;">Explore Every Project &amp; Resource in Pride World City</h3>
         <div class="silo-links-grid">
           <a href="/" class="silo-link-chip"><i class="fa-solid fa-house text-gold"></i> 400-Acre Master Portal</a>
-          <a href="/valencia" class="silo-link-chip">★ Pride Valencia (New Launch)</a>
-          <a href="/miami" class="silo-link-chip">Pride Miami (Waterfront)</a>
-          <a href="/wellington" class="silo-link-chip">Pride Wellington (Resort)</a>
-          <a href="/montreal" class="silo-link-chip">Pride Montreal (4 BHK Duplex)</a>
-          <a href="/boston" class="silo-link-chip">Pride Boston Central (2X)</a>
-          <a href="/charholi-pune-real-estate" class="silo-link-chip">Charholi &amp; Pune Real Estate Guide</a>
+          <a href="/valencia" class="silo-link-chip ">★ Valencia (New Launch)</a>
+          <a href="/miami" class="silo-link-chip ">Miami (Waterfront)</a>
+          <a href="/wellington" class="silo-link-chip ">Wellington (7-Acre Podium)</a>
+          <a href="/montreal" class="silo-link-chip current">Montreal (4 BHK Duplex)</a>
+          <a href="/boston" class="silo-link-chip ">Boston Central (2X)</a>
+          <a href="/kingsbury" class="silo-link-chip ">Kingsbury (Ready / Resale)</a>
+          <a href="/brooklyn" class="silo-link-chip ">Brooklyn (1 &amp; 2 BHK)</a>
+          <a href="/manhattan" class="silo-link-chip ">Manhattan (2 &amp; 3 BHK)</a>
+          <a href="/atlantic" class="silo-link-chip ">Atlantic (Scenic)</a>
+          <a href="/notting-hill" class="silo-link-chip ">Notting Hill (Pool Duplex)</a>
+          <a href="/long-island" class="silo-link-chip ">Long Island (Sky Villas)</a>
+          <a href="/soho" class="silo-link-chip ">SoHo (Live-Work)</a>
+          <a href="/pride-tech-park" class="silo-link-chip ">Pride Tech Park &amp; Retail</a>
+          <a href="/charholi-pune-real-estate" class="silo-link-chip ">Charholi &amp; Pune Market</a>
+          <a href="/articles" class="silo-link-chip"><i class="fa-solid fa-newspaper text-gold"></i> Market Research Guides</a>
+          <a href="/faq" class="silo-link-chip"><i class="fa-solid fa-book text-gold"></i> Complete FAQ Encyclopedia</a>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Primary Township Master Portal -->
+  <!-- 1. Primary Township Master Portal -->
   <url>
     <loc>https://prideworld.city/</loc>
     <lastmod>2026-11-25</lastmod>
@@ -20,75 +20,189 @@
     </image:image>
   </url>
 
-  <!-- Dedicated Cluster Pillar: Pride Valencia (New Launch) -->
+  <!-- 2. Residential & Live-Work Internal Project Pillars (All 12 Clusters + Tech Park) -->
   <url>
     <loc>https://prideworld.city/valencia</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.95</priority>
+    <priority>0.98</priority>
     <image:image>
       <image:loc>https://prideworld.city/assets/images/Twilight-Valencia-Apartment-Launch-Banner.webp.bv.webp</image:loc>
       <image:title>Pride Valencia New Launch 2 &amp; 3 BHK Sun-Side Homes Charholi</image:title>
     </image:image>
   </url>
-
-  <!-- Dedicated Cluster Pillar: Pride Miami -->
   <url>
     <loc>https://prideworld.city/miami</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
+    <priority>0.94</priority>
     <image:image>
       <image:loc>https://prideworld.city/assets/images/miami-desktop-banner.webp</image:loc>
       <image:title>Pride Miami Waterfront 2, 3 &amp; 4.5 BHK Residences Charholi Pune</image:title>
     </image:image>
   </url>
-
-  <!-- Dedicated Cluster Pillar: Pride Wellington -->
   <url>
     <loc>https://prideworld.city/wellington</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
+    <priority>0.94</priority>
     <image:image>
       <image:loc>https://prideworld.city/assets/images/wellington-overview.jpg</image:loc>
       <image:title>Pride Wellington Resort 2 &amp; 3 BHK 7-Acre Podium Pune</image:title>
     </image:image>
   </url>
-
-  <!-- Dedicated Cluster Pillar: Pride Montreal -->
   <url>
     <loc>https://prideworld.city/montreal</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
+    <priority>0.94</priority>
     <image:image>
       <image:loc>https://prideworld.city/assets/images/montreal-hero-banner.webp</image:loc>
       <image:title>Pride Montreal Smart Tech &amp; 4 BHK Duplexes Pune</image:title>
     </image:image>
   </url>
-
-  <!-- Dedicated Cluster Pillar: Pride Boston Central -->
   <url>
     <loc>https://prideworld.city/boston</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
+    <priority>0.94</priority>
     <image:image>
       <image:loc>https://prideworld.city/assets/images/boston-desktop-homepage-banner.webp</image:loc>
       <image:title>Pride Boston Central 2X Advantage 2 BHK Homes Charholi</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://prideworld.city/kingsbury</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://prideworld.city/assets/images/Scene_01_aerial-view.webp</image:loc>
+      <image:title>Pride Kingsbury Royal High-Rise 2 &amp; 3 BHK Charholi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://prideworld.city/brooklyn</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://prideworld.city/assets/images/Cam_12Final.jpg</image:loc>
+      <image:title>Pride Brooklyn Urban 1 &amp; 2 BHK Homes Charholi Pune</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://prideworld.city/manhattan</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://prideworld.city/assets/images/Cam_07Final.jpg</image:loc>
+      <image:title>Pride Manhattan Cosmopolitan 2 &amp; 3 BHK Residences Pune</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://prideworld.city/atlantic</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://prideworld.city/assets/images/Cam_21Final.jpg</image:loc>
+      <image:title>Pride Atlantic Scenic 2 &amp; 3 BHK Apartments Charholi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://prideworld.city/notting-hill</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://prideworld.city/assets/images/Cam_03Final.jpg</image:loc>
+      <image:title>Pride Notting Hill British Manors &amp; Pool Duplexes Pune</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://prideworld.city/long-island</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://prideworld.city/assets/images/pride-world-city-Bird-eye-view.jpeg.bv.webp</image:loc>
+      <image:title>Pride Long Island 3 &amp; 4 BHK Sky Villas Charholi Pune</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://prideworld.city/soho</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://prideworld.city/assets/images/Cam_13_EveningFinal.jpg</image:loc>
+      <image:title>Pride SoHo Live-Work Studios &amp; Boutique Offices Charholi</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://prideworld.city/pride-tech-park</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+    <image:image>
+      <image:loc>https://prideworld.city/assets/images/Cam_13_EveningFinal.jpg</image:loc>
+      <image:title>Pride Tech Park &amp; Town Plaza High-Street Retail Charholi</image:title>
+    </image:image>
+  </url>
 
-  <!-- North Pune & Charholi Real Estate Authority Page -->
+  <!-- 3. North Pune Market Authority, FAQ Encyclopedia & Editorial Articles -->
   <url>
     <loc>https://prideworld.city/charholi-pune-real-estate</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
+  <url>
+    <loc>https://prideworld.city/faq</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://prideworld.city/articles</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
+    <loc>https://prideworld.city/pride-world-city-vs-pune-townships</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://prideworld.city/pride-world-city-price-list-cost-sheet-guide</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
+    <loc>https://prideworld.city/pride-world-city-resale-rental-yield-guide</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://prideworld.city/which-cluster-to-buy-pride-world-city</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://prideworld.city/charholi-airport-ring-road-infrastructure-report</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
 
-  <!-- Statutory & Legal Compliance -->
+  <!-- 4. Statutory & Legal Compliance -->
   <url>
     <loc>https://prideworld.city/privacy</loc>
     <lastmod>2026-11-25</lastmod>

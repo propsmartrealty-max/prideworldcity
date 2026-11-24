@@ -18,6 +18,7 @@ Allow: /js/
 Allow: /data/
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /feed.xml
 Allow: /sitemap.xml
 
 # 2. Generative AI Search & Real-Time Answer Engine Citation Bots (Allowed for GEO)
@@ -33,12 +34,23 @@ User-agent: DuckAssistBot
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /feed.xml
 Allow: /valencia
 Allow: /miami
 Allow: /wellington
 Allow: /montreal
 Allow: /boston
+Allow: /kingsbury
+Allow: /brooklyn
+Allow: /manhattan
+Allow: /atlantic
+Allow: /notting-hill
+Allow: /long-island
+Allow: /soho
+Allow: /pride-tech-park
 Allow: /charholi-pune-real-estate
+Allow: /faq
+Allow: /articles
 Allow: /sitemap.xml
 
 # 3. General Public Bots

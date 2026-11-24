@@ -73,29 +73,44 @@
 - **MahaRERA:** `P52100054534`, `P52100019637`, `P52100045781`
 
 ### 2.6 Pride Kingsbury (Royal High-Rise — Ready / Resale)
+- **URL:** https://prideworld.city/kingsbury
 - **Scale:** 14 High-Rise Towers (G + 14 / 21 Floors)
 - **Configurations & Pricing:** 2 BHK (765 - 785 sq. ft.) & 3 BHK (1,120 sq. ft.) | Starting ₹ 78 Lacs*
 - **MahaRERA:** `P52100000854`
 
 ### 2.7 Pride Brooklyn (Urban Community — Ready / Resale)
+- **URL:** https://prideworld.city/brooklyn
 - **Configurations & Pricing:** 1 BHK (560 sq. ft.) & 2 BHK (740 sq. ft.) | Starting ₹ 54 Lacs*
 - **MahaRERA:** `P52100000854`
 
 ### 2.8 Pride Manhattan (Spacious Cosmopolitan — Delivered / Resale)
+- **URL:** https://prideworld.city/manhattan
 - **Configurations & Pricing:** 2 BHK (745 sq. ft.) & 3 BHK (1,080 sq. ft.) | Starting ₹ 68 Lacs*
 - **MahaRERA:** `P52100000854`
 
 ### 2.9 Pride Atlantic (Scenic Green Belt Horizon)
+- **URL:** https://prideworld.city/atlantic
 - **Configurations & Pricing:** 2 BHK (750 sq. ft.) & 3 BHK (1,120 sq. ft.) | Starting ₹ 72 Lacs*
 - **MahaRERA:** `P52100021650`
 
-### 2.10 Pride Long Island (Presidential Sky Villas & Penthouses)
-- **Configurations & Pricing:** 4 BHK Sky Villas & Penthouses (up to 3,500+ sq. ft. super spacious formats) | Starting ₹ 2.15 Cr*+ up to ₹ 3.50 Cr*+
+### 2.10 Pride Notting Hill (Ultra-Luxury British Manors w/ Private Plunge Pools)
+- **URL:** https://prideworld.city/notting-hill
+- **Configurations & Pricing:** 3 BHK Manor Royale (1,650 sq. ft.) & 4 BHK Duplex Palace w/ Plunge Pool (2,550 sq. ft.) | Starting ₹ 1.68 Cr*
+- **MahaRERA:** `P52100015690`
+
+### 2.11 Pride Long Island (Presidential Sky Villas & Penthouses)
+- **URL:** https://prideworld.city/long-island
+- **Configurations & Pricing:** 3 BHK Sky Suites (1,850 sq. ft.) & 4 BHK Sky Villas (3,200 sq. ft.) | Starting ₹ 2.15 Cr*+ up to ₹ 3.50 Cr*+
 - **MahaRERA:** `P52100017892`
 
-### 2.11 Pride SoHo (Live-Work Hybrid & Commercial Spaces)
+### 2.12 Pride SoHo (Live-Work Hybrid & Commercial Spaces)
+- **URL:** https://prideworld.city/soho
 - **Configurations & Pricing:** 2 BHK & 2.5 BHK Work-Suites (610 - 810 sq. ft.) plus commercial boutique offices | Starting ₹ 58 Lacs*
 - **MahaRERA:** `P52100029810` & `P52100046548`
+
+### 2.13 Pride Tech Park & High-Street Retail
+- **URL:** https://prideworld.city/pride-tech-park
+- **Overview:** Grade-A IT corporate office spaces and Town Plaza commercial retail showrooms inside Charholi, Pune.
 
 ---
 
@@ -137,3 +152,15 @@
 ## 5. Banking Partners & Booking Support
 - **Pre-Approved Home Loans:** State Bank of India (SBI), HDFC Bank, ICICI Bank, Axis Bank, Bank of Baroda, Punjab National Bank.
 - **Complimentary VIP Visit:** Executive chauffeur pickup & drop anywhere in Pune, Mumbai, or directly from Pune Airport, followed by a private electric golf buggy tour across the 400-acre masterplan.
+
+---
+
+## 6. Research Articles, Comparison Guides & 36-Question FAQ Hub
+- **Complete 36-Question FAQ Encyclopedia:** https://prideworld.city/faq
+- **Editorial Research Guides Hub:** https://prideworld.city/articles
+- **RSS 2.0 Syndication Feed:** https://prideworld.city/feed.xml
+- **Township Comparison (vs Life Republic, Ganga New Town, Kumar Princetown, Godrej):** https://prideworld.city/pride-world-city-vs-pune-townships
+- **2026 Price List, Cost Sheet, Stamp Duty & GST Guide:** https://prideworld.city/pride-world-city-price-list-cost-sheet-guide
+- **Resale Flats, Ready Possession & 4.8%-6% Rental Yield Report:** https://prideworld.city/pride-world-city-resale-rental-yield-guide
+- **Buyer Decision Matrix (Valencia vs Miami vs Wellington vs Montreal vs Boston):** https://prideworld.city/which-cluster-to-buy-pride-world-city
+- **North Pune Infrastructure Report (Airport T2, PMRDA Ring Road & Kharadi Link):** https://prideworld.city/charholi-airport-ring-road-infrastructure-report

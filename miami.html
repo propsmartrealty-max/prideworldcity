@@ -9,6 +9,8 @@
   <link rel="canonical" href="https://prideworld.city/miami">
   <link rel="alternate" hreflang="en-in" href="https://prideworld.city/miami">
   <link rel="alternate" hreflang="x-default" href="https://prideworld.city/miami">
+  <link rel="alternate" type="application/rss+xml" title="Pride World City Research &amp; Updates" href="/feed.xml">
+  <link rel="alternate" type="text/plain" title="LLMs Grounding" href="/llms.txt">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="theme-color" content="#fbfcfb">
 
@@ -35,7 +37,7 @@
         "RealEstateAgent",
         "ApartmentComplex"
       ],
-      "name": "Pride Miami Charholi Pune",
+      "name": "Pride Miami",
       "url": "https://prideworld.city/miami",
       "image": "https://prideworld.city/assets/images/miami-desktop-banner.webp",
       "description": "Discover Pride Miami at Pride World City, Charholi Budruk, Pune. South Beach-inspired art-deco waterfront 2, 3 & 4.5 BHK residences (790 - 2,240 sq.ft) starting \u20b992 L*. MahaRERA PR1260002600188.",
@@ -68,7 +70,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Miami",
+          "name": "Pride Miami",
           "item": "https://prideworld.city/miami"
         }
       ]
@@ -172,25 +174,36 @@
       color: var(--accent-gold);
       text-decoration: none;
     }
+    .editorial-lead-box {
+      background: rgba(212, 175, 55, 0.04);
+      border-left: 3px solid var(--accent-gold);
+      padding: 1.5rem 1.75rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
     .silo-links-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1.5rem;
+      gap: 0.65rem;
+      margin-top: 1.25rem;
     }
     .silo-link-chip {
-      padding: 0.55rem 1rem;
+      padding: 0.5rem 0.95rem;
       background: rgba(255,255,255,0.03);
       border: 1px solid var(--border-subtle);
       border-radius: 999px;
       color: var(--text-muted);
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       text-decoration: none;
       transition: all 0.2s;
     }
-    .silo-link-chip:hover {
+    .silo-link-chip:hover, .silo-link-chip.current {
       border-color: var(--accent-gold);
       color: #fff;
+      background: rgba(212, 175, 55, 0.12);
     }
     @media (max-width: 900px) {
       .pillar-hero-grid { grid-template-columns: 1fr; }
@@ -212,8 +225,8 @@
         <li><a href="/miami" class="nav-link">MIAMI</a></li>
         <li><a href="/wellington" class="nav-link">WELLINGTON</a></li>
         <li><a href="/montreal" class="nav-link">MONTREAL</a></li>
-        <li><a href="/boston" class="nav-link">BOSTON</a></li>
-        <li><a href="/charholi-pune-real-estate" class="nav-link">PUNE MARKET</a></li>
+        <li><a href="/articles" class="nav-link">RESEARCH GUIDES</a></li>
+        <li><a href="/faq" class="nav-link">36 FAQS</a></li>
       </ul>
       <div class="nav-actions">
         <a href="/#vip-booking" class="btn btn-gold btn-nav-vip">
@@ -226,12 +239,12 @@
   <section class="pillar-hero">
     <div class="container">
       <div class="breadcrumb-bar">
-        <a href="/">Pride World City</a> &rsaquo; <a href="/charholi-pune-real-estate">Charholi Budruk, Pune</a> &rsaquo; <span>Miami</span>
+        <a href="/">Pride World City</a> &rsaquo; <a href="/charholi-pune-real-estate">Charholi Budruk, Pune</a> &rsaquo; <span>Pride Miami</span>
       </div>
       <div class="pillar-hero-grid">
         <div>
           <span class="section-kicker">WATERFRONT ART-DECO LIVING • 9 TOWERS</span>
-          <h1 style="font-size: clamp(2rem, 4vw, 3.1rem); line-height: 1.15; margin: 0.75rem 0 1rem 0; color: #fff;">Pride Miami — <span class='text-gold-gradient'>Waterfront</span> 2, 3 &amp; 4.5 BHK Luxury</h1>
+          <h1 style="font-size: clamp(2rem, 4vw, 3.05rem); line-height: 1.15; margin: 0.75rem 0 1rem 0; color: #fff;">Pride Miami — <span class='text-gold-gradient'>Waterfront</span> 2, 3 &amp; 4.5 BHK Luxury</h1>
           <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.75rem;">Directly overlooking the 7-acre central freshwater lake at Pride World City, Charholi. South Beach-inspired curved facades, glass sundecks, and rooftop sky lounges.</p>
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
             <a href="/#vip-booking" class="btn btn-gold"><i class="fa-solid fa-car-side"></i> Book VIP Chauffeur Tour</a>
@@ -244,19 +257,23 @@
       </div>
 
       <div class="pillar-specs-strip">
-        <div class="pillar-spec-box"><span>Starting Price</span><strong>₹ 92 Lacs* Onwards</strong></div>
+        <div class="pillar-spec-box"><span>Indicative Pricing</span><strong>₹ 92 Lacs* Onwards</strong></div>
         <div class="pillar-spec-box"><span>Carpet Area</span><strong>790 - 2,240 sq. ft.</strong></div>
-        <div class="pillar-spec-box"><span>Configurations</span><strong>2 BHK, 3 BHK &amp; 4.5 BHK Sky Residences</strong></div>
+        <div class="pillar-spec-box"><span>Offerings</span><strong>2 BHK, 3 BHK &amp; 4.5 BHK Sky Residences</strong></div>
         <div class="pillar-spec-box"><span>MahaRERA No.</span><strong>PR1260002600188 &amp; P52100028741</strong></div>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <div class="container" style="max-width: 1100px;">
+    <div class="container" style="max-width: 1120px;">
       <div class="seo-matrix-card">
+        <div class="editorial-lead-box">
+          <strong>Pride Miami</strong> channels coastal Art-Deco elegance directly onto the banks of Pride World City's signature 7-acre central freshwater lake. Across nine sweeping waterfront glass towers, residents enjoy direct access to the palm-lined boardwalk, an Olympic-length 50-meter lap swimming pool, rooftop barbeque lounges, and rare large-format <strong>4.5 BHK Sky Penthouses</strong> spanning 2,240 sq. ft. carpet area—designed for multi-generational families and aviation/IT executives commuting 10 minutes to Pune Airport.
+        </div>
+
         <h2 style="color: #fff; font-size: 1.5rem; margin-top: 0;">Floor Plans, Configurations &amp; Pricing Matrix</h2>
-        <p style="color: var(--text-dim); font-size: 0.9rem;">Official layouts and indicative valuations across 9 Art-Deco Waterfront Glass Towers. Pre-approved by SBI, HDFC, ICICI &amp; Axis Bank.</p>
+        <p style="color: var(--text-dim); font-size: 0.9rem;">Official specifications across 9 Art-Deco Waterfront Glass Towers. Pre-approved for home loans by SBI, HDFC Bank, ICICI Bank &amp; Axis Bank.</p>
         <div class="seo-table-responsive">
           <table class="seo-table">
             <thead>
@@ -287,24 +304,37 @@
       </div>
 
       <div class="seo-matrix-card">
-        <h2 style="color: #fff; font-size: 1.5rem; margin-top: 0;">Frequently Asked Questions</h2>
-        <div style="margin-top: 1.5rem;">
+        <h2 style="color: #fff; font-size: 1.5rem; margin-top: 0;">Frequently Asked Questions — Pride Miami</h2>
+        <div style="margin-top: 1.25rem;">
           <div style='border-bottom: 1px solid var(--border-subtle); padding: 1.15rem 0;'><h3 style='color: #fff; font-size: 1.05rem; margin: 0 0 0.5rem 0;'>What is the MahaRERA registration number for Pride Miami?</h3><p style='color: var(--text-muted); font-size: 0.92rem; margin: 0; line-height: 1.6;'>Pride Miami is registered under MahaRERA numbers PR1260002600188 and P52100028741.</p></div>
 <div style='border-bottom: 1px solid var(--border-subtle); padding: 1.15rem 0;'><h3 style='color: #fff; font-size: 1.05rem; margin: 0 0 0.5rem 0;'>What configurations and carpet areas are available in Pride Miami?</h3><p style='color: var(--text-muted); font-size: 0.92rem; margin: 0; line-height: 1.6;'>Pride Miami offers 2 BHK (790 - 880 sq. ft.), 3 BHK (1,240 sq. ft.), and ultra-luxury 4.5 BHK sky residences (2,240 sq. ft. carpet area).</p></div>
 <div style='border-bottom: 1px solid var(--border-subtle); padding: 1.15rem 0;'><h3 style='color: #fff; font-size: 1.05rem; margin: 0 0 0.5rem 0;'>What is the starting price of Pride Miami Charholi?</h3><p style='color: var(--text-muted); font-size: 0.92rem; margin: 0; line-height: 1.6;'>Residences in Pride Miami start from ₹92 Lacs* for 2 BHK homes, ₹1.42 Cr* for 3 BHK lakefront suites, and ₹2.45 Cr* for 4.5 BHK sky penthouses.</p></div>
         </div>
+        <div style="margin-top: 1.5rem;">
+          <a href="/faq" class="btn btn-outline-gold" style="font-size: 0.85rem;"><i class="fa-solid fa-circle-question"></i> Read All 36 Township FAQs</a>
+        </div>
       </div>
 
       <div class="seo-matrix-card">
-        <h3 style="color: #fff; margin-top: 0;">Explore All Enclaves Inside 400-Acre Pride World City</h3>
+        <h3 style="color: #fff; margin-top: 0;">Explore Every Project &amp; Resource in Pride World City</h3>
         <div class="silo-links-grid">
           <a href="/" class="silo-link-chip"><i class="fa-solid fa-house text-gold"></i> 400-Acre Master Portal</a>
-          <a href="/valencia" class="silo-link-chip">★ Pride Valencia (New Launch)</a>
-          <a href="/miami" class="silo-link-chip">Pride Miami (Waterfront)</a>
-          <a href="/wellington" class="silo-link-chip">Pride Wellington (Resort)</a>
-          <a href="/montreal" class="silo-link-chip">Pride Montreal (4 BHK Duplex)</a>
-          <a href="/boston" class="silo-link-chip">Pride Boston Central (2X)</a>
-          <a href="/charholi-pune-real-estate" class="silo-link-chip">Charholi &amp; Pune Real Estate Guide</a>
+          <a href="/valencia" class="silo-link-chip ">★ Valencia (New Launch)</a>
+          <a href="/miami" class="silo-link-chip current">Miami (Waterfront)</a>
+          <a href="/wellington" class="silo-link-chip ">Wellington (7-Acre Podium)</a>
+          <a href="/montreal" class="silo-link-chip ">Montreal (4 BHK Duplex)</a>
+          <a href="/boston" class="silo-link-chip ">Boston Central (2X)</a>
+          <a href="/kingsbury" class="silo-link-chip ">Kingsbury (Ready / Resale)</a>
+          <a href="/brooklyn" class="silo-link-chip ">Brooklyn (1 &amp; 2 BHK)</a>
+          <a href="/manhattan" class="silo-link-chip ">Manhattan (2 &amp; 3 BHK)</a>
+          <a href="/atlantic" class="silo-link-chip ">Atlantic (Scenic)</a>
+          <a href="/notting-hill" class="silo-link-chip ">Notting Hill (Pool Duplex)</a>
+          <a href="/long-island" class="silo-link-chip ">Long Island (Sky Villas)</a>
+          <a href="/soho" class="silo-link-chip ">SoHo (Live-Work)</a>
+          <a href="/pride-tech-park" class="silo-link-chip ">Pride Tech Park &amp; Retail</a>
+          <a href="/charholi-pune-real-estate" class="silo-link-chip ">Charholi &amp; Pune Market</a>
+          <a href="/articles" class="silo-link-chip"><i class="fa-solid fa-newspaper text-gold"></i> Market Research Guides</a>
+          <a href="/faq" class="silo-link-chip"><i class="fa-solid fa-book text-gold"></i> Complete FAQ Encyclopedia</a>
         </div>
       </div>
     </div>

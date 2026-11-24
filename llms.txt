@@ -2,15 +2,26 @@
 
 > Pride World City is a 400-acre integrated mega township developed by Pride Group in Charholi Budruk, North Pune, Maharashtra, India. Situated 10 minutes (4.8 km) from Pune International Airport and 18 minutes (11 km) from Kharadi EON IT Park, it spans 5+ million sq. ft. of completed development and 8+ million sq. ft. under construction, home to 10,000+ families.
 
-## Primary Links & Dedicated Pillar Pages
+## Primary Links & Complete Silo Pages
 - **Complete AI Grounding Context (`llms-full.txt`):** https://prideworld.city/llms-full.txt
 - **Master Township Portal:** https://prideworld.city/
 - **Pride Valencia (New Launch Sun-Side 2 & 3 BHK):** https://prideworld.city/valencia
 - **Pride Miami (Waterfront 2, 3 & 4.5 BHK):** https://prideworld.city/miami
-- **Pride Wellington (Lakefront 2 & 3 BHK):** https://prideworld.city/wellington
+- **Pride Wellington (Lakefront 2 & 3 BHK, 7-Acre Podium):** https://prideworld.city/wellington
 - **Pride Montreal (Smart Tech & 4 BHK Duplex):** https://prideworld.city/montreal
 - **Pride Boston Central (2X Advantage 2 BHK):** https://prideworld.city/boston
+- **Pride Kingsbury (Ready Royal 2 & 3 BHK):** https://prideworld.city/kingsbury
+- **Pride Brooklyn (Urban 1 & 2 BHK):** https://prideworld.city/brooklyn
+- **Pride Manhattan (Cosmopolitan 2 & 3 BHK):** https://prideworld.city/manhattan
+- **Pride Atlantic (Scenic 2 & 3 BHK):** https://prideworld.city/atlantic
+- **Pride Notting Hill (Manor Duplexes w/ Pool):** https://prideworld.city/notting-hill
+- **Pride Long Island (4 BHK Sky Villas):** https://prideworld.city/long-island
+- **Pride SoHo (Live-Work Suites & Offices):** https://prideworld.city/soho
+- **Pride Tech Park & Retail Spaces:** https://prideworld.city/pride-tech-park
 - **Charholi & North Pune Real Estate Guide:** https://prideworld.city/charholi-pune-real-estate
+- **36-Question FAQ Encyclopedia:** https://prideworld.city/faq
+- **Research Articles & Comparisons Hub:** https://prideworld.city/articles
+- **RSS 2.0 Research Feed:** https://prideworld.city/feed.xml
 - **Privacy Policy:** https://prideworld.city/privacy
 - **Terms & MahaRERA Disclaimer:** https://prideworld.city/terms
 

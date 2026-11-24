@@ -31,7 +31,10 @@ class ClusterManager {
       return true;
     });
 
-    this.grid.innerHTML = filtered.map(c => `
+    const slugMap = { nottinghill: "notting-hill", longisland: "long-island" };
+    this.grid.innerHTML = filtered.map(c => {
+      const clusterSlug = slugMap[c.id] || c.id;
+      return `
       <div class="cluster-card" data-id="${c.id}">
         <div class="cluster-card-media">
           <img src="${c.image}" alt="${c.name} - Pride World City" loading="lazy"/>
@@ -51,10 +54,10 @@ class ClusterManager {
 
         <div class="cluster-card-body">
           <div class="cluster-header-wrap">
-            <h3 class="cluster-name">${c.name}</h3>
+            <h3 class="cluster-name"><a href="/${clusterSlug}" style="color: inherit; text-decoration: none;">${c.name}</a></h3>
             <span class="cluster-type">${c.type}</span>
           </div>
-          <p class="cluster-desc">${c.description}</p>
+          <p class="cluster-desc">${c.description} <a href="/${clusterSlug}" style="color: var(--accent-gold); font-weight: 600; font-size: 0.82rem; white-space: nowrap;">Explore ${c.name} &rarr;</a></p>
 
           <div class="cluster-specs-grid">
             <div class="spec-cell">
@@ -90,7 +93,7 @@ class ClusterManager {
           </div>
         </div>
       </div>
-    `).join("");
+    `; }).join("");
 
     this.attachCardEvents();
   }
