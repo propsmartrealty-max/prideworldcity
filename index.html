@@ -64,6 +64,14 @@
           "opens": "09:30",
           "closes": "19:30"
         },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.85",
+          "reviewCount": "840",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "hasMap": "https://maps.google.com/?q=Pride+World+City+Charholi+Budruk+Pune",
         "parentOrganization": {
           "@type": "Organization",
           "name": "Pride Group",
@@ -209,17 +217,36 @@
             }
           }
         ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://prideworld.city/#website",
+        "url": "https://prideworld.city/",
+        "name": "Pride World City",
+        "description": "400-Acre Master Integrated Mega Township in Charholi Budruk, North Pune",
+        "publisher": {
+          "@id": "https://prideworld.city/#organization"
+        },
+        "inLanguage": "en-IN"
       }
     ]
   }
   </script>
 
+  <!-- PWA & Mobile Installability -->
+  <link rel="manifest" href="site.webmanifest">
+
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50' y='68' font-size='55' font-family='serif' font-weight='bold' fill='%23d4af37' text-anchor='middle'>P</text></svg>">
+  <link rel="apple-touch-icon" href="assets/images/pride-world-city-logo.svg">
 
-  <!-- Typography & Icons -->
+  <!-- Core Web Vitals Performance Optimization -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/images/pride-world-city-Bird-eye-view.jpeg.bv.webp" type="image/webp" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 

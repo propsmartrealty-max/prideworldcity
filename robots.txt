@@ -1,4 +1,41 @@
+# ==============================================================================
+# Pride World City - Enterprise Robots Directives (Google Search Essentials)
+# Production Host: https://prideworld.city/
+# ==============================================================================
+
+# 1. Primary Search Engine Crawlers (Googlebot, Bingbot, Applebot)
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-Mobile
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: Slurp
+User-agent: DuckDuckBot
+Allow: /
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: /data/
+Allow: /sitemap.xml
+
+# 2. General Public Bots
 User-agent: *
 Allow: /
+Disallow: /scratch/
+Disallow: /tmp/
+Disallow: /*.json$
 
+# 3. Block Aggressive Scraping Bots & Unauthorized Content Harvesters
+User-agent: Bytespider
+User-agent: PetalBot
+User-agent: MJ12bot
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: DotBot
+User-agent: BLEXBot
+User-agent: DataForSeoBot
+Disallow: /
+
+# 4. Search Indexation Sitemap & Host Verification
+Host: https://prideworld.city
 Sitemap: https://prideworld.city/sitemap.xml
