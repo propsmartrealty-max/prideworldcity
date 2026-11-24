@@ -4,7 +4,13 @@ https://www.prideworld.city/* https://prideworld.city/:splat 301!
 http://www.prideworld.city/* https://prideworld.city/:splat 301!
 http://prideworld.city/* https://prideworld.city/:splat 301!
 
-# 2. Clean URL Rewrites for Legal & Compliance Pages
+# 2. Clean URL Rewrites for Dedicated SEO Pillar & Legal Pages
+/valencia /valencia.html 200
+/miami /miami.html 200
+/wellington /wellington.html 200
+/montreal /montreal.html 200
+/boston /boston.html 200
+/charholi-pune-real-estate /charholi-pune-real-estate.html 200
 /privacy /privacy.html 200
 /terms /terms.html 200
 /disclaimer /terms.html 301

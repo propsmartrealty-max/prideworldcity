@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Primary Township Landing Page -->
+  <!-- Primary Township Master Portal -->
   <url>
     <loc>https://prideworld.city/</loc>
     <lastmod>2026-11-25</lastmod>
@@ -12,153 +12,94 @@
     <image:image>
       <image:loc>https://prideworld.city/assets/images/pride-world-city-Bird-eye-view.jpeg.bv.webp</image:loc>
       <image:title>Pride World City 400-Acre Master Integrated Township Pune</image:title>
-      <image:caption>Aerial drone view of Pride World City in Charholi Budruk, Pune featuring central lake and residential clusters.</image:caption>
+      <image:caption>Aerial view of Pride World City in Charholi Budruk, Pune featuring central lake and residential clusters.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://prideworld.city/assets/images/Scene_01_aerial-view.webp</image:loc>
-      <image:title>Kingsbury and Wellington Residential Enclaves at Pride World City</image:title>
-      <image:caption>High-rise residential towers and 50,000 sq.ft Club Royale at Pride World City.</image:caption>
+      <image:loc>https://prideworld.city/assets/images/og-share.jpg</image:loc>
+      <image:title>Pride World City Official Master Township</image:title>
     </image:image>
   </url>
 
-  <!-- Valencia Sun-Side Residences (New Launch) -->
+  <!-- Dedicated Cluster Pillar: Pride Valencia (New Launch) -->
   <url>
-    <loc>https://prideworld.city/#valencia</loc>
+    <loc>https://prideworld.city/valencia</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.98</priority>
+    <priority>0.95</priority>
     <image:image>
       <image:loc>https://prideworld.city/assets/images/Twilight-Valencia-Apartment-Launch-Banner.webp.bv.webp</image:loc>
-      <image:title>Valencia New Launch 2 &amp; 3 BHK Sun-Side Homes</image:title>
-      <image:caption>East-west facing sun-side luxury towers at Valencia, Pride World City Charholi.</image:caption>
+      <image:title>Pride Valencia New Launch 2 &amp; 3 BHK Sun-Side Homes Charholi</image:title>
     </image:image>
   </url>
 
-  <!-- Masterplan & Township Infrastructure -->
+  <!-- Dedicated Cluster Pillar: Pride Miami -->
   <url>
-    <loc>https://prideworld.city/#masterplan</loc>
+    <loc>https://prideworld.city/miami</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/11-original.png</image:loc>
-      <image:title>Pride World City 400-Acre Master Layout Plan</image:title>
-      <image:caption>Comprehensive master zoning plan of Pride World City showing 7-acre lake, residential clusters and IT park.</image:caption>
-    </image:image>
-  </url>
-
-  <!-- North Pune Micro-Market & Investment Guide -->
-  <url>
-    <loc>https://prideworld.city/#micro-market-guide</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- Residential Clusters Showcase -->
-  <url>
-    <loc>https://prideworld.city/#clusters</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
     <image:image>
       <image:loc>https://prideworld.city/assets/images/miami-desktop-banner.webp</image:loc>
-      <image:title>Pride Miami Lakefront Residences</image:title>
-      <image:caption>Art-deco waterfront 2, 3 and 4.5 BHK residences facing 7-acre lake at Pride World City.</image:caption>
+      <image:title>Pride Miami Waterfront 2, 3 &amp; 4.5 BHK Residences Charholi Pune</image:title>
     </image:image>
+  </url>
+
+  <!-- Dedicated Cluster Pillar: Pride Wellington -->
+  <url>
+    <loc>https://prideworld.city/wellington</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
     <image:image>
       <image:loc>https://prideworld.city/assets/images/wellington-overview.jpg</image:loc>
-      <image:title>Pride Wellington Resort Living</image:title>
-      <image:caption>Lakefront 14-tower residential cluster with infinity lagoon pool and cabanas.</image:caption>
+      <image:title>Pride Wellington Resort 2 &amp; 3 BHK 7-Acre Podium Pune</image:title>
     </image:image>
+  </url>
+
+  <!-- Dedicated Cluster Pillar: Pride Montreal -->
+  <url>
+    <loc>https://prideworld.city/montreal</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
     <image:image>
       <image:loc>https://prideworld.city/assets/images/montreal-hero-banner.webp</image:loc>
-      <image:title>Pride Montreal Smart Tech &amp; Duplex Sky Villas</image:title>
-      <image:caption>Smart automation residences and 4 BHK duplexes at Pride World City.</image:caption>
+      <image:title>Pride Montreal Smart Tech &amp; 4 BHK Duplexes Pune</image:title>
     </image:image>
+  </url>
+
+  <!-- Dedicated Cluster Pillar: Pride Boston Central -->
+  <url>
+    <loc>https://prideworld.city/boston</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
     <image:image>
       <image:loc>https://prideworld.city/assets/images/boston-desktop-homepage-banner.webp</image:loc>
-      <image:title>Pride Boston Central 2X Advantage</image:title>
-      <image:caption>Smart 2 BHK homes with dual private balconies and two clubhouses.</image:caption>
+      <image:title>Pride Boston Central 2X Advantage 2 BHK Homes Charholi</image:title>
     </image:image>
   </url>
 
-  <!-- Civic Infrastructure & Amenities -->
+  <!-- North Pune & Charholi Real Estate Authority Page -->
   <url>
-    <loc>https://prideworld.city/#civic</loc>
+    <loc>https://prideworld.city/charholi-pune-real-estate</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
+    <priority>0.95</priority>
   </url>
 
-  <!-- Fullscreen Media Gallery -->
+  <!-- Statutory & Legal Compliance -->
   <url>
-    <loc>https://prideworld.city/#gallery</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- 360 Virtual Tour Experience -->
-  <url>
-    <loc>https://prideworld.city/#tour</loc>
+    <loc>https://prideworld.city/privacy</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.50</priority>
   </url>
-
-  <!-- 45+ Curated Lifestyle Amenities & Club Royale -->
   <url>
-    <loc>https://prideworld.city/#amenities</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-
-  <!-- 15-Minute Airport & Kharadi Transit Radar -->
-  <url>
-    <loc>https://prideworld.city/#connectivity</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-
-  <!-- Dynamic Mortgage & EMI Intelligence Calculator -->
-  <url>
-    <loc>https://prideworld.city/#calculator</loc>
+    <loc>https://prideworld.city/terms</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- Frequently Asked Questions & MahaRERA Compliance -->
-  <url>
-    <loc>https://prideworld.city/#faqs</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <!-- VIP Chauffeur Site Visit Suite -->
-  <url>
-    <loc>https://prideworld.city/#vip-booking</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.92</priority>
-  </url>
-
-  <!-- Legal & Statutory Compliance -->
-  <url>
-    <loc>https://prideworld.city/privacy.html</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/terms.html</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.50</priority>
   </url>
 
 </urlset>
