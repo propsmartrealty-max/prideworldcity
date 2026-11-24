@@ -1213,6 +1213,97 @@ const TOWNSHIP_DATA = {
         stars: 5
       }
     ]
+  },
+
+  puneMarketTrends: {
+    city: "Pune",
+    updatedDate: "November 2026",
+    growthDriver: "PMRDA Ring Road, Pune Airport Terminal 2 & Kharadi Tech Corridor",
+    averageAppreciation5Yr: "42.8%",
+    microMarketRates: [
+      {
+        locality: "Charholi Budruk (Pride World City)",
+        region: "North Pune",
+        avgRateSqFt: "₹ 6,800 - ₹ 8,200",
+        rentalYield: "4.8% - 6.0%",
+        connectivityHighlights: "10 mins to Airport, 18 mins to Kharadi IT Park, PMRDA Ring Road 1.8 km",
+        verdict: "High Capital Growth & Superior Value Arbitrage"
+      },
+      {
+        locality: "Dhanori & Lohegaon",
+        region: "North-East Pune",
+        avgRateSqFt: "₹ 6,200 - ₹ 7,800",
+        rentalYield: "3.8% - 4.5%",
+        connectivityHighlights: "Adjacent to Airport, narrow internal roads, standalone buildings",
+        verdict: "Moderate appreciation, higher density"
+      },
+      {
+        locality: "Viman Nagar",
+        region: "East Pune",
+        avgRateSqFt: "₹ 11,500 - ₹ 16,500",
+        rentalYield: "3.2% - 3.8%",
+        connectivityHighlights: "Prime lifestyle retail, Phoenix Mall, mature saturated market",
+        verdict: "High capital entry barrier, low rental yield"
+      },
+      {
+        locality: "Kharadi (EON Free Zone / WTC)",
+        region: "East Pune",
+        avgRateSqFt: "₹ 8,900 - ₹ 13,200",
+        rentalYield: "3.5% - 4.2%",
+        connectivityHighlights: "Leading IT hub, heavy peak-hour traffic choke points",
+        verdict: "High demand, expensive ticket size"
+      },
+      {
+        locality: "Hinjawadi IT Park",
+        region: "West Pune",
+        avgRateSqFt: "₹ 6,800 - ₹ 9,500",
+        rentalYield: "3.6% - 4.4%",
+        connectivityHighlights: "60+ mins from Airport, severe peak congestion on Hinjawadi flyover",
+        verdict: "Tech-focused, distant from Airport & East IT corridors"
+      },
+      {
+        locality: "Baner & Balewadi",
+        region: "North-West Pune",
+        avgRateSqFt: "₹ 9,800 - ₹ 14,500",
+        rentalYield: "3.1% - 3.7%",
+        connectivityHighlights: "High-end commercial & residential, highly saturated land parcels",
+        verdict: "Premium pricing, limited large-scale township infrastructure"
+      },
+      {
+        locality: "Wagholi (Nagar Road)",
+        region: "East Pune",
+        avgRateSqFt: "₹ 5,400 - ₹ 7,100",
+        rentalYield: "3.5% - 4.1%",
+        connectivityHighlights: "Nagar Road corridor, heavy vehicular congestion and water tanker dependency",
+        verdict: "Affordable but infrastructure challenges"
+      },
+      {
+        locality: "Moshi & Alandi Corridor",
+        region: "North Pune / PCMC",
+        avgRateSqFt: "₹ 5,200 - ₹ 6,600",
+        rentalYield: "3.4% - 4.0%",
+        connectivityHighlights: "Pimpri-Chinchwad municipal boundary, auto-hub proximity",
+        verdict: "Industrial workforce residential hub"
+      }
+    ],
+    macroPillars: [
+      {
+        title: "PMRDA 128-km Pune Ring Road",
+        desc: "Signal-free expressway encircling Pune and Pimpri-Chinchwad with an interchange within 1.8 km of Charholi Budruk, unlocking direct 20-minute transit to PCMC auto hubs and Mumbai Expressway."
+      },
+      {
+        title: "Pune International Airport (PNQ) Terminal 2",
+        desc: "State-of-the-art expansion handling 16+ million passengers annually. Charholi Budruk is the nearest planned integrated township (4.8 km), capturing the highest aviation corporate executive rental demand."
+      },
+      {
+        title: "Direct 8-Lane Kharadi-Charholi Tech Corridor",
+        desc: "Dramatically cutting travel time to EON IT Park and World Trade Center to under 18 minutes, transforming Charholi into the natural residential choice for over 150,000 IT professionals."
+      },
+      {
+        title: "Township vs Standalone Apartment Advantage",
+        desc: "Pride World City provides 100% water self-sufficiency (7-acre freshwater lake, rainwater harvesting, STP), 70% open green reserves, on-campus K-12 Cambridge education, and zero dependence on municipal water tankers."
+      }
+    ]
   }
 };
 

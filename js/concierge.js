@@ -248,6 +248,25 @@ class PrideConcierge {
       return;
     }
 
+    // 11. Pune Real Estate Market / Locality Comparison (Viman Nagar, Kharadi, Hinjawadi, Baner, Rates)
+    if (q.includes("pune real estate") || q.includes("pune market") || q.includes("rates") || q.includes("per sq ft") || q.includes("sqft") || q.includes("viman nagar") || q.includes("hinjawadi") || q.includes("nri") || q.includes("baner")) {
+      this.addMessage(`
+        <strong>Pune Real Estate Market Intelligence:</strong>
+        <br/><br/>
+        📊 <strong>Charholi Budruk (Pride World City):</strong> ₹6,800 - ₹8,200/sq.ft (Rental yield: <strong>4.8% - 6.0%</strong>)<br/>
+        📍 <strong>Viman Nagar:</strong> ₹11,500 - ₹16,500/sq.ft (35-45% higher entry ticket, yield ~3.4%)<br/>
+        💻 <strong>Kharadi IT Park:</strong> ₹8,900 - ₹13,200/sq.ft (yield ~3.8%)<br/>
+        🏢 <strong>Hinjawadi:</strong> ₹6,800 - ₹9,500/sq.ft (60+ mins from Airport)<br/><br/>
+        <strong>Why Charholi is Pune's #1 Value Arbitrage:</strong><br/>
+        • 10 mins from Pune Airport Terminal 2<br/>
+        • 18 mins to Kharadi EON Free Zone via 8-lane expressway<br/>
+        • 1.8 km to upcoming PMRDA 128-km Ring Road interchange<br/>
+        • 400-acre masterplan with 7-acre lake & self-sufficient water infrastructure.<br/><br/>
+        <button class="quick-reply-pill" onclick="window.scrollToSection('micro-market-guide')">Explore Pune Market Benchmark</button>
+      `, "bot");
+      return;
+    }
+
     // 6. Valencia / Spanish / Sunset Homes
     if (q.includes("valencia") || q.includes("spanish") || q.includes("sunset")) {
       this.addMessage(`
