@@ -1,5 +1,11 @@
 # Cloudflare Pages Redirects
-# Canonical Domain Enforcement (www to apex)
+# 1. Canonical Domain Enforcement (www to apex)
 https://www.prideworld.city/* https://prideworld.city/:splat 301!
 http://www.prideworld.city/* https://prideworld.city/:splat 301!
 http://prideworld.city/* https://prideworld.city/:splat 301!
+
+# 2. Clean URL Rewrites for Legal & Compliance Pages
+/privacy /privacy.html 200
+/terms /terms.html 200
+/disclaimer /terms.html 301
+/security /.well-known/security.txt 301
