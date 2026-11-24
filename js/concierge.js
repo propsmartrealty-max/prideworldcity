@@ -162,21 +162,88 @@ class PrideConcierge {
     // 5. RERA / Approvals
     if (q.includes("rera") || q.includes("approval") || q.includes("legal") || q.includes("possession")) {
       this.addMessage(`
-        All clusters at Pride World City are 100% MahaRERA compliant with clear titles:
+        All clusters at Pride World City are 100% MahaRERA compliant with clear titles and sanctioned plans:
         <br/><br/>
-        • Kingsbury: <code>P52100000854</code>
-        <br/>
-        • Wellington: <code>P52100019637</code>
-        <br/>
-        • Montreal: <code>P52100021650</code>
-        <br/>
-        • Miami: <code>P52100028741</code>
-        <br/>
-        • Long Island: <code>P52100017892</code>
-        <br/>
-        • Boston Central: <code>P52100029810</code>
+        • <strong>Miami:</strong> <code>PR1260002600188</code> & <code>P52100028741</code><br/>
+        • <strong>Boston Central:</strong> <code>P52100078307</code> & <code>P52100049648</code><br/>
+        • <strong>Montreal:</strong> <code>P52100077138</code> & <code>P52100021650</code><br/>
+        • <strong>Wellington:</strong> <code>P52100054534</code> & <code>P52100019637</code><br/>
+        • <strong>Valencia:</strong> <code>P52100052309</code><br/>
+        • <strong>Kingsbury:</strong> <code>P52100000854</code><br/>
+        • <strong>SoHo:</strong> <code>P52100029810</code><br/>
+        • <strong>Long Island:</strong> <code>P52100017892</code>
         <br/><br/>
-        You can verify all certificates on <a href="https://maharera.mahaonline.gov.in" target="_blank" style="color:var(--accent-gold);">maharera.mahaonline.gov.in</a>.
+        Verify certificates on <a href="https://maharera.mahaonline.gov.in" target="_blank" rel="noopener noreferrer" style="color:var(--accent-gold);">maharera.mahaonline.gov.in</a>.
+      `, "bot");
+      return;
+    }
+
+    // 6. Boston / 2X Advantage
+    if (q.includes("boston")) {
+      this.addMessage(`
+        <strong>Pride Boston Central — The 2X Advantage:</strong>
+        <br/><br/>
+        • <strong>Two Balconies:</strong> Double the natural daylight and breezy cross-ventilation in every 2 BHK.<br/>
+        • <strong>Two Clubhouses:</strong> Dual access to fitness, recreation, and social clubs.<br/>
+        • <strong>Pricing:</strong> Smart 2 BHK starting from ₹68 Lacs*.<br/>
+        • <strong>MahaRERA:</strong> <code>P52100078307 & P52100049648</code>
+        <br/><br/>
+        <button class="quick-reply-pill" onclick="window.scrollToSection('clusters')">Inspect Boston Floor Plans</button>
+      `, "bot");
+      return;
+    }
+
+    // 7. Montreal / Duplex / Smart Tech
+    if (q.includes("montreal") || q.includes("duplex")) {
+      this.addMessage(`
+        <strong>Pride Montreal — Smart Homes & Duplex Living:</strong>
+        <br/><br/>
+        • <strong>Configurations:</strong> Contemporary 2 & 3 BHKs plus palatial 4 BHK Duplex Sky Villas.<br/>
+        • <strong>Smart Tech:</strong> Touch-panel home automation, smart glass & acoustic soundproofing.<br/>
+        • <strong>4 BHK Duplex:</strong> 1,850 sq.ft with double-height salons and private sky terrace from ₹1.65 Cr*.<br/>
+        • <strong>MahaRERA:</strong> <code>P52100077138 & P52100021650</code>
+        <br/><br/>
+        <button class="quick-reply-pill" onclick="window.scrollToSection('clusters')">View Montreal Duplex Plans</button>
+      `, "bot");
+      return;
+    }
+
+    // 8. Investment / Rental Yield / Appreciation / Resale
+    if (q.includes("investment") || q.includes("rental") || q.includes("yield") || q.includes("appreciation") || q.includes("resale") || q.includes("roi")) {
+      this.addMessage(`
+        <strong>North Pune Investment & Rental Intelligence:</strong>
+        <br/><br/>
+        📈 <strong>Rental Yield:</strong> 4.5% - 6% annually for 1 & 2 BHKs, powered by Pune Airport corporate staff, Kharadi IT workforce, and D.Y. Patil Knowledge City.<br/>
+        🚀 <strong>Capital Growth:</strong> 42%+ appreciation over the past 5 years driven by the upcoming PMRDA Ring Road & Airport expansion.<br/>
+        🔑 <strong>Resale / Ready Units:</strong> Delivered inventory available in Kingsbury, Brooklyn, and Manhattan with immediate registry.<br/><br/>
+        <button class="quick-reply-pill" onclick="window.scrollToSection('micro-market-guide')">Explore Investment Matrix</button>
+      `, "bot");
+      return;
+    }
+
+    // 9. Competitor Comparisons (Ganga New Town, Life Republic, Godrej, Kumar)
+    if (q.includes("vs") || q.includes("compare") || q.includes("ganga") || q.includes("republic") || q.includes("godrej") || q.includes("kumar") || q.includes("vtp")) {
+      this.addMessage(`
+        <strong>Why Pride World City Stands Apart:</strong>
+        <br/><br/>
+        1. <strong>Unrivaled Scale:</strong> 400 contiguous acres vs 14-40 acre standalone developments.<br/>
+        2. <strong>Airport Proximity:</strong> Just 10 minutes to Pune Airport vs 60+ mins from Life Republic Hinjawadi.<br/>
+        3. <strong>Living Water Body:</strong> Real 7-acre lake promenade & 50,000 sq.ft Club Royale already delivered.<br/>
+        4. <strong>On-Site Cambridge School:</strong> Global Indian International School operational within gates.<br/><br/>
+        <button class="quick-reply-pill" onclick="window.scrollToSection('micro-market-guide')">View Detailed Comparison</button>
+      `, "bot");
+      return;
+    }
+
+    // 10. Commercial / Pride Tech Park / Retail / Soho
+    if (q.includes("tech park") || q.includes("office") || q.includes("commercial") || q.includes("retail") || q.includes("shop") || q.includes("soho")) {
+      this.addMessage(`
+        <strong>Township Commercial & Tech Hub:</strong>
+        <br/><br/>
+        🏢 <strong>Pride Tech Park:</strong> Grade-A corporate office spaces and IT facilities in North Pune.<br/>
+        🏬 <strong>SoHo Business Spaces:</strong> Hybrid live-work lofts and commercial boutique offices (MahaRERA: <code>P52100029810</code>).<br/>
+        🛍️ <strong>Town Plaza:</strong> High-street retail shops, cafes, supermarkets, and wellness outlets.<br/><br/>
+        <button class="quick-reply-pill" onclick="window.scrollToSection('masterplan')">Explore Master Commercial Plan</button>
       `, "bot");
       return;
     }

@@ -10,8 +10,10 @@ const TOWNSHIP_DATA = {
     subtext: "Live, Work, Learn, and Play in Pune's Most Celebrated Integrated Mega Township",
     developer: "Pride Group",
     legacyYears: "28+",
-    totalAcreage: "400+ Acres",
-    familiesCount: "3,500+",
+    totalAcreage: "Approximately 400 Acres",
+    familiesCount: "10,000+",
+    completedArea: "5 Million Sq. Ft.",
+    underConstructionArea: "8 Million+ Sq. Ft.",
     unitsDelivered: "5,000+",
     openGreenSpace: "70%",
     phone: "+91 91580 00111",
@@ -22,12 +24,12 @@ const TOWNSHIP_DATA = {
   },
 
   keyHighlights: [
-    { number: "400+", label: "Acres Masterplan", desc: "Self-sustaining global ecosystem" },
-    { number: "3,500+", label: "Happy Resident Families", desc: "Vibrant thriving community" },
-    { number: "70%", label: "Open & Green Belts", desc: "Lush botanical gardens & water bodies" },
-    { number: "45+", label: "World-Class Amenities", desc: "Sports, wellness, leisure & social" },
-    { number: "10 Mins", label: "To Pune Int'l Airport", desc: "Unmatched prime connectivity" },
-    { number: "8+", label: "Distinct Residential Clusters", desc: "From smart suites to sky villas" }
+    { number: "400", label: "Acres Masterplan", desc: "Integrated mega township in Charholi" },
+    { number: "10,000+", label: "Township Families", desc: "Thriving multi-generational community" },
+    { number: "5M+ Sq.Ft", label: "Completed Area", desc: "World-class delivered infrastructure" },
+    { number: "8M+ Sq.Ft", label: "Under Construction", desc: "Rapidly expanding residential & tech hubs" },
+    { number: "10 Mins", label: "To Pune Int'l Airport", desc: "Unmatched prime connectivity corridor" },
+    { number: "11", label: "Clusters & Tech Park", desc: "Valencia, Miami, Boston, Montreal & more" }
   ],
 
   clusters: [
@@ -136,7 +138,7 @@ const TOWNSHIP_DATA = {
       priceNumber: 8600000,
       carpetArea: "820 - 1,420 sq. ft.",
       towers: "14 Signature Resort Towers (G + 24 Floors)",
-      reraNo: "P52100045781, P52100048479, P52100054530",
+      reraNo: "P52100054534, P52100019637, P52100045781",
       tagline: "Everyday Feels Like a Five-Star Lakefront Vacation",
       description: "Wellington redefines resort living with an expansive infinity lagoon pool, floating cabanas, private tropical gazebos, and sun-drenched balconies looking into the 7-acre central lake.",
       image: "assets/images/wellington-overview.jpg",
@@ -191,7 +193,7 @@ const TOWNSHIP_DATA = {
       priceNumber: 7400000,
       carpetArea: "740 - 1,850 sq. ft.",
       towers: "8 Smart Automation Towers",
-      reraNo: "P52100077138, P52100053272",
+      reraNo: "P52100077138, P52100021650, P52100053272",
       tagline: "Intelligent Living Powered by Modern Architecture",
       description: "Crafted for millennial families and tech professionals, Montreal integrates touch-panel home automation, smart energy-saving glass, aerodynamic cross-ventilation, and dedicated kid-safe play sectors.",
       image: "assets/images/montreal-hero-banner.webp",
@@ -246,7 +248,7 @@ const TOWNSHIP_DATA = {
       priceNumber: 9200000,
       carpetArea: "790 - 2,240 sq. ft.",
       towers: "9 Art Deco Waterfront Glass Towers",
-      reraNo: "P52100077670 & PR1260002502081",
+      reraNo: "PR1260002600188 & P52100028741",
       tagline: "Sun, Water, and Miami-Inspired Splendor",
       description: "Directly overlooking the central waterfront lake, Miami brings vibrant South Beach vibes to Charholi. Characterized by curvaceous white facade lines, glass balustrades, palm-fringed avenues, and rooftop cocktail decks.",
       image: "assets/images/miami-desktop-banner.webp",
@@ -405,7 +407,7 @@ const TOWNSHIP_DATA = {
       priceNumber: 6800000,
       carpetArea: "690 - 845 sq. ft.",
       towers: "High-Energy Urban Towers with 2 Mega Clubhouses",
-      reraNo: "P52100049648 & P52100078301",
+      reraNo: "P52100078307 & P52100049648",
       tagline: "Double the Space, Double the Amenities, Double the Joy",
       description: "Boston Central delivers the exclusive 2X Advantage: Two Balconies providing abundant natural light, superior cross-ventilation, and private outdoor unwinding space, alongside Two Clubhouses doubling your access to fitness, recreation, and social leisure.",
       image: "assets/images/boston-desktop-homepage-banner.webp",
@@ -482,6 +484,135 @@ const TOWNSHIP_DATA = {
           rooms: "2 Bedrooms, Dedicated Work Study, 2 Baths, Kitchen, Deck",
           planImage: "assets/images/2-BHK-L-Boston.jpg",
           svgType: "2bhk"
+        }
+      ]
+    },
+    {
+      id: "brooklyn",
+      name: "Brooklyn",
+      badge: "Vibrant Community",
+      status: "Delivered & Resale Available",
+      type: "Modern 1 & 2 BHK Urban Homes",
+      configurations: ["1 BHK", "2 BHK"],
+      priceStarting: "₹ 54 Lacs*",
+      priceNumber: 5400000,
+      carpetArea: "560 - 780 sq. ft.",
+      towers: "High-Rise Urban Towers",
+      reraNo: "P52100000854",
+      tagline: "Effortless City Living with Complete Township Convenience",
+      description: "Pride Brooklyn offers meticulously planned 1 and 2 BHK residences ideal for young couples, tech professionals, and rental investors. Enjoy landscaped podiums, community clubhouse, children's park, and immediate connectivity to Dhanori and Pune Airport.",
+      image: "assets/images/Scene_01_aerial-view.webp",
+      accentColor: "#3b82f6",
+      features: [
+        "Thoughtful Space Optimization with Zero Wastage",
+        "Community Clubhouse, Gym & Indoor Games",
+        "High Rental Demand from Pune Airport & Viman Nagar Staff",
+        "Children's Play Zone & Senior Citizen Pavilion",
+        "24/7 Multi-Tier Gated Security",
+        "Dedicated Power Backup & Water Conservation"
+      ],
+      floorPlans: [
+        {
+          name: "1 BHK Urban Compact",
+          carpet: "560 sq. ft.",
+          balcony: "45 sq. ft.",
+          orientation: "Vastu Compliant East Facing",
+          rooms: "Master Bedroom, Living Room, Kitchen, Utility Deck, Bath",
+          svgType: "1bhk"
+        },
+        {
+          name: "2 BHK Urban Comfort",
+          carpet: "740 sq. ft.",
+          balcony: "65 sq. ft.",
+          orientation: "Cross-Ventilated Garden Facing",
+          rooms: "2 Bedrooms, 2 Baths, Living-Dining, Kitchen, Balcony",
+          svgType: "2bhk"
+        }
+      ]
+    },
+    {
+      id: "manhattan",
+      name: "Manhattan",
+      badge: "Cosmopolitan Living",
+      status: "Delivered & Resale Available",
+      type: "Spacious 2 & 3 BHK Contemporary Residences",
+      configurations: ["2 BHK", "3 BHK"],
+      priceStarting: "₹ 68 Lacs*",
+      priceNumber: 6800000,
+      carpetArea: "730 - 1,080 sq. ft.",
+      towers: "Sleek Contemporary Towers",
+      reraNo: "P52100000854",
+      tagline: "New York Architectural Flare in North Pune",
+      description: "Pride Manhattan delivers vibrant cosmopolitan living characterized by expansive room layouts, wide panoramic balconies, designer entrance lobbies, and walking proximity to the Town Plaza high-street shopping boulevard.",
+      image: "assets/images/wellington-overview.jpg",
+      accentColor: "#ec4899",
+      features: [
+        "Spacious Living Rooms with Attached Sun Balconies",
+        "Designer Club House with Fully Equipped Fitness Center",
+        "Landscaped Central Greens & Jogging Loop",
+        "Walking Distance to Pride High Street & Town Plaza",
+        "Pre-approved by SBI, HDFC & ICICI Banks",
+        "High Appreciation Corridor near Lohegaon-Charholi Axis"
+      ],
+      floorPlans: [
+        {
+          name: "2 BHK Cosmopolitan Suite",
+          carpet: "745 sq. ft.",
+          balcony: "70 sq. ft.",
+          orientation: "East-West Sunrise Orientation",
+          rooms: "2 Bedrooms, 2 Bathrooms, Living, Dining, Balcony, Kitchen",
+          svgType: "2bhk"
+        },
+        {
+          name: "3 BHK Grand Cosmopolitan",
+          carpet: "1,080 sq. ft.",
+          balcony: "105 sq. ft.",
+          orientation: "Open Podium Horizon View",
+          rooms: "3 Bedrooms, 3 Bathrooms, Foyer, Living-Dining, Dual Balconies",
+          svgType: "3bhk"
+        }
+      ]
+    },
+    {
+      id: "atlantic",
+      name: "Atlantic",
+      badge: "Scenic Horizon",
+      status: "Under Construction / Modern Enclave",
+      type: "Premium 2 & 3 BHK Scenic Residences",
+      configurations: ["2 BHK", "3 BHK"],
+      priceStarting: "₹ 72 Lacs*",
+      priceNumber: 7200000,
+      carpetArea: "740 - 1,120 sq. ft.",
+      towers: "Modern High-Rise Towers",
+      reraNo: "P52100021650",
+      tagline: "Panoramic Breezes & Nature-Connected Living",
+      description: "Pride Atlantic overlooks the peripheral green belts and botanical preserves of Pride World City. Thoughtfully crafted with aerodynamic cross-ventilation, generous daylighting, and direct access to the 10-acre sports arena.",
+      image: "assets/images/montreal-hero-banner.webp",
+      accentColor: "#0ea5e9",
+      features: [
+        "Unobstructed Valley and Green Belt Vistas",
+        "Aerodynamic Layouts for Natural Year-Round Cooling",
+        "Direct Access to Township 10-Acre Sports Arena",
+        "Kids Splash Pool & Shaded Pergola Sit-outs",
+        "EV Charging Bays & Rainwater Harvesting",
+        "Proximity to Proposed Pune Ring Road & BRTS Route"
+      ],
+      floorPlans: [
+        {
+          name: "2 BHK Atlantic Breeze",
+          carpet: "750 sq. ft.",
+          balcony: "75 sq. ft.",
+          orientation: "North-East Morning Light",
+          rooms: "2 Bedrooms, 2 Baths, Living, Dining, Dry Terrace",
+          svgType: "2bhk"
+        },
+        {
+          name: "3 BHK Atlantic Horizon",
+          carpet: "1,120 sq. ft.",
+          balcony: "110 sq. ft.",
+          orientation: "Scenic Valley Facing",
+          rooms: "3 Bedrooms, 3 Baths, Living Salon, Sundeck, Kitchen",
+          svgType: "3bhk"
         }
       ]
     }
@@ -623,36 +754,88 @@ const TOWNSHIP_DATA = {
 
   faqs: [
     {
-      q: "Where exactly is Pride World City located in Pune?",
-      a: "Pride World City is situated in Charholi Budruk, adjacent to D.Y. Patil Knowledge City. It is strategically positioned between Dhanori, Lohegaon, and Viman Nagar, just 10 minutes (4.8 km) from Pune International Airport, with direct connectivity to Kharadi IT hub via the proposed 8-lane corridor."
+      q: "What is Pride World City Pune?",
+      a: "Pride World City is a premier 400-acre integrated mega township developed by Pride Group in Charholi Budruk, North Pune. Designed on global urban planning principles, it encompasses over 5 million sq. ft. of completed developments and 8+ million sq. ft. under active construction, accommodating more than 10,000 families with residential clusters, commercial IT parks, high-street retail, international education, and healthcare infrastructure."
     },
     {
-      q: "What is the total acreage and masterplan vision of Pride World City?",
-      a: "Pride World City spans 400+ acres, designed as an ultra-modern global metropolis. It is designed around the '15-minute city' concept where residential enclaves, commercial IT spaces, shopping promenades, K-12 education, 100-bed hospital, 10-acre sports arena, and a 7-acre natural lake coexist seamlessly."
+      q: "Where is Pride World City located and how is the connectivity?",
+      a: "Pride World City is strategically located at Charholi Budruk, adjacent to D.Y. Patil Knowledge City in North Pune. It borders Lohegaon and Dhanori, situated just 4.8 km (10 minutes) from Pune International Airport, 11 km from the Kharadi IT corridor (EON IT Park and World Trade Center), and minutes from Viman Nagar, Kalyani Nagar, and Vishrantwadi, with direct connectivity via the upcoming Pune Ring Road and BRTS bus corridors."
     },
     {
-      q: "Are the residential clusters registered with MahaRERA?",
-      a: "Yes, every cluster within Pride World City is 100% compliant and registered under MahaRERA with transparent approvals: Valencia: P52100055250, Kingsbury: P52100000854, Wellington: P52100019637, Montreal: P52100021650, Miami: P52100028741, Boston Central: P52100049648, Long Island: P52100017892, SoHo: P52100029810. Details are available on maharera.mahaonline.gov.in."
+      q: "Who is the master developer of Pride World City?",
+      a: "The master developer is Pride Group (Pride Developers Pune), a nationally acclaimed real estate pioneer with a 28+ year legacy of excellence. Led by Managing Director Arvind Jain, Pride Group has delivered landmark residential townships, IT business parks, and hospitality ventures across Pune, Mumbai, and Bangalore."
     },
     {
-      q: "What configurations and price ranges are available across the enclaves?",
-      a: "We offer a diverse portfolio for every stature: 2 & 3 BHK sun-side homes at Valencia starting from ₹74.5 Lacs*, waterfront residences at Miami from ₹1.05 Cr*, lake-facing 2 & 3 BHKs at Wellington from ₹78 Lacs*, smart tech homes at Montreal from ₹76 Lacs*, 2X smart suites at Boston Central from ₹48 Lacs*, live-work studios at SoHo from ₹42 Lacs*, and presidential sky villas at Long Island up to ₹3.5+ Cr*."
+      q: "How many acres is Pride World City township and what is its scale?",
+      a: "Pride World City spans approximately 400 contiguous acres. It is recognized as one of the largest integrated, master-planned townships in Maharashtra, featuring 70% open green corridors, an authentic 7-acre central lake promenade, and a 10-acre sports arena."
     },
     {
-      q: "Which leading banks have approved project home loans?",
-      a: "Pride World City is pre-approved by all premier financial institutions including State Bank of India (SBI), HDFC Bank, ICICI Bank, Axis Bank, Bank of Baroda, and Punjab National Bank, offering maximum loan-to-value (LTV) and preferred interest rates."
+      q: "What are the residential projects inside Pride World City?",
+      a: "The residential portfolio includes 11 signature enclaves: Valencia (New Launch 2 & 3 BHK sun-side homes), Miami (luxury waterfront 2, 3 & 4.5 BHK), Boston Central (smart 2 BHK homes with 2X advantage), Montreal (smart tech 2, 3 BHK & 4 BHK duplex residences), Wellington (resort-style 2 & 3 BHK facing the 7-acre lake), Kingsbury (ready-to-move royal 2 & 3 BHK), Brooklyn (urban 1 & 2 BHK), Manhattan (spacious 2 & 3 BHK), Atlantic (scenic high-rise apartments), Long Island (ultra-luxury sky villas), and SoHo (hybrid live-work suites)."
     },
     {
-      q: "Can I book a private site visit with complimentary chauffeur pickup?",
-      a: "Yes! Pride World City provides a complimentary VIP Chauffeur Pickup & Drop service from anywhere in Pune, Mumbai, or direct from Pune International Airport in an executive sedan, accompanied by a private electric golf buggy tour across the 400 acres."
+      q: "What is the price of 2 BHK and 3 BHK flats in Pride World City?",
+      a: "Starting prices vary by enclave: 2 BHK flats start from ₹54 Lacs* in Brooklyn/SoHo, ₹68 Lacs* in Boston Central, ₹74 Lacs* in Montreal, ₹78 Lacs* in Kingsbury, ₹86 Lacs* in Wellington, ₹92 Lacs* in Miami, and ₹92.49 Lacs* (All Inclusive) in Valencia. Spacious 3 BHK residences start from ₹1.05 Cr* in Wellington and Montreal, and ₹1.23 Cr* in Valencia. All-inclusive cost sheets and flexible construction-linked payment plans are available upon request."
     },
     {
-      q: "Is there priority admission for residents in the township school?",
-      a: "Yes, resident families at Pride World City enjoy exclusive priority admission privileges at the Cambridge & CBSE affiliated international school located right inside the township gates, eliminating school bus commutes."
+      q: "What is Pride Miami and what are its configurations and price?",
+      a: "Pride Miami is an art-deco inspired waterfront residential cluster comprising 9 high-rise glass towers set on the edge of the 7-acre central lake. Miami offers 2 BHK, 3 BHK, and palatial 4.5 BHK sky residences (carpet areas from 790 to 2,240 sq. ft.) starting from ₹92 Lacs* up to ₹2.45 Cr*. MahaRERA Registration: PR1260002600188 & P52100028741."
     },
     {
-      q: "What are the recreational privileges of Club Royale?",
-      a: "Club Royale is a palatial 50,000 sq.ft private clubhouse featuring an Olympic lap pool, heated indoor pool, 4-lane bowling alley, Dolby Atmos screening theater, multiple banquet halls, spa, gymnasium, and rooftop sunset lounge."
+      q: "What is Boston Central and what is the 2X Advantage?",
+      a: "Boston Central is an energetic urban cluster featuring the proprietary 2X Advantage: Two private sundeck balconies per apartment ensuring double the cross-ventilation and natural daylight, coupled with Two independent Clubhouses catering to active sports and serene social wellness. Configured as smart 2 BHK homes from ₹68 Lacs*. MahaRERA: P52100078307 & P52100049648."
+    },
+    {
+      q: "What is Pride Montreal and what are the duplex options?",
+      a: "Pride Montreal combines European contemporary architecture with smart home tech automation. In addition to 2 & 3 BHK apartments, Montreal features exclusive 4 BHK Duplex Residences (1,850 sq. ft. carpet) with double-height ceilings, private family lounges, and open sky terraces, priced from ₹1.65 Cr*. MahaRERA: P52100077138 & P52100021650."
+    },
+    {
+      q: "What is Pride Wellington 3 BHK price and amenities?",
+      a: "Pride Wellington offers resort-style waterfront residences across 14 towers overlooking the central lake. Premium 3 BHK lake-facing apartments start from ₹1.12 Cr* (carpet area 1,040 - 1,420 sq. ft.). Amenities include an expansive 7-acre landscaped podium, infinity lagoon pool, floating cabanas, private tropical gazebos, and acoustic work-from-home pods. MahaRERA: P52100054534 & P52100019637."
+    },
+    {
+      q: "What is the difference between Pride Miami and Pride Montreal?",
+      a: "While both represent luxury developments, Miami is a South Beach-inspired waterfront cluster focusing on expansive lakeside balconies, 4.5 BHK large-format sky suites, and panoramic water views. Montreal is a tech-forward smart enclave offering voice/app-enabled home automation and 4 BHK duplex residences with double-height architectural volumes."
+    },
+    {
+      q: "What is the carpet area range of Pride World City apartments?",
+      a: "Carpet areas are thoughtfully engineered across configurations: 1 BHK (560 - 620 sq. ft.), 2 BHK (690 - 880 sq. ft.), 3 BHK (1,020 - 1,420 sq. ft.), 4 BHK & 4.5 BHK (1,780 - 2,240 sq. ft.), and presidential duplex sky villas at Long Island reaching up to 3,500+ sq. ft."
+    },
+    {
+      q: "What social infrastructure and amenities exist inside Pride World City?",
+      a: "The township operates as a complete self-sustaining ecosystem featuring: 50,000 sq. ft. Club Royale / Club Charholi, 7-acre central natural lake with boardwalks, 10-acre multi-sport arena (cricket ground, football turf, tennis, badminton, and pickleball courts), Global Indian International School (GIIS), planned 100-bed multispeciality hospital, Town Plaza shopping promenade, BRTS rapid transit hub, senior citizen wellness zones, and 5-star business hotel."
+    },
+    {
+      q: "Is there an operational school inside Pride World City?",
+      a: "Yes, the prestigious Global Indian International School (GIIS Charholi) is operational right within the township boundaries. Residents receive priority admission privileges for their children, offering Cambridge and CBSE curricula and eliminating stressful daily traffic commutes."
+    },
+    {
+      q: "Is there a commercial IT business park inside Pride World City?",
+      a: "Yes, Pride World City incorporates Pride Tech Park (offering Grade-A corporate office spaces and IT facilities) and SoHo commercial business hubs, enabling walk-to-work culture for software engineers, entrepreneurs, and consulting professionals in North Pune."
+    },
+    {
+      q: "How far is Pride World City from Pune Airport and Kharadi EON IT Park?",
+      a: "Pride World City is only 4.8 km (approx. 10 minutes) from Pune International Airport via Lohegaon-Airport Road. Kharadi EON Free Zone, World Trade Center (WTC), and Magarpatta are reached within 18 to 22 minutes via the direct 8-lane corridor, making it the preferred residential township for IT and corporate professionals."
+    },
+    {
+      q: "Is Pride World City a good investment for capital appreciation and rental yield?",
+      a: "Yes, Pride World City is one of North Pune's highest-performing investment destinations. Driven by the upcoming Pune Ring Road, Pune Airport terminal expansion, and adjacent D.Y. Patil Knowledge City student-faculty population, rental yields average 4.5% - 6% annually for 1 & 2 BHK units, with proven capital appreciation exceeding 42% over the last 5 years."
+    },
+    {
+      q: "Are ready possession and resale flats available in Pride World City?",
+      a: "Yes, fully delivered clusters like Kingsbury, Brooklyn, and Manhattan have active resale and rental inventory for immediate possession, ranging from semi-furnished 1 BHKs to luxury furnished 3 BHK units. New launch and under-construction inventory is available in Valencia, Miami, Boston Central, and Wellington with phased possessions from 2026 to 2028."
+    },
+    {
+      q: "Is Pride World City MahaRERA registered and what are the certificates?",
+      a: "Yes, 100% of Pride World City enclaves are officially registered under MahaRERA: Valencia (P52100052309), Miami (PR1260002600188), Boston (P52100078307), Montreal (P52100077138), Wellington (P52100054534), Kingsbury (P52100000854), SoHo (P52100029810), and Long Island (P52100017892). Verification can be validated on maharera.mahaonline.gov.in."
+    },
+    {
+      q: "Which banks offer pre-approved home loans for Pride World City?",
+      a: "All premier public and private banks have pre-sanctioned Pride World City projects, including State Bank of India (SBI), HDFC Bank, ICICI Bank, Axis Bank, Bank of Baroda, and Punjab National Bank. Competitive interest rates, transparent zero-hidden-fee processing, and maximum LTV (up to 80-90%) are available."
+    },
+    {
+      q: "How does Pride World City compare with Ganga New Town, Life Republic, and other Pune townships?",
+      a: "Pride World City offers three unmatched competitive advantages: 1) Proximity to Pune Airport (10 mins vs 45+ mins from Life Republic Hinjawadi), 2) Exceptional 7-acre natural lake and 50,000 sq. ft. Club Royale infrastructure already delivered on-site, and 3) Superior multi-modal connectivity to both East Pune (Kharadi/Viman Nagar) and PCMC automotive hubs (Bhosari/Chakan)."
     }
   ],
 

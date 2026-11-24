@@ -22,10 +22,11 @@ class ClusterManager {
     const filtered = this.data.clusters.filter(c => {
       if (this.activeFilter === "all") return true;
       if (c.id === this.activeFilter) return true;
+      if (this.activeFilter === "1bhk") return c.configurations.some(cfg => cfg.includes("1 BHK"));
       if (this.activeFilter === "2bhk") return c.configurations.some(cfg => cfg.includes("2 BHK"));
       if (this.activeFilter === "3bhk") return c.configurations.some(cfg => cfg.includes("3 BHK"));
-      if (this.activeFilter === "4bhk") return c.configurations.some(cfg => cfg.includes("4 BHK") || cfg.includes("Villas"));
-      if (this.activeFilter === "ready") return c.status.toLowerCase().includes("ready");
+      if (this.activeFilter === "4bhk") return c.configurations.some(cfg => cfg.includes("4 BHK") || cfg.includes("Villas") || cfg.includes("Duplex") || cfg.includes("4.5 BHK"));
+      if (this.activeFilter === "ready") return c.status.toLowerCase().includes("ready") || c.status.toLowerCase().includes("delivered") || c.status.toLowerCase().includes("resale");
       if (this.activeFilter === "under-construction") return c.status.toLowerCase().includes("under") || c.status.toLowerCase().includes("launch");
       return true;
     });

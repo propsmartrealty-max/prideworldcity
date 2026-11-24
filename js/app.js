@@ -110,6 +110,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Setup SEO Knowledge Guide Tabs
+  const guideTabBtns = document.querySelectorAll("#seoGuideTabs .seo-pill-btn");
+  if (guideTabBtns.length > 0) {
+    guideTabBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const targetId = btn.getAttribute("data-tab");
+        guideTabBtns.forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".seo-tab-pane").forEach(pane => pane.classList.remove("active"));
+        btn.classList.add("active");
+        const targetPane = document.getElementById(targetId);
+        if (targetPane) targetPane.classList.add("active");
+      });
+    });
+  }
+
   // 6. Interactive Hero Master Township Switcher
   setupHeroTownshipSwitcher();
 });

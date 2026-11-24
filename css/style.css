@@ -3910,3 +3910,178 @@ body.mode-night .valencia-btn-outline {
     font-size: 0.8rem;
   }
 }
+
+/* ==================== STRATEGIC SEO KNOWLEDGE & MICRO-MARKET BLUEPRINT ==================== */
+.seo-blueprint-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seo-nav-pills {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-subtle);
+  scrollbar-width: none;
+}
+.seo-nav-pills::-webkit-scrollbar {
+  display: none;
+}
+
+.seo-pill-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.seo-pill-btn:hover {
+  border-color: var(--accent-gold);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.seo-pill-btn.active {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.05));
+  border-color: var(--accent-gold);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+}
+
+.seo-tab-pane {
+  display: none;
+  animation: fadeInTab 0.35s ease;
+}
+.seo-tab-pane.active {
+  display: block;
+}
+
+@keyframes fadeInTab {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.seo-matrix-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+  margin-bottom: 2rem;
+}
+
+.seo-table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.seo-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.seo-table th {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--accent-gold);
+  font-weight: 700;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.seo-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  vertical-align: middle;
+}
+
+.seo-table tr:hover td {
+  background: rgba(212, 175, 55, 0.03);
+  color: #fff;
+}
+
+.seo-table td strong {
+  color: #fff;
+}
+
+.seo-highlight-badge {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: var(--accent-gold);
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.seo-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.seo-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.seo-feature-box {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+}
+.seo-feature-box:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-2px);
+  background: rgba(212, 175, 55, 0.02);
+}
+
+.seo-feature-box h4 {
+  color: #fff;
+  font-size: 1.05rem;
+  margin: 0.5rem 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.seo-feature-box p {
+  color: var(--text-dim);
+  font-size: 0.86rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .seo-grid-3, .seo-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .seo-matrix-card {
+    padding: 1.25rem;
+  }
+}
