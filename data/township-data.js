@@ -621,7 +621,7 @@ const TOWNSHIP_DATA = {
   townshipZones: [
     {
       id: "zone-residential",
-      name: "Residential Enclaves (8+ Clusters)",
+      name: "Residential Enclaves (11 Clusters)",
       area: "180+ Acres",
       icon: "fa-city",
       desc: "Distinct thematic master clusters from affordable luxury to sky villas, surrounded by tree-lined boulevards and pocket parks."

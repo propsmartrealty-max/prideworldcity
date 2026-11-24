@@ -3,6 +3,7 @@
 > Pride World City is a 400-acre integrated mega township developed by Pride Group in Charholi Budruk, North Pune, Maharashtra, India. Situated 10 minutes (4.8 km) from Pune International Airport and 18 minutes (11 km) from Kharadi EON IT Park, it spans 5+ million sq. ft. of completed development and 8+ million sq. ft. under construction, home to 10,000+ families.
 
 ## Primary Links & Dedicated Pillar Pages
+- **Complete AI Grounding Context (`llms-full.txt`):** https://prideworld.city/llms-full.txt
 - **Master Township Portal:** https://prideworld.city/
 - **Pride Valencia (New Launch Sun-Side 2 & 3 BHK):** https://prideworld.city/valencia
 - **Pride Miami (Waterfront 2, 3 & 4.5 BHK):** https://prideworld.city/miami

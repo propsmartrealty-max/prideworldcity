@@ -52,8 +52,9 @@ class PrideConcierge {
   }
 
   handleUserMessage() {
-    const text = this.chatInput.value.trim();
-    if (!text) return;
+    const rawText = this.chatInput.value.trim();
+    if (!rawText) return;
+    const text = rawText.slice(0, 500);
 
     this.addMessage(text, "user");
     this.chatInput.value = "";
@@ -267,35 +268,37 @@ class PrideConcierge {
       return;
     }
 
-    // 6. Valencia / Spanish / Sunset Homes
-    if (q.includes("valencia") || q.includes("spanish") || q.includes("sunset")) {
+    // 6. Valencia / Sun-Side Homes (Flagship New Launch)
+    if (q.includes("valencia") || q.includes("spanish") || q.includes("sunset") || q.includes("sun")) {
       this.addMessage(`
-        <strong>Say Hola to Valencia at Pride World City!</strong>
+        <strong>Say Hola to Valencia — New Launch at Pride World City!</strong>
         <br/><br/>
-        • Spanish-themed 2 & 3 BHK residences starting from ₹88 Lacs*.
+        • 100% East-West facing Sun-Side 2 &amp; 3 BHK homes across 5.9 acres (5 towers).
         <br/>
-        • Arched loggias, terracotta styling, sunset balconies, and central floral plazas.
+        • 2 BHK (755 - 795 sq.ft): Starting from <strong>₹92.49 L* All Inclusive</strong>.
+        <br/>
+        • 3 BHK (1,045 - 1,180 sq.ft): Starting from <strong>₹1.23 Cr* All Inclusive</strong>.
         <br/>
         • MahaRERA No: <code>P52100052309</code>
         <br/><br/>
-        <button class="quick-reply-pill" onclick="window.scrollToSection('clusters')">Inspect Valencia Details</button>
-        <button class="quick-reply-pill" onclick="window.scrollToSection('gallery')">View Spanish Architecture</button>
+        <button class="quick-reply-pill" onclick="window.scrollToSection('valencia')">Explore Valencia Showcase</button>
+        <button class="quick-reply-pill" onclick="window.scrollToSection('clusters')">View Floor Plans</button>
       `, "bot");
       return;
     }
 
-    // 7. Gallery / Photos / Renderings / Blueprint
+    // 7. Gallery / Photos / Renderings
     if (q.includes("gallery") || q.includes("photo") || q.includes("picture") || q.includes("image") || q.includes("render")) {
       this.addMessage(`
-        Explore our brand new <strong>Township Visual Gallery</strong> featuring:
+        Explore our <strong>Township Visual Gallery</strong> featuring:
         <br/><br/>
         • 400-Acre masterplan drone aerials
         <br/>
-        • Real residential cluster elevations
+        • Authentic residential cluster elevations &amp; twilight photography
         <br/>
-        • Enscape 3D photorealistic interior walkthroughs
+        • Enscape 3D photorealistic lifestyle &amp; amenity walkthroughs
         <br/>
-        • Official architectural blueprint floor plans
+        • 7-Acre Central Lake &amp; Club Royale panoramas
         <br/><br/>
         <button class="quick-reply-pill" onclick="window.scrollToSection('gallery')">Launch Fullscreen Gallery</button>
       `, "bot");
@@ -311,7 +314,7 @@ class PrideConcierge {
         <br/>
         • Executive chauffeur pickup in a luxury sedan from anywhere in Pune / Mumbai
         <br/>
-        • Guided buggy tour across all 400 acres & Club Royale
+        • Guided buggy tour across all 400 acres &amp; Club Royale
         <br/>
         • Private walkthrough of furnished show homes
         <br/><br/>
@@ -326,11 +329,11 @@ class PrideConcierge {
       <br/><br/>
       As your dedicated digital advisor, I can assist with:
       <br/>
-      • Real-time availability & floor plans across all 8 clusters
+      • Real-time availability &amp; floor plans across all 11 clusters (Valencia, Miami, Wellington, Montreal, Boston &amp; more)
       <br/>
-      • Custom payment milestones & banking home loan pre-approvals
+      • Custom payment milestones, MahaRERA certificates &amp; banking home loan pre-approvals
       <br/>
-      • Arranging complimentary chauffeur site pickup
+      • Arranging complimentary chauffeur site pickup from Pune Airport or your residence
       <br/><br/>
       How can I tailor your experience today?
     `, "bot");
