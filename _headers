@@ -27,8 +27,8 @@
   Cross-Origin-Opener-Policy: same-origin-allow-popups
   Cross-Origin-Resource-Policy: same-origin
 
-  # 8. Enterprise Content Security Policy (CSP — Allows Google Maps, GA4/GTM, Zaraz & Turnstile)
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data: https: blob:; media-src 'self' data: blob:; frame-src 'self' https://www.google.com https://maps.google.com https://challenges.cloudflare.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://challenges.cloudflare.com https:; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https:; upgrade-insecure-requests;
+  # 8. Enterprise Content Security Policy (CSP — Allows Google Maps, GA4/GTM, Zaraz, Insights & Turnstile)
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://www.googletagmanager.com https://challenges.cloudflare.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data: https: blob:; media-src 'self' data: blob:; frame-src 'self' https://www.google.com https://maps.google.com https://challenges.cloudflare.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://challenges.cloudflare.com https://cloudflareinsights.com https:; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https:; upgrade-insecure-requests;
 
   # 9. Google & Bing Indexing Directives Header
   X-Robots-Tag: all, index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1
