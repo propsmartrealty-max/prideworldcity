@@ -54,8 +54,8 @@
         "logo": "https://prideworld.city/assets/images/pride-world-city-logo.svg",
         "image": "https://prideworld.city/assets/images/pride-world-city-Bird-eye-view.jpeg.bv.webp",
         "description": "Pride World City is a 400-acre integrated mega township in Charholi Budruk, Pune, developed by Pride Group. Featuring 12 residential and live-work clusters including Valencia, Miami, Wellington, Montreal, and Boston, plus Pride Tech Park and Global Indian International School.",
-        "telephone": "+919158000111",
-        "email": "sales@prideworldcity.com",
+        "telephone": "+917744009295",
+        "email": "propsmartrealty@gmail.com",
         "priceRange": "₹ 54 Lacs - ₹ 3.50 Cr",
         "address": {
           "@type": "PostalAddress",
@@ -1357,6 +1357,11 @@
               </div>
 
               <div class="form-group">
+                <label for="bookEmail">Email Address</label>
+                <input type="email" id="bookEmail" class="form-control" placeholder="rajesh@example.com">
+              </div>
+
+              <div class="form-group">
                 <label for="bookingClusterSelect">Preferred Residential Cluster</label>
                 <select id="bookingClusterSelect" class="form-control">
                   <option value="Valencia" selected>★ Valencia (New Launch - Sun-Side 2 & 3 BHK)</option>
@@ -1376,9 +1381,28 @@
                 <input type="date" id="bookDate" class="form-control" required>
               </div>
 
-              <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 1rem; padding: 0.85rem;">
+              <div style="display: flex; align-items: center; gap: 0.6rem; margin-top: 0.5rem; margin-bottom: 0.25rem;">
+                <input type="checkbox" id="bookWhatsappConsent" checked style="accent-color: #22c55e; width: 16px; height: 16px;">
+                <label for="bookWhatsappConsent" style="font-size: 0.82rem; color: var(--text-muted); margin: 0; cursor: pointer;">
+                  <i class="fa-brands fa-whatsapp" style="color: #22c55e;"></i> Send instant enquiry copy on WhatsApp (+91 77440 09295)
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 0.85rem; padding: 0.85rem;">
                 <i class="fa-solid fa-calendar-check"></i> Confirm VIP Reservation
               </button>
+
+              <div id="vipBookingConfirm" style="display: none; margin-top: 1rem; padding: 0.9rem 1rem; border-radius: 10px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.35);">
+                <div style="font-size: 0.84rem; font-weight: 700; color: #10b981; margin-bottom: 0.35rem;">
+                  <i class="fa-solid fa-circle-check"></i> Enquiry Submitted (<span id="vipBookingConfirmRef">PWC</span>)
+                </div>
+                <p style="font-size: 0.78rem; color: var(--text-muted); margin: 0 0 0.65rem 0;">
+                  Dispatched to <strong>propsmartrealty@gmail.com</strong>. Tap below if WhatsApp did not open automatically:
+                </p>
+                <a id="vipBookingWaBtn" href="https://wa.me/917744009295" target="_blank" rel="noopener noreferrer" class="btn" style="width: 100%; justify-content: center; background: #16a34a; color: #fff; font-size: 0.82rem; padding: 0.6rem;">
+                  <i class="fa-brands fa-whatsapp"></i> Send Enquiry on WhatsApp (+91 77440 09295)
+                </a>
+              </div>
             </form>
           </div>
         </div>
@@ -1403,8 +1427,8 @@
           </p>
           <div style="display: flex; gap: 0.85rem;">
             <a href="https://www.prideworldcity.com/" target="_blank" rel="noopener noreferrer" class="map-control-btn" title="Official Website"><i class="fa-solid fa-globe"></i></a>
-            <a href="https://wa.me/919158000111" target="_blank" rel="noopener noreferrer" class="map-control-btn" title="WhatsApp Concierge"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="tel:+919158000111" class="map-control-btn" title="Direct Phone Line"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://wa.me/917744009295?text=Hello%20Propsmart%20Realty%2C%20I%20would%20like%20details%20and%20floor%20plans%20for%20Pride%20World%20City%2C%20Charholi%20Pune." target="_blank" rel="noopener noreferrer" class="map-control-btn" title="WhatsApp Enquiry +91 77440 09295"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:+917744009295" class="map-control-btn" title="Direct Phone Line"><i class="fa-solid fa-phone"></i></a>
           </div>
         </div>
 
@@ -1449,7 +1473,7 @@
             <i class="fa-solid fa-location-dot text-gold"></i> Charholi Budruk, Adjacent D.Y. Patil Knowledge City, Pune 412105
           </p>
           <p style="color: var(--text-muted); font-size: 0.84rem; margin: 0;">
-            <i class="fa-solid fa-phone text-gold"></i> <strong>+91 91580 00111</strong> &bull; sales@prideworldcity.com
+            <i class="fa-solid fa-phone text-gold"></i> <strong>+91 77440 09295</strong> &bull; propsmartrealty@gmail.com
           </p>
         </div>
       </div>
@@ -1819,6 +1843,9 @@
             </div>
 
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+              <a id="vipSuccessWaBtn" href="https://wa.me/917744009295" target="_blank" rel="noopener noreferrer" class="btn" style="background: #16a34a; color: #fff;">
+                <i class="fa-brands fa-whatsapp"></i> Send on WhatsApp (+91 77440 09295)
+              </a>
               <button class="btn btn-gold" onclick="window.downloadVipTicketMock()">
                 <i class="fa-solid fa-download"></i> Save VIP Boarding Pass
               </button>

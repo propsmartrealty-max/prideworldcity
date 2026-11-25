@@ -268,34 +268,43 @@
     const date = document.getElementById("vipGuestDate").value;
     const whatsapp = document.getElementById("vipWhatsappConsent") ? document.getElementById("vipWhatsappConsent").checked : true;
 
+    const leadPayload = {
+      name,
+      phone,
+      email,
+      cluster: selectedEnclave,
+      typology: selectedTypology,
+      budget: selectedBudget,
+      date,
+      timeSlot: selectedTimeSlot,
+      whatsappConsent: whatsapp,
+      source: "vip_experience_modal"
+    };
+
+    let res = null;
     let passCode = `PWC-VIP-${Math.floor(1000 + Math.random() * 9000)}`;
     if (window.PrideAnalytics && typeof window.PrideAnalytics.submitLead === "function") {
-      const res = await window.PrideAnalytics.submitLead({
-        name,
-        phone,
-        email,
-        cluster: selectedEnclave,
-        typology: selectedTypology,
-        budget: selectedBudget,
-        date,
-        timeSlot: selectedTimeSlot,
-        whatsappConsent: whatsapp,
-        source: "vip_experience_modal"
-      });
+      res = await window.PrideAnalytics.submitLead(leadPayload);
       if (res && res.referenceId) {
         passCode = res.referenceId;
       }
     }
+
+    const waUrl = (res && res.whatsappUrl) || (window.PrideAnalytics
+      ? window.PrideAnalytics.buildWhatsappUrl(leadPayload, passCode)
+      : `https://wa.me/917744009295?text=${encodeURIComponent(`New VIP Enquiry (${passCode}) - ${name}, ${phone}, ${selectedEnclave}`)}`);
 
     // Update Confirmation Screen
     const successPanel = document.getElementById("vipSuccessPanel");
     const successTitle = document.getElementById("vipSuccessTitle");
     const passIdEl = document.getElementById("vipSuccessPassId");
     const passBarcodeToken = document.getElementById("passBarcodeToken");
+    const successWaBtn = document.getElementById("vipSuccessWaBtn");
 
     if (successTitle) successTitle.innerText = `Welcome, ${name}!`;
     if (passIdEl) passIdEl.innerText = passCode;
     if (passBarcodeToken) passBarcodeToken.innerText = `TOKEN: ${passCode}-CONFIDENTIAL`;
+    if (successWaBtn) successWaBtn.setAttribute("href", waUrl);
 
     // Hide stage panels and show success
     for (let i = 1; i <= 3; i++) {
@@ -304,9 +313,13 @@
     }
     if (successPanel) successPanel.style.display = "block";
 
+    if (whatsapp && window.PrideAnalytics && typeof window.PrideAnalytics.dispatchWhatsapp === "function") {
+      window.PrideAnalytics.dispatchWhatsapp(waUrl);
+    }
+
     // Show celebratory toast
     if (window.showToast) {
-      window.showToast(`VIP Chauffeur Tour Confirmed for ${name}! Pass: ${passCode}`);
+      window.showToast(`VIP Enquiry sent to propsmartrealty@gmail.com & WhatsApp +91 77440 09295! Pass: ${passCode}`);
     }
 
     // Synchronize page booking form if present

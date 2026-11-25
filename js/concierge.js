@@ -305,20 +305,22 @@ class PrideConcierge {
       return;
     }
 
-    // 8. VIP Site Visit / Booking
-    if (q.includes("visit") || q.includes("book") || q.includes("tour") || q.includes("appointment") || q.includes("helicopter") || q.includes("cab")) {
+    // 8. VIP Site Visit / Booking / Direct Contact
+    if (q.includes("visit") || q.includes("book") || q.includes("tour") || q.includes("appointment") || q.includes("helicopter") || q.includes("cab") || q.includes("whatsapp") || q.includes("contact") || q.includes("call") || q.includes("email")) {
       this.addMessage(`
         I would be honored to arrange your <strong>VIP Site Experience</strong>!
         <br/><br/>
-        We offer:
-        <br/>
         • Executive chauffeur pickup in a luxury sedan from anywhere in Pune / Mumbai
         <br/>
         • Guided buggy tour across all 400 acres &amp; Club Royale
         <br/>
-        • Private walkthrough of furnished show homes
+        • Direct Desk: <strong>+91 77440 09295</strong> &bull; <strong>propsmartrealty@gmail.com</strong>
         <br/><br/>
-        <button class="quick-reply-pill" onclick="window.scrollToSection('vip-booking')">Fill 30-Sec Booking Form</button>
+        <div class="chat-quick-replies">
+          <button class="quick-reply-pill" onclick="window.scrollToSection('vip-booking')">Fill 30-Sec Booking Form</button>
+          <a class="quick-reply-pill" href="https://wa.me/917744009295?text=Hello%20Propsmart%20Realty%2C%20I%20would%20like%20details%20and%20to%20schedule%20a%20site%20visit%20at%20Pride%20World%20City%2C%20Charholi%20Pune." target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><i class="fa-brands fa-whatsapp"></i> WhatsApp +91 77440 09295</a>
+          <a class="quick-reply-pill" href="mailto:propsmartrealty@gmail.com?subject=Pride%20World%20City%20Enquiry" style="text-decoration:none;"><i class="fa-solid fa-envelope"></i> Email Enquiry</a>
+        </div>
       `, "bot");
       return;
     }

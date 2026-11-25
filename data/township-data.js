@@ -16,8 +16,8 @@ const TOWNSHIP_DATA = {
     underConstructionArea: "8 Million+ Sq. Ft.",
     unitsDelivered: "5,000+",
     openGreenSpace: "70%",
-    phone: "+91 91580 00111",
-    email: "sales@prideworldcity.com",
+    phone: "+91 77440 09295",
+    email: "propsmartrealty@gmail.com",
     logo: "assets/images/pride-world-city-logo.svg",
     address: "Pride World City, Adjacent to D.Y. Patil Knowledge City, Charholi Budruk, Pune - 412105, Maharashtra, India",
     reraWebsite: "https://maharera.mahaonline.gov.in"

@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 4. VIP Booking Form Submission (Wired to Edge /api/lead & Conversion Analytics)
+  // 4. VIP Booking Form Submission (Wired to Edge /api/lead -> propsmartrealty@gmail.com & WhatsApp 917744009295)
   const bookingForm = document.getElementById("vipBookingForm");
   if (bookingForm) {
     bookingForm.addEventListener("submit", async (e) => {
@@ -86,17 +86,46 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       const name = document.getElementById("bookName").value;
       const phone = document.getElementById("bookPhone").value;
+      const emailEl = document.getElementById("bookEmail");
+      const email = emailEl ? emailEl.value : "";
       const cluster = document.getElementById("bookingClusterSelect").value;
       const date = document.getElementById("bookDate").value;
+      const waConsentEl = document.getElementById("bookWhatsappConsent");
+      const sendWhatsapp = waConsentEl ? waConsentEl.checked : true;
 
-      const payload = { name, phone, cluster, date, source: "vip_booking_section", _gotcha_sec: "" };
-      let refId = "";
-      if (window.PrideAnalytics && typeof window.PrideAnalytics.submitLead === "function") {
-        const res = await window.PrideAnalytics.submitLead(payload);
-        refId = res && res.referenceId ? ` (Ref: ${res.referenceId})` : "";
+      const submitBtn = bookingForm.querySelector("button[type='submit']");
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Sending Enquiry...`;
       }
 
-      showToast(`Appointment Confirmed${refId}! Our VIP Concierge will coordinate your chauffeur for ${date}. Welcome, ${name}!`);
+      const payload = { name, phone, email, cluster, date, source: "vip_booking_section", _gotcha_sec: "" };
+      let res = null;
+      if (window.PrideAnalytics && typeof window.PrideAnalytics.submitLead === "function") {
+        res = await window.PrideAnalytics.submitLead(payload);
+      }
+
+      const refId = res && res.referenceId ? res.referenceId : `PWC-${Math.floor(1000 + Math.random() * 9000)}`;
+      const waUrl = (res && res.whatsappUrl) || (window.PrideAnalytics
+        ? window.PrideAnalytics.buildWhatsappUrl(payload, refId)
+        : `https://wa.me/917744009295?text=${encodeURIComponent(`New Enquiry (${refId}) - ${name}, ${phone}, ${cluster}, Date: ${date}`)}`);
+
+      const confirmBox = document.getElementById("vipBookingConfirm");
+      const confirmRefEl = document.getElementById("vipBookingConfirmRef");
+      const confirmWaBtn = document.getElementById("vipBookingWaBtn");
+      if (confirmRefEl) confirmRefEl.textContent = refId;
+      if (confirmWaBtn) confirmWaBtn.setAttribute("href", waUrl);
+      if (confirmBox) confirmBox.style.display = "block";
+
+      if (sendWhatsapp && window.PrideAnalytics && typeof window.PrideAnalytics.dispatchWhatsapp === "function") {
+        window.PrideAnalytics.dispatchWhatsapp(waUrl);
+      }
+
+      showToast(`Enquiry Sent (Ref: ${refId}) to propsmartrealty@gmail.com & WhatsApp +91 77440 09295! Welcome, ${name}!`);
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `<i class="fa-solid fa-calendar-check"></i> Confirm VIP Reservation`;
+      }
       bookingForm.reset();
     });
   }
