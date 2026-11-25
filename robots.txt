@@ -49,6 +49,14 @@ Allow: /long-island
 Allow: /soho
 Allow: /pride-tech-park
 Allow: /charholi-pune-real-estate
+Allow: /1-bhk-flats-in-charholi-pune
+Allow: /2-bhk-flats-in-charholi-pune
+Allow: /3-bhk-flats-in-charholi-pune
+Allow: /duplex-and-4-bhk-homes-pune
+Allow: /flats-in-lohegaon-dhanori-pune
+Allow: /flats-near-pune-airport-viman-nagar
+Allow: /flats-near-kharadi-eon-it-park
+Allow: /nri-real-estate-investment-pune
 Allow: /faq
 Allow: /articles
 Allow: /sitemap.xml
