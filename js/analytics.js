@@ -192,6 +192,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Inject responsive mobile sticky CTA bar across all portal & spoke pages
+  if (!document.getElementById("mobileStickyCtaBar")) {
+    const pageTitle = document.title.split("|")[0].trim();
+    const waHref = `https://wa.me/${WHATSAPP_DIGITS}?text=${encodeURIComponent(`Hello Propsmart Realty, please share Cost Sheet & floor plans for ${pageTitle} at Pride World City, Charholi Pune.`)}`;
+    const bar = document.createElement("nav");
+    bar.id = "mobileStickyCtaBar";
+    bar.className = "mobile-sticky-cta-bar";
+    bar.setAttribute("aria-label", "Quick Enquiry Bar");
+    bar.innerHTML = `
+      <a href="tel:+${WHATSAPP_DIGITS}" class="mobile-cta-btn mobile-cta-call"><i class="fa-solid fa-phone"></i> Call Now</a>
+      <a href="${waHref}" target="_blank" rel="noopener noreferrer" class="mobile-cta-btn mobile-cta-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="/#vip-booking" class="mobile-cta-btn mobile-cta-vip"><i class="fa-solid fa-calendar-check"></i> VIP Tour</a>
+    `;
+    document.body.appendChild(bar);
+  }
+
+  // Register lightweight offline PWA Service Worker
+  if ("serviceWorker" in navigator && window.location.protocol === "https:") {
+    navigator.serviceWorker.register("/sw.js").catch(() => {});
+  }
+
   fetch("/api/geo")
     .then(r => (r.ok ? r.json() : null))
     .then(geo => {

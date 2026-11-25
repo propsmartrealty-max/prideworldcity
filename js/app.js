@@ -130,19 +130,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 5. Brochure Download Handler
+  // 5. On-Domain Brochure & 2026 Cost Sheet Dispatcher (Zero External Redirect Leak)
   const downloadBrochureBtns = document.querySelectorAll(".download-brochure-trigger");
   downloadBrochureBtns.forEach(btn => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      showToast("Preparing customized 400-Acre Master Brochure PDF... Download starting!");
-      setTimeout(() => {
-        // Trigger simulated brochure download
-        const dummyLink = document.createElement("a");
-        dummyLink.href = "https://www.prideworldcity.com/";
-        dummyLink.target = "_blank";
-        dummyLink.click();
-      }, 1200);
+      if (window.PrideAnalytics) {
+        window.PrideAnalytics.track("file_download", { file_name: "Pride_World_City_Brochure_Request" });
+      }
+      if (typeof window.openVipExperienceModal === "function") {
+        window.openVipExperienceModal("Valencia");
+        showToast("Complete your 30-sec VIP pass to receive the PDF Brochure & Cost Sheet on WhatsApp (+91 77440 09295) & Email.");
+      } else {
+        window.scrollToSection && window.scrollToSection("vip-booking");
+        showToast("Enter your details below or tap WhatsApp (+91 77440 09295) for instant Brochure PDF delivery.");
+      }
     });
   });
 

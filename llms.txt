@@ -63,3 +63,12 @@
 - **Proposed PMRDA Pune Ring Road:** 1.8 km (3 mins)
 - **Rental Yield:** 4.8% - 6.0% annually (outperforming Pune average of ~3.2%)
 - **5-Year Appreciation:** 42.8%+
+
+## Interactive Calculators, MahaRERA Matrix & Micro-Market Comparisons
+- **MahaRERA & Possession Matrix:** https://prideworld.city/pride-world-city-maharera-possession-status
+- **Pune Stamp Duty & EMI Calculator:** https://prideworld.city/pride-world-city-emi-stamp-duty-calculator
+- **Charholi Price Trends Dataset:** https://prideworld.city/charholi-ready-reckoner-rate-and-price-trends
+- **GIIS School & Township Campus:** https://prideworld.city/global-indian-international-school-pride-world-city
+- **Club Royale & 7-Acre Lake:** https://prideworld.city/club-royale-and-7-acre-lake-charholi
+- **Town Plaza Retail & Hospital:** https://prideworld.city/town-plaza-and-hospital-charholi
+- **Corridor & Budget Comparisons:** `/charholi-vs-wagholi-property-investment`, `/charholi-vs-moshi-dudulgaon-real-estate`, `/charholi-vs-dhanori-lohegaon-flats`, `/pride-world-city-vs-amanora-magarpatta`, `/2-bhk-flats-under-80-lakhs-pune`, `/ready-to-move-flats-in-charholi-pune`, `/flats-near-pune-metro-ring-road-charholi`, `/dy-patil-knowledge-city-charholi-flats`, `/pride-world-city-sample-flat-virtual-tour`

@@ -103,6 +103,12 @@
   Content-Type: text/csv; charset=utf-8
   Cache-Control: public, max-age=3600
 
+# PWA Service Worker (must revalidate immediately)
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: application/javascript; charset=utf-8
+  X-Robots-Tag: noindex, nofollow
+
 # Serverless Edge API Endpoints
 /api/*
   Cache-Control: private, no-store, max-age=0

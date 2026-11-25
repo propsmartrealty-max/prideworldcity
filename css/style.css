@@ -4085,3 +4085,69 @@ body.mode-night .valencia-btn-outline {
     padding: 1.25rem;
   }
 }
+
+/* Sticky Mobile Action Bar (Call + WhatsApp + VIP Tour) */
+.mobile-sticky-cta-bar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 62px;
+  }
+  .floating-vip-trigger {
+    bottom: 4.5rem;
+    left: 0.9rem;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.78rem;
+  }
+  .concierge-trigger-btn {
+    bottom: 4.5rem;
+    right: 0.9rem;
+    padding: 0.65rem 1rem;
+    font-size: 0.82rem;
+  }
+  .concierge-modal {
+    bottom: 8rem;
+  }
+  .mobile-sticky-cta-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    display: grid;
+    grid-template-columns: 1fr 1.25fr 1fr;
+    gap: 0.45rem;
+    padding: 0.5rem 0.65rem;
+    background: rgba(12, 15, 23, 0.96);
+    backdrop-filter: blur(16px);
+    border-top: 1px solid rgba(212, 175, 55, 0.35);
+    box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.45);
+  }
+  .mobile-cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.58rem 0.4rem;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .mobile-cta-call {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+  }
+  .mobile-cta-wa {
+    background: #16a34a;
+    color: #fff;
+  }
+  .mobile-cta-vip {
+    background: linear-gradient(135deg, #dfc285, #c5a059);
+    color: #0c0f17;
+  }
+}
