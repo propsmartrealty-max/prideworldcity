@@ -4,6 +4,9 @@
 
 ## Primary Links & Complete Silo Pages
 - **Complete AI Grounding Context (`llms-full.txt`):** https://prideworld.city/llms-full.txt
+- **Structured AI Verified Facts JSON (`ai-facts.json`):** https://prideworld.city/ai-facts.json
+- **Live Queryable Facts API (`/api/facts`):** https://prideworld.city/api/facts
+- **AI Crawler Policy (`ai.txt`):** https://prideworld.city/ai.txt
 - **Master Township Portal:** https://prideworld.city/
 - **Pride Valencia (New Launch Sun-Side 2 & 3 BHK):** https://prideworld.city/valencia
 - **Pride Miami (Waterfront 2, 3 & 4.5 BHK):** https://prideworld.city/miami

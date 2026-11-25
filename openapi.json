@@ -1,0 +1,40 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Pride World City Charholi Pune — Verified Facts API",
+    "version": "1.0.0",
+    "description": "Public read-only ground-truth JSON API for AI search engines (ChatGPT Search, Claude, Gemini, Perplexity) providing verified township specs, 12-cluster pricing, MahaRERA IDs, distances, and Pune market comparisons."
+  },
+  "servers": [
+    { "url": "https://prideworld.city" }
+  ],
+  "paths": {
+    "/api/facts": {
+      "get": {
+        "operationId": "getPrideWorldCityFacts",
+        "summary": "Retrieve verified facts on Pride World City clusters, pricing, MahaRERA IDs, connectivity, and Charholi comparisons",
+        "parameters": [
+          {
+            "name": "topic",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string", "enum": ["all", "clusters", "connectivity", "market", "ecosystem", "contact"] }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string" },
+            "description": "Optional cluster slug or keyword (e.g. valencia, miami, kingsbury, maharera)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Verified structured JSON response",
+            "content": { "application/json": {} }
+          }
+        }
+      }
+    }
+  }
+}

@@ -14,6 +14,8 @@
   <link rel="alternate" type="text/plain" title="LLMs.txt AI Index" href="/llms.txt">
   <link rel="alternate" type="text/plain" title="LLMs Full Grounding Context" href="/llms-full.txt">
   <link rel="alternate" type="application/rss+xml" title="Pride World City Research &amp; Updates" href="/feed.xml">
+  <link rel="alternate" type="application/json" title="AI Verified Facts JSON" href="/ai-facts.json">
+  <meta property="article:modified_time" content="2026-11-25T20:50:00+05:30">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="theme-color" content="#fbfcfb">
 
@@ -41,290 +43,370 @@
 
   <!-- ==================== STRUCTURED DATA (SCHEMA.ORG JSON-LD) ==================== -->
   <!-- 1. RealEstateAgent, ApartmentComplex, OfferCatalog & Grounded Reviews Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["RealEstateAgent", "ApartmentComplex"],
-        "@id": "https://prideworld.city/#organization",
-        "name": "Pride World City",
-        "alternateName": ["Pride World City Pune", "Pride World City Charholi", "Pride City Charholi Budruk"],
-        "url": "https://prideworld.city/",
-        "logo": "https://prideworld.city/assets/images/pride-world-city-logo.svg",
-        "image": "https://prideworld.city/assets/images/pride-world-city-Bird-eye-view.jpeg.bv.webp",
-        "description": "Pride World City is a 400-acre integrated mega township in Charholi Budruk, Pune, developed by Pride Group. Featuring 12 residential and live-work clusters including Valencia, Miami, Wellington, Montreal, and Boston, plus Pride Tech Park and Global Indian International School.",
-        "telephone": "+917744009295",
-        "email": "propsmartrealty@gmail.com",
-        "priceRange": "₹ 54 Lacs - ₹ 3.50 Cr",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Pride World City, Adjacent to D.Y. Patil Knowledge City, Charholi Budruk",
-          "addressLocality": "Pune",
-          "addressRegion": "Maharashtra",
-          "postalCode": "412105",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 18.6366,
-          "longitude": 73.8967
-        },
-        "areaServed": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": 18.6366,
-            "longitude": 73.8967
-          },
-          "geoRadius": "15000"
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "09:30",
-          "closes": "19:30"
-        },
-        "hasMap": "https://www.google.com/maps/search/?api=1&query=Pride+World+City+Charholi+Budruk+Pune",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Pride World City Residential & Commercial Enclaves",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "name": "Pride Valencia — 2 & 3 BHK Sun-Side Homes (New Launch)",
-              "url": "https://prideworld.city/valencia",
-              "priceCurrency": "INR",
-              "price": "9249000",
-              "availability": "https://schema.org/InStock"
-            },
-            {
-              "@type": "Offer",
-              "name": "Pride Miami — 2, 3 & 4.5 BHK Waterfront Residences",
-              "url": "https://prideworld.city/miami",
-              "priceCurrency": "INR",
-              "price": "9200000",
-              "availability": "https://schema.org/InStock"
-            },
-            {
-              "@type": "Offer",
-              "name": "Pride Wellington — Resort 2 & 3 BHK on 7-Acre Podium",
-              "url": "https://prideworld.city/wellington",
-              "priceCurrency": "INR",
-              "price": "8600000",
-              "availability": "https://schema.org/InStock"
-            },
-            {
-              "@type": "Offer",
-              "name": "Pride Montreal — Smart 2, 3 BHK & 4 BHK Duplexes",
-              "url": "https://prideworld.city/montreal",
-              "priceCurrency": "INR",
-              "price": "7400000",
-              "availability": "https://schema.org/InStock"
-            },
-            {
-              "@type": "Offer",
-              "name": "Pride Boston Central — 2X Advantage 2 BHK Homes",
-              "url": "https://prideworld.city/boston",
-              "priceCurrency": "INR",
-              "price": "6800000",
-              "availability": "https://schema.org/InStock"
-            },
-            {
-              "@type": "Offer",
-              "name": "Pride Kingsbury — Ready High-Rise 2 & 3 BHK Residences",
-              "url": "https://prideworld.city/kingsbury",
-              "priceCurrency": "INR",
-              "price": "7800000",
-              "availability": "https://schema.org/InStock"
-            },
-            {
-              "@type": "Offer",
-              "name": "Pride Brooklyn — Urban 1 & 2 BHK Residences",
-              "url": "https://prideworld.city/brooklyn",
-              "priceCurrency": "INR",
-              "price": "5400000",
-              "availability": "https://schema.org/InStock"
-            }
-          ]
-        },
-        "parentOrganization": {
-          "@type": "Organization",
-          "name": "Pride Group",
-          "alternateName": "Pride Developers Pune",
-          "url": "https://www.prideworldcity.com/",
-          "founder": {
-            "@type": "Person",
-            "name": "Arvind Jain",
-            "jobTitle": "Managing Director"
-          }
-        },
-        "sameAs": [
-          "https://www.prideworldcity.com/",
-          "https://maharera.mahaonline.gov.in",
-          "https://www.google.com/maps/search/?api=1&query=Pride+World+City+Charholi+Budruk+Pune"
-        ],
-        "amenityFeature": [
-          { "@type": "LocationFeatureSpecification", "name": "7-Acre Central Lake & Promenade", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "50,000 Sq.Ft Club Royale / Club Charholi", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "10-Acre Multi-Sport Arena", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Global Indian International School (GIIS)", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Pride Tech Park IT & Corporate Office Hub", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Town Plaza High-Street Shopping Boulevard", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "BRTS Rapid Transit Station", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "100-Bed Multi-Speciality Hospital Zone", "value": true }
-        ]
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "RealEstateAgent",
+        "ApartmentComplex"
+      ],
+      "@id": "https://prideworld.city/#organization",
+      "name": "Pride World City",
+      "alternateName": [
+        "Pride World City Pune",
+        "Pride World City Charholi",
+        "Pride City Charholi Budruk"
+      ],
+      "url": "https://prideworld.city/",
+      "logo": "https://prideworld.city/assets/images/pride-world-city-logo.svg",
+      "image": "https://prideworld.city/assets/images/pride-world-city-Bird-eye-view.jpeg.bv.webp",
+      "description": "Pride World City is a 400-acre integrated mega township in Charholi Budruk, Pune, developed by Pride Group. Featuring 12 residential and live-work clusters including Valencia, Miami, Wellington, Montreal, and Boston, plus Pride Tech Park and Global Indian International School.",
+      "telephone": "+917744009295",
+      "email": "propsmartrealty@gmail.com",
+      "priceRange": "₹ 54 Lacs - ₹ 3.50 Cr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pride World City, Adjacent to D.Y. Patil Knowledge City, Charholi Budruk",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "412105",
+        "addressCountry": "IN"
       },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://prideworld.city/#breadcrumb",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.6366,
+        "longitude": 73.8967
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Pune"
+        },
+        {
+          "@type": "Place",
+          "name": "Charholi Budruk"
+        },
+        {
+          "@type": "Place",
+          "name": "Lohegaon"
+        },
+        {
+          "@type": "Place",
+          "name": "Dhanori"
+        },
+        {
+          "@type": "Place",
+          "name": "Viman Nagar"
+        },
+        {
+          "@type": "Place",
+          "name": "Kharadi"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:30",
+        "closes": "19:30"
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Pride+World+City+Charholi+Budruk+Pune",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Pride World City Residential & Commercial Enclaves",
         "itemListElement": [
           {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://prideworld.city/"
+            "@type": "Offer",
+            "name": "Pride Valencia — 2 & 3 BHK Sun-Side Homes (New Launch)",
+            "url": "https://prideworld.city/valencia",
+            "priceCurrency": "INR",
+            "price": "9249000",
+            "availability": "https://schema.org/InStock"
           },
           {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Pune Real Estate",
-            "item": "https://prideworld.city/#masterplan"
+            "@type": "Offer",
+            "name": "Pride Miami — 2, 3 & 4.5 BHK Waterfront Residences",
+            "url": "https://prideworld.city/miami",
+            "priceCurrency": "INR",
+            "price": "9200000",
+            "availability": "https://schema.org/InStock"
           },
           {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Charholi Budruk Integrated Townships",
-            "item": "https://prideworld.city/#clusters"
+            "@type": "Offer",
+            "name": "Pride Wellington — Resort 2 & 3 BHK on 7-Acre Podium",
+            "url": "https://prideworld.city/wellington",
+            "priceCurrency": "INR",
+            "price": "8600000",
+            "availability": "https://schema.org/InStock"
           },
           {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Pride World City",
-            "item": "https://prideworld.city/"
+            "@type": "Offer",
+            "name": "Pride Montreal — Smart 2, 3 BHK & 4 BHK Duplexes",
+            "url": "https://prideworld.city/montreal",
+            "priceCurrency": "INR",
+            "price": "7400000",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pride Boston Central — 2X Advantage 2 BHK Homes",
+            "url": "https://prideworld.city/boston",
+            "priceCurrency": "INR",
+            "price": "6800000",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pride Kingsbury — Ready High-Rise 2 & 3 BHK Residences",
+            "url": "https://prideworld.city/kingsbury",
+            "priceCurrency": "INR",
+            "price": "7800000",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pride Brooklyn — Urban 1 & 2 BHK Residences",
+            "url": "https://prideworld.city/brooklyn",
+            "priceCurrency": "INR",
+            "price": "5400000",
+            "availability": "https://schema.org/InStock"
           }
         ]
       },
-      {
-        "@type": "FAQPage",
-        "@id": "https://prideworld.city/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Pride World City Pune?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Pride World City is a 400-acre integrated mega township developed by Pride Group in Charholi Budruk, North Pune. It encompasses over 5 million sq. ft. of completed projects and 8+ million sq. ft. under active development, accommodating more than 10,000 families with residential clusters, commercial IT parks, retail, international education, and healthcare infrastructure."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Where is Pride World City located and how is the connectivity?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Pride World City is located at Charholi Budruk, adjacent to D.Y. Patil Knowledge City in North Pune. It borders Lohegaon and Dhanori, situated 4.8 km (10 minutes) from Pune International Airport, 11 km from the Kharadi IT corridor (EON IT Park and WTC), and minutes from Viman Nagar, Kalyani Nagar, and Vishrantwadi."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What are the residential projects inside Pride World City?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The residential clusters include Valencia (New Launch 2 & 3 BHK sun-side homes), Miami (luxury waterfront 2, 3 & 4.5 BHK), Boston Central (smart 2 BHK with 2X advantage), Montreal (smart tech 2, 3 BHK & 4 BHK duplex residences), Wellington (resort-style 2 & 3 BHK facing 7-acre lake), Kingsbury (royal ready-to-move 2 & 3 BHK), Brooklyn (urban 1 & 2 BHK), Manhattan (spacious 2 & 3 BHK), Atlantic (scenic high-rise apartments), Long Island (ultra-luxury sky villas), and SoHo (hybrid live-work suites)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the price of 2 BHK and 3 BHK flats in Pride World City?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Starting prices: 2 BHK flats start from ₹54 Lacs* in Brooklyn/SoHo, ₹68 Lacs* in Boston Central, ₹74 Lacs* in Montreal, ₹78 Lacs* in Kingsbury, ₹86 Lacs* in Wellington, ₹92 Lacs* in Miami, and ₹92.49 Lacs* (All Inclusive) in Valencia. Spacious 3 BHK residences start from ₹1.05 Cr* in Wellington and Montreal, and ₹1.23 Cr* in Valencia."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Pride Miami price, configurations, and MahaRERA?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Pride Miami offers lakefront 2, 3, and 4.5 BHK luxury residences (790 - 2,240 sq. ft. carpet area) starting from ₹92 Lacs* up to ₹2.45 Cr*. MahaRERA Registration: PR1260002600188 & P52100028741."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Boston Central and what is the 2X Advantage?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Boston Central features the 2X Advantage: Two private balconies per residence for double ventilation and natural light, alongside Two dedicated Clubhouses for sports and social wellness. Smart 2 BHK homes starting from ₹68 Lacs*. MahaRERA: P52100078307 & P52100049648."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Pride Montreal and what are the duplex options?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Pride Montreal combines European contemporary architecture with smart home automation. Features 2 & 3 BHK apartments and 4 BHK Duplex Residences (1,850 sq. ft. carpet) with double-height ceilings, private family lounges, and open sky terraces, priced from ₹1.65 Cr*. MahaRERA: P52100077138 & P52100021650."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Pride Wellington 3 BHK price and amenities?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Pride Wellington offers resort-style waterfront residences across 14 towers overlooking the 7-acre lake. Premium 3 BHK lake-facing apartments start from ₹1.12 Cr* (carpet area 1,040 - 1,420 sq. ft.). Amenities include a 7-acre landscaped podium, infinity lagoon pool, floating cabanas, and acoustic work-from-home pods. MahaRERA: P52100054534 & P52100019637."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How far is Pride World City from Pune Airport and Kharadi EON IT Park?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Pride World City is 4.8 km (approx. 10 minutes) from Pune International Airport via Lohegaon-Airport Road. Kharadi EON Free Zone, World Trade Center (WTC), and Magarpatta are reached within 18 to 22 minutes via the direct 8-lane expressway corridor."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is Pride World City MahaRERA registered and what are the registration numbers?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, 100% of Pride World City clusters are MahaRERA registered: Valencia (P52100052309), Miami (PR1260002600188), Boston (P52100078307), Montreal (P52100077138), Wellington (P52100054534), Kingsbury (P52100000854), SoHo (P52100029810), and Long Island (P52100017892). Details available on maharera.mahaonline.gov.in."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is Pride World City a good investment for capital appreciation and rental yield?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, Pride World City is one of North Pune's premier investment corridors. Driven by the upcoming Pune Ring Road, airport terminal expansion, and adjacent D.Y. Patil Knowledge City student-faculty population, rental yields average 4.5% - 6% annually for 1 & 2 BHK units, with proven capital appreciation exceeding 42% over the last 5 years."
-            }
-          }
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://prideworld.city/#website",
-        "url": "https://prideworld.city/",
-        "name": "Pride World City",
-        "alternateName": "Pride World City Pune",
-        "description": "400-Acre Master Integrated Mega Township in Charholi Budruk, North Pune",
-        "publisher": {
-          "@id": "https://prideworld.city/#organization"
-        },
-        "inLanguage": "en-IN"
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://prideworld.city/#webpage",
-        "url": "https://prideworld.city/",
-        "name": "Pride World City Pune | 2–4.5 BHK from ₹54L* [2026]",
-        "isPartOf": { "@id": "https://prideworld.city/#website" },
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": ["h1", ".hero-subheadline", "#faqsAccordion"]
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Pride Group",
+        "alternateName": "Pride Developers Pune",
+        "url": "https://www.prideworldcity.com/",
+        "founder": {
+          "@type": "Person",
+          "name": "Arvind Jain",
+          "jobTitle": "Managing Director"
         }
-      }
-    ]
-  }
-  </script>
+      },
+      "sameAs": [
+        "https://www.prideworldcity.com/",
+        "https://maharera.mahaonline.gov.in",
+        "https://www.google.com/maps/search/?api=1&query=Pride+World+City+Charholi+Budruk+Pune"
+      ],
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "7-Acre Central Lake & Promenade",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "50,000 Sq.Ft Club Royale / Club Charholi",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "10-Acre Multi-Sport Arena",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Global Indian International School (GIIS)",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Pride Tech Park IT & Corporate Office Hub",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Town Plaza High-Street Shopping Boulevard",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "BRTS Rapid Transit Station",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "100-Bed Multi-Speciality Hospital Zone",
+          "value": true
+        }
+      ],
+      "knowsAbout": [
+        "Charholi Budruk Real Estate",
+        "MahaRERA Registered Integrated Townships Pune",
+        "Pune Airport Residential Corridor",
+        "Kharadi IT Park Adjacent Apartments",
+        "NRI Real Estate Investment Pune"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://prideworld.city/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://prideworld.city/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Pune Real Estate",
+          "item": "https://prideworld.city/#masterplan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Charholi Budruk Integrated Townships",
+          "item": "https://prideworld.city/#clusters"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Pride World City",
+          "item": "https://prideworld.city/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://prideworld.city/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Pride World City Pune?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pride World City is a 400-acre integrated mega township developed by Pride Group in Charholi Budruk, North Pune. It encompasses over 5 million sq. ft. of completed projects and 8+ million sq. ft. under active development, accommodating more than 10,000 families with residential clusters, commercial IT parks, retail, international education, and healthcare infrastructure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Pride World City located and how is the connectivity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pride World City is located at Charholi Budruk, adjacent to D.Y. Patil Knowledge City in North Pune. It borders Lohegaon and Dhanori, situated 4.8 km (10 minutes) from Pune International Airport, 11 km from the Kharadi IT corridor (EON IT Park and WTC), and minutes from Viman Nagar, Kalyani Nagar, and Vishrantwadi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the residential projects inside Pride World City?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The residential clusters include Valencia (New Launch 2 & 3 BHK sun-side homes), Miami (luxury waterfront 2, 3 & 4.5 BHK), Boston Central (smart 2 BHK with 2X advantage), Montreal (smart tech 2, 3 BHK & 4 BHK duplex residences), Wellington (resort-style 2 & 3 BHK facing 7-acre lake), Kingsbury (royal ready-to-move 2 & 3 BHK), Brooklyn (urban 1 & 2 BHK), Manhattan (spacious 2 & 3 BHK), Atlantic (scenic high-rise apartments), Long Island (ultra-luxury sky villas), and SoHo (hybrid live-work suites)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the price of 2 BHK and 3 BHK flats in Pride World City?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Starting prices: 2 BHK flats start from ₹54 Lacs* in Brooklyn/SoHo, ₹68 Lacs* in Boston Central, ₹74 Lacs* in Montreal, ₹78 Lacs* in Kingsbury, ₹86 Lacs* in Wellington, ₹92 Lacs* in Miami, and ₹92.49 Lacs* (All Inclusive) in Valencia. Spacious 3 BHK residences start from ₹1.05 Cr* in Wellington and Montreal, and ₹1.23 Cr* in Valencia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Pride Miami price, configurations, and MahaRERA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pride Miami offers lakefront 2, 3, and 4.5 BHK luxury residences (790 - 2,240 sq. ft. carpet area) starting from ₹92 Lacs* up to ₹2.45 Cr*. MahaRERA Registration: PR1260002600188 & P52100028741."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Boston Central and what is the 2X Advantage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Boston Central features the 2X Advantage: Two private balconies per residence for double ventilation and natural light, alongside Two dedicated Clubhouses for sports and social wellness. Smart 2 BHK homes starting from ₹68 Lacs*. MahaRERA: P52100078307 & P52100049648."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Pride Montreal and what are the duplex options?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pride Montreal combines European contemporary architecture with smart home automation. Features 2 & 3 BHK apartments and 4 BHK Duplex Residences (1,850 sq. ft. carpet) with double-height ceilings, private family lounges, and open sky terraces, priced from ₹1.65 Cr*. MahaRERA: P52100077138 & P52100021650."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Pride Wellington 3 BHK price and amenities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pride Wellington offers resort-style waterfront residences across 14 towers overlooking the 7-acre lake. Premium 3 BHK lake-facing apartments start from ₹1.12 Cr* (carpet area 1,040 - 1,420 sq. ft.). Amenities include a 7-acre landscaped podium, infinity lagoon pool, floating cabanas, and acoustic work-from-home pods. MahaRERA: P52100054534 & P52100019637."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far is Pride World City from Pune Airport and Kharadi EON IT Park?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pride World City is 4.8 km (approx. 10 minutes) from Pune International Airport via Lohegaon-Airport Road. Kharadi EON Free Zone, World Trade Center (WTC), and Magarpatta are reached within 18 to 22 minutes via the direct 8-lane expressway corridor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Pride World City MahaRERA registered and what are the registration numbers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, 100% of Pride World City clusters are MahaRERA registered: Valencia (P52100052309), Miami (PR1260002600188), Boston (P52100078307), Montreal (P52100077138), Wellington (P52100054534), Kingsbury (P52100000854), SoHo (P52100029810), and Long Island (P52100017892). Details available on maharera.mahaonline.gov.in."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Pride World City a good investment for capital appreciation and rental yield?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Pride World City is one of North Pune's premier investment corridors. Driven by the upcoming Pune Ring Road, airport terminal expansion, and adjacent D.Y. Patil Knowledge City student-faculty population, rental yields average 4.5% - 6% annually for 1 & 2 BHK units, with proven capital appreciation exceeding 42% over the last 5 years."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://prideworld.city/#website",
+      "url": "https://prideworld.city/",
+      "name": "Pride World City",
+      "alternateName": "Pride World City Pune",
+      "description": "400-Acre Master Integrated Mega Township in Charholi Budruk, North Pune",
+      "publisher": {
+        "@id": "https://prideworld.city/#organization"
+      },
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://prideworld.city/#webpage",
+      "url": "https://prideworld.city/",
+      "name": "Pride World City Pune | 2–4.5 BHK from ₹54L* [2026]",
+      "isPartOf": {
+        "@id": "https://prideworld.city/#website"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".hero-subheadline",
+          ".editorial-lead-box",
+          ".pillar-hero p",
+          ".pillar-specs-strip"
+        ]
+      },
+      "dateModified": "2026-11-25T20:50:00+05:30",
+      "datePublished": "2026-11-24T00:00:00+05:30",
+      "inLanguage": "en-IN"
+    }
+  ]
+}</script>
 
   <!-- PWA & Mobile Installability -->
   <link rel="manifest" href="site.webmanifest">

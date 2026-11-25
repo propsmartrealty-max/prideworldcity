@@ -1,0 +1,351 @@
+{
+  "schemaVersion": "2026-11-25",
+  "canonicalUrl": "https://prideworld.city/",
+  "entity": {
+    "name": "Pride World City",
+    "developer": "Pride Group",
+    "tagline": "The 400-Acre Global Metropolis in Charholi, Pune",
+    "location": "Pride World City, Adjacent to D.Y. Patil Knowledge City, Charholi Budruk, Pune - 412105, Maharashtra, India",
+    "coordinates": {
+      "latitude": 18.6366,
+      "longitude": 73.8967
+    },
+    "scaleAcres": 400,
+    "completedFootprint": "5 Million Sq. Ft.",
+    "underConstructionFootprint": "8 Million+ Sq. Ft.",
+    "familiesCount": "10,000+",
+    "openGreenSpace": "70%",
+    "reraPortal": "https://maharera.mahaonline.gov.in"
+  },
+  "contact": {
+    "email": "propsmartrealty@gmail.com",
+    "whatsappUrl": "https://wa.me/917744009295",
+    "telephone": "+917744009295",
+    "bookingUrl": "https://prideworld.city/#vip-booking"
+  },
+  "clusters": [
+    {
+      "id": "valencia",
+      "name": "Valencia",
+      "url": "https://prideworld.city/valencia",
+      "badge": "★ NEW LAUNCH",
+      "status": "New Launch • 5.9 Acres, 5 Towers",
+      "configurations": [
+        "2 BHK",
+        "3 BHK"
+      ],
+      "priceStarting": "₹ 92.49 L* All Inclusive",
+      "carpetArea": "755 - 1,180 sq. ft.",
+      "towers": "5 Elegant High-Rise Towers (G + 28 Floors)",
+      "maharera": "P52100052309",
+      "tagline": "Hola to the Brighter Side of Life"
+    },
+    {
+      "id": "kingsbury",
+      "name": "Kingsbury",
+      "url": "https://prideworld.city/kingsbury",
+      "badge": "Best Seller",
+      "status": "Ready to Move / Few Units Left",
+      "configurations": [
+        "2 BHK",
+        "3 BHK"
+      ],
+      "priceStarting": "₹ 78 Lacs*",
+      "carpetArea": "765 - 1,120 sq. ft.",
+      "towers": "14 High-Rise Towers (G + 14 / 21 Floors)",
+      "maharera": "P52100000854",
+      "tagline": "Regal Elegance in the Heart of the Township"
+    },
+    {
+      "id": "wellington",
+      "name": "Wellington",
+      "url": "https://prideworld.city/wellington",
+      "badge": "Lakefront Living",
+      "status": "14 Towers • Facing 7-Acre Central Lake",
+      "configurations": [
+        "2 BHK",
+        "3 BHK",
+        "3 BHK XL"
+      ],
+      "priceStarting": "₹ 86 Lacs*",
+      "carpetArea": "820 - 1,420 sq. ft.",
+      "towers": "14 Signature Resort Towers (G + 24 Floors)",
+      "maharera": "P52100054534, P52100019637, P52100045781",
+      "tagline": "Everyday Feels Like a Five-Star Lakefront Vacation"
+    },
+    {
+      "id": "montreal",
+      "name": "Montreal",
+      "url": "https://prideworld.city/montreal",
+      "badge": "Duplex & Smart Tech",
+      "status": "Super Spacious Duplex Living",
+      "configurations": [
+        "2 BHK",
+        "3 BHK",
+        "4 BHK Duplex"
+      ],
+      "priceStarting": "₹ 74 Lacs*",
+      "carpetArea": "740 - 1,850 sq. ft.",
+      "towers": "8 Smart Automation Towers",
+      "maharera": "P52100077138, P52100021650, P52100053272",
+      "tagline": "Intelligent Living Powered by Modern Architecture"
+    },
+    {
+      "id": "miami",
+      "name": "Miami",
+      "url": "https://prideworld.city/miami",
+      "badge": "Waterfront Art Deco",
+      "status": "Under Construction • 9 High-Rise Towers",
+      "configurations": [
+        "2 BHK",
+        "3 BHK",
+        "4.5 BHK Sky Penthouse"
+      ],
+      "priceStarting": "₹ 92 Lacs*",
+      "carpetArea": "790 - 2,240 sq. ft.",
+      "towers": "9 Art Deco Waterfront Glass Towers",
+      "maharera": "PR1260002600188 & P52100028741",
+      "tagline": "Sun, Water, and Miami-Inspired Splendor"
+    },
+    {
+      "id": "nottinghill",
+      "name": "Notting Hill",
+      "url": "https://prideworld.city/notting-hill",
+      "badge": "Ultra Luxury",
+      "status": "Signature Limited Edition",
+      "configurations": [
+        "3 BHK",
+        "4 BHK Duplex",
+        "Bespoke Villas"
+      ],
+      "priceStarting": "₹ 1.68 Cr*",
+      "carpetArea": "1,480 - 2,550 sq. ft.",
+      "towers": "Low-Density Private Estates (G + 11)",
+      "maharera": "P52100015690",
+      "tagline": "Aristocratic Quintessence for Connoisseurs"
+    },
+    {
+      "id": "longisland",
+      "name": "Long Island",
+      "url": "https://prideworld.city/long-island",
+      "badge": "Sky Villas",
+      "status": "Ready for Ultra-Elite Occupancy",
+      "configurations": [
+        "3 BHK",
+        "4 BHK Sky Villas"
+      ],
+      "priceStarting": "₹ 2.15 Cr*",
+      "carpetArea": "1,850 - 3,200 sq. ft.",
+      "towers": "Iconic Triple Tower Landmark",
+      "maharera": "P52100017892",
+      "tagline": "Living in the Clouds Above the 400-Acre Horizon"
+    },
+    {
+      "id": "boston",
+      "name": "Boston Central",
+      "url": "https://prideworld.city/boston",
+      "badge": "2X Advantage",
+      "status": "Two Balconies & Two Clubhouses",
+      "configurations": [
+        "2 BHK"
+      ],
+      "priceStarting": "₹ 68 Lacs*",
+      "carpetArea": "690 - 845 sq. ft.",
+      "towers": "High-Energy Urban Towers with 2 Mega Clubhouses",
+      "maharera": "P52100078307 & P52100049648",
+      "tagline": "Double the Space, Double the Amenities, Double the Joy"
+    },
+    {
+      "id": "soho",
+      "name": "SoHo",
+      "url": "https://prideworld.city/soho",
+      "badge": "Live-Work Suites",
+      "status": "2 Towers • Hybrid Work-Living",
+      "configurations": [
+        "2 BHK",
+        "2.5 BHK"
+      ],
+      "priceStarting": "₹ 58 Lacs*",
+      "carpetArea": "610 - 810 sq. ft.",
+      "towers": "2 High-Tech Towers (Live, Work & Play)",
+      "maharera": "P52100046548",
+      "tagline": "Designed for the New-Age Creator & Entrepreneur"
+    },
+    {
+      "id": "brooklyn",
+      "name": "Brooklyn",
+      "url": "https://prideworld.city/brooklyn",
+      "badge": "Vibrant Community",
+      "status": "Delivered & Resale Available",
+      "configurations": [
+        "1 BHK",
+        "2 BHK"
+      ],
+      "priceStarting": "₹ 54 Lacs*",
+      "carpetArea": "560 - 780 sq. ft.",
+      "towers": "High-Rise Urban Towers",
+      "maharera": "P52100000854",
+      "tagline": "Effortless City Living with Complete Township Convenience"
+    },
+    {
+      "id": "manhattan",
+      "name": "Manhattan",
+      "url": "https://prideworld.city/manhattan",
+      "badge": "Cosmopolitan Living",
+      "status": "Delivered & Resale Available",
+      "configurations": [
+        "2 BHK",
+        "3 BHK"
+      ],
+      "priceStarting": "₹ 68 Lacs*",
+      "carpetArea": "730 - 1,080 sq. ft.",
+      "towers": "Sleek Contemporary Towers",
+      "maharera": "P52100000854",
+      "tagline": "New York Architectural Flare in North Pune"
+    },
+    {
+      "id": "atlantic",
+      "name": "Atlantic",
+      "url": "https://prideworld.city/atlantic",
+      "badge": "Scenic Horizon",
+      "status": "Under Construction / Modern Enclave",
+      "configurations": [
+        "2 BHK",
+        "3 BHK"
+      ],
+      "priceStarting": "₹ 72 Lacs*",
+      "carpetArea": "740 - 1,120 sq. ft.",
+      "towers": "Modern High-Rise Towers",
+      "maharera": "P52100021650",
+      "tagline": "Panoramic Breezes & Nature-Connected Living"
+    }
+  ],
+  "ecosystem": [
+    {
+      "name": "Global Indian International School (GIIS)",
+      "status": "Operational inside township gates",
+      "url": "https://prideworld.city/global-indian-international-school-pride-world-city"
+    },
+    {
+      "name": "Club Royale & 7-Acre Central Lake",
+      "specs": "50,000 sq.ft clubhouse, 7-acre lake promenade, 10-acre sports arena",
+      "url": "https://prideworld.city/club-royale-and-7-acre-lake-charholi"
+    },
+    {
+      "name": "Town Plaza & 100-Bed Hospital Zone",
+      "specs": "Operational high-street retail, BRTS station & medical hub",
+      "url": "https://prideworld.city/town-plaza-and-hospital-charholi"
+    },
+    {
+      "name": "Pride Tech Park & SoHo",
+      "specs": "Commercial IT offices & dual-zoned live-work studios",
+      "url": "https://prideworld.city/pride-tech-park"
+    }
+  ],
+  "connectivity": {
+    "puneInternationalAirport": "4.8 km (10 mins)",
+    "dyPatilKnowledgeCity": "0.5 km (adjacent)",
+    "dhanoriLohegaon": "3.5 km (7 mins)",
+    "vimanNagarPhoenix": "8.5 km (14 mins)",
+    "kharadiEonItParkWtc": "11.0 km (18 mins via 8-lane corridor)",
+    "pmrdaRingRoad": "1.8 km (3 mins)"
+  },
+  "puneMarketBenchmarks": {
+    "city": "Pune",
+    "updatedDate": "November 2026",
+    "growthDriver": "PMRDA Ring Road, Pune Airport Terminal 2 & Kharadi Tech Corridor",
+    "averageAppreciation5Yr": "42.8%",
+    "microMarketRates": [
+      {
+        "locality": "Charholi Budruk (Pride World City)",
+        "region": "North Pune",
+        "avgRateSqFt": "₹ 6,800 - ₹ 8,200",
+        "rentalYield": "4.8% - 6.0%",
+        "connectivityHighlights": "10 mins to Airport, 18 mins to Kharadi IT Park, PMRDA Ring Road 1.8 km",
+        "verdict": "High Capital Growth & Superior Value Arbitrage"
+      },
+      {
+        "locality": "Dhanori & Lohegaon",
+        "region": "North-East Pune",
+        "avgRateSqFt": "₹ 6,200 - ₹ 7,800",
+        "rentalYield": "3.8% - 4.5%",
+        "connectivityHighlights": "Adjacent to Airport, narrow internal roads, standalone buildings",
+        "verdict": "Moderate appreciation, higher density"
+      },
+      {
+        "locality": "Viman Nagar",
+        "region": "East Pune",
+        "avgRateSqFt": "₹ 11,500 - ₹ 16,500",
+        "rentalYield": "3.2% - 3.8%",
+        "connectivityHighlights": "Prime lifestyle retail, Phoenix Mall, mature saturated market",
+        "verdict": "High capital entry barrier, low rental yield"
+      },
+      {
+        "locality": "Kharadi (EON Free Zone / WTC)",
+        "region": "East Pune",
+        "avgRateSqFt": "₹ 8,900 - ₹ 13,200",
+        "rentalYield": "3.5% - 4.2%",
+        "connectivityHighlights": "Leading IT hub, heavy peak-hour traffic choke points",
+        "verdict": "High demand, expensive ticket size"
+      },
+      {
+        "locality": "Hinjawadi IT Park",
+        "region": "West Pune",
+        "avgRateSqFt": "₹ 6,800 - ₹ 9,500",
+        "rentalYield": "3.6% - 4.4%",
+        "connectivityHighlights": "60+ mins from Airport, severe peak congestion on Hinjawadi flyover",
+        "verdict": "Tech-focused, distant from Airport & East IT corridors"
+      },
+      {
+        "locality": "Baner & Balewadi",
+        "region": "North-West Pune",
+        "avgRateSqFt": "₹ 9,800 - ₹ 14,500",
+        "rentalYield": "3.1% - 3.7%",
+        "connectivityHighlights": "High-end commercial & residential, highly saturated land parcels",
+        "verdict": "Premium pricing, limited large-scale township infrastructure"
+      },
+      {
+        "locality": "Wagholi (Nagar Road)",
+        "region": "East Pune",
+        "avgRateSqFt": "₹ 5,400 - ₹ 7,100",
+        "rentalYield": "3.5% - 4.1%",
+        "connectivityHighlights": "Nagar Road corridor, heavy vehicular congestion and water tanker dependency",
+        "verdict": "Affordable but infrastructure challenges"
+      },
+      {
+        "locality": "Moshi & Alandi Corridor",
+        "region": "North Pune / PCMC",
+        "avgRateSqFt": "₹ 5,200 - ₹ 6,600",
+        "rentalYield": "3.4% - 4.0%",
+        "connectivityHighlights": "Pimpri-Chinchwad municipal boundary, auto-hub proximity",
+        "verdict": "Industrial workforce residential hub"
+      }
+    ],
+    "macroPillars": [
+      {
+        "title": "PMRDA 128-km Pune Ring Road",
+        "desc": "Signal-free expressway encircling Pune and Pimpri-Chinchwad with an interchange within 1.8 km of Charholi Budruk, unlocking direct 20-minute transit to PCMC auto hubs and Mumbai Expressway."
+      },
+      {
+        "title": "Pune International Airport (PNQ) Terminal 2",
+        "desc": "State-of-the-art expansion handling 16+ million passengers annually. Charholi Budruk is the nearest planned integrated township (4.8 km), capturing the highest aviation corporate executive rental demand."
+      },
+      {
+        "title": "Direct 8-Lane Kharadi-Charholi Tech Corridor",
+        "desc": "Dramatically cutting travel time to EON IT Park and World Trade Center to under 18 minutes, transforming Charholi into the natural residential choice for over 150,000 IT professionals."
+      },
+      {
+        "title": "Township vs Standalone Apartment Advantage",
+        "desc": "Pride World City provides 100% water self-sufficiency (7-acre freshwater lake, rainwater harvesting, STP), 70% open green reserves, on-campus K-12 Cambridge education, and zero dependence on municipal water tankers."
+      }
+    ]
+  },
+  "tools": {
+    "emiAndStampDutyCalculator": "https://prideworld.city/pride-world-city-emi-stamp-duty-calculator",
+    "mahareraTracker": "https://prideworld.city/pride-world-city-maharera-possession-status",
+    "priceTrendsDataset": "https://prideworld.city/charholi-ready-reckoner-rate-and-price-trends",
+    "faqEncyclopedia": "https://prideworld.city/faq",
+    "sitemap": "https://prideworld.city/sitemap.xml",
+    "llmsFull": "https://prideworld.city/llms-full.txt"
+  }
+}

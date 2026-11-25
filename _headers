@@ -92,6 +92,34 @@
   Access-Control-Allow-Origin: *
   X-Robots-Tag: all, index, follow
 
+/ai.txt
+  Cache-Control: public, max-age=86400, stale-while-revalidate=3600
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: all, index, follow
+
+/ai-facts.json
+  Cache-Control: public, max-age=3600, stale-while-revalidate=1800
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: all, index, follow
+
+/openapi.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/.well-known/ai-plugin.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/api/facts
+  Cache-Control: public, max-age=300, stale-while-revalidate=3600
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: all, index, follow
+
 /feed.xml
   Cache-Control: public, max-age=3600, stale-while-revalidate=1800
   Content-Type: application/rss+xml; charset=utf-8

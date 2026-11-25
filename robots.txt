@@ -1,5 +1,5 @@
 # ==============================================================================
-# Pride World City - Enterprise Search & AI Bot Governance (Google & GEO Standard)
+# Pride World City - Enterprise Search & Multi-Engine AI Overview Governance
 # Production Host: https://prideworld.city/
 # ==============================================================================
 
@@ -18,22 +18,42 @@ Allow: /js/
 Allow: /data/
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /ai.txt
+Allow: /ai-facts.json
+Allow: /.well-known/
+Allow: /api/facts
 Allow: /feed.xml
 Allow: /sitemap.xml
 
-# 2. Generative AI Search & Real-Time Answer Engine Citation Bots (Allowed for GEO)
+# 2. Generative AI Search, Deep Research & Answer Engines (ChatGPT, Claude, Gemini, Perplexity, Meta, Apple, Copilot)
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
+User-agent: GPTBot
 User-agent: Google-Extended
+User-agent: Google-CloudVertexBot
+User-agent: Gemini-Deep-Research
 User-agent: PerplexityBot
 User-agent: Perplexity-User
+User-agent: ClaudeBot
 User-agent: Claude-SearchBot
 User-agent: Claude-User
+User-agent: anthropic-ai
 User-agent: Applebot-Extended
 User-agent: DuckAssistBot
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-agent: MistralAI-User
+User-agent: YouBot
+User-agent: cohere-ai
+User-agent: Amazonbot
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /ai.txt
+Allow: /ai-facts.json
+Allow: /openapi.json
+Allow: /.well-known/
+Allow: /api/facts
 Allow: /feed.xml
 Allow: /valencia
 Allow: /miami
@@ -79,14 +99,18 @@ Allow: /sitemap.xml
 # 3. General Public Bots
 User-agent: *
 Allow: /
-Disallow: /api/
+Allow: /ai-facts.json
+Allow: /openapi.json
+Allow: /.well-known/
+Allow: /api/facts
+Disallow: /api/lead
+Disallow: /api/geo
 Disallow: /functions/
 Disallow: /google-ads-page-feed.csv
 Disallow: /scratch/
 Disallow: /tmp/
-Disallow: /*.json$
 
-# 4. Block Aggressive SEO Scrapers, Harvesters & Unauthorized Bulk Training Crawlers
+# 4. Block Aggressive SEO Scrapers & Unwanted Harvest Bots
 User-agent: Bytespider
 User-agent: PetalBot
 User-agent: CCBot
@@ -106,3 +130,5 @@ Host: https://prideworld.city
 Sitemap: https://prideworld.city/sitemap.xml
 # LLMs.txt: https://prideworld.city/llms.txt
 # LLMs-Full: https://prideworld.city/llms-full.txt
+# AI-Policy: https://prideworld.city/ai.txt
+# AI-Facts-JSON: https://prideworld.city/ai-facts.json
