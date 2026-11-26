@@ -63,7 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // 3. Mobile Navigation Menu Toggle
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
   const navLinks = document.getElementById("navLinks");
-  if (mobileMenuBtn && navLinks) {
+  if (mobileMenuBtn && navLinks && !mobileMenuBtn.dataset.bound) {
+    mobileMenuBtn.dataset.bound = "1";
     mobileMenuBtn.addEventListener("click", () => {
       navLinks.classList.toggle("mobile-open");
     });

@@ -192,6 +192,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Bind responsive hamburger menu across all sub-pages seamlessly
+  const menuBtn = document.getElementById("mobileMenuBtn");
+  const navLinksEl = document.getElementById("navLinks");
+  if (menuBtn && navLinksEl && !menuBtn.dataset.bound) {
+    menuBtn.dataset.bound = "1";
+    menuBtn.addEventListener("click", () => {
+      navLinksEl.classList.toggle("mobile-open");
+    });
+    navLinksEl.querySelectorAll(".nav-link").forEach((lnk) => {
+      lnk.addEventListener("click", () => navLinksEl.classList.remove("mobile-open"));
+    });
+  }
+
   // Inject responsive mobile sticky CTA bar across all portal & spoke pages
   if (!document.getElementById("mobileStickyCtaBar")) {
     const pageTitle = document.title.split("|")[0].trim();
@@ -206,6 +219,32 @@ document.addEventListener("DOMContentLoaded", () => {
       <a href="/#vip-booking" class="mobile-cta-btn mobile-cta-vip"><i class="fa-solid fa-calendar-check"></i> VIP Tour</a>
     `;
     document.body.appendChild(bar);
+  }
+
+  // Smooth Scroll-Triggered Stagger Reveal & Metric Number Polish (60fps, Zero CLS)
+  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduceMotion && "IntersectionObserver" in window) {
+    const revealTargets = document.querySelectorAll(
+      ".seo-matrix-card, .pillar-spec-box, .cluster-card, .amenity-card, .civic-card, .transit-card, .gallery-item-card, .valencia-pillar-card, .valencia-testimonial-card, .seo-feature-box, .booking-section-card, .rera-banner-box"
+    );
+    const vh = window.innerHeight || 800;
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("pwc-inview");
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: "0px 0px -30px 0px" });
+
+    revealTargets.forEach((el, idx) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top > vh * 0.92) {
+        el.style.transitionDelay = `${Math.min((idx % 4) * 70, 210)}ms`;
+        el.classList.add("pwc-reveal-init");
+        io.observe(el);
+      }
+    });
   }
 
   // Register lightweight offline PWA Service Worker

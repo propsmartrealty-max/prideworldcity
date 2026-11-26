@@ -43,15 +43,14 @@
   X-Content-Type-Options: nosniff
   Access-Control-Allow-Origin: *
 
-# Weekly Cache with Background Stale-While-Revalidate for CSS
+# Short Browser Cache with Background Revalidation for CSS & JS
 /css/*
-  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
   X-Content-Type-Options: nosniff
   Access-Control-Allow-Origin: *
 
-# Weekly Cache with Background Stale-While-Revalidate for JS
 /js/*
-  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
   X-Content-Type-Options: nosniff
   Access-Control-Allow-Origin: *
 
