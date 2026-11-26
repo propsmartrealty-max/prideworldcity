@@ -324,7 +324,7 @@ const TOWNSHIP_DATA = {
       reraNo: "P52100015690",
       tagline: "Aristocratic Quintessence for Connoisseurs",
       description: "Exclusive to only 120 privileged families, Notting Hill offers double-height ceilings, private elevator access options, Italian marble flooring throughout, bespoke private plunge pools, and manicured English private lawns.",
-      image: "assets/images/Cam_03Final.jpg",
+      image: "assets/images/Cam_03Final-480x320.jpg",
       accentColor: "#a855f7",
       features: [
         "Double-height 22-foot Living Salons",

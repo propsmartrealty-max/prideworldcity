@@ -112,6 +112,13 @@ h1, h2, h3, h4, .font-serif {
 }
 
 .text-gold-gradient {
+  background: linear-gradient(135deg, #7c5206 0%, #b8860b 48%, #5e3e03 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.mode-night .text-gold-gradient,
+body.mode-sunset .text-gold-gradient {
   background: linear-gradient(135deg, #fff3d6 0%, #d4af37 40%, #aa8427 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1102,12 +1109,14 @@ body.mode-night .map-control-btn {
   position: relative;
   height: 240px;
   overflow: hidden;
+  background: #0f172a;
 }
 
 .cluster-card-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.6s ease;
 }
 
@@ -1403,12 +1412,14 @@ body.mode-night .scene-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
   margin-bottom: 0.65rem;
 }
 
 .slider-label-row label {
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-main);
 }
 
@@ -1416,16 +1427,26 @@ body.mode-night .scene-btn {
   font-family: var(--font-serif);
   font-size: 1.15rem;
   font-weight: 700;
+  color: #8a5f06;
+}
+
+body.mode-night .slider-label-row .calc-value-display {
   color: var(--accent-gold-light);
 }
 
 .custom-range-slider {
   width: 100%;
   -webkit-appearance: none;
-  height: 6px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.12);
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.16);
+  border: 1px solid rgba(184, 134, 11, 0.25);
   outline: none;
+}
+
+body.mode-night .custom-range-slider {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(212, 175, 55, 0.28);
 }
 
 .custom-range-slider::-webkit-slider-thumb {
@@ -1482,8 +1503,9 @@ body.mode-night .emi-main-figure .emi-amount {
 }
 
 .emi-breakdown-strip {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
   padding: 1rem 0;
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
@@ -1920,7 +1942,7 @@ body.mode-night .form-control:focus {
 .site-footer {
   background: #f8fafc;
   border-top: 1px solid rgba(184, 134, 11, 0.25);
-  padding: 5rem 0 2rem;
+  padding: 4.5rem 0 6.5rem;
   position: relative;
   color: var(--text-main);
 }
@@ -4329,6 +4351,22 @@ body.mode-night .pillar-spec-box strong {
   }
 }
 
+/* Desktop Hero Landmark Wrap & Booking Clearance */
+@media (min-width: 768px) {
+  .hero-township-strip {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    gap: 0.4rem;
+  }
+  .hero-township-tab {
+    padding: 0.36rem 0.68rem;
+    font-size: 0.71rem;
+  }
+  #vip-booking.section {
+    padding-bottom: 5.5rem;
+  }
+}
+
 .mobile-sticky-cta-bar {
   display: none;
 }
@@ -4340,7 +4378,15 @@ body.mode-night .pillar-spec-box strong {
 
   .container,
   .nav-container {
-    padding: 0 1rem !important;
+    padding: 0 0.9rem !important;
+  }
+
+  .section {
+    padding: 2.5rem 0 !important;
+  }
+
+  .legal-page-header {
+    padding: 94px 0 28px 0 !important;
   }
 
   .brand-dynamic-emblem {
@@ -4352,7 +4398,7 @@ body.mode-night .pillar-spec-box strong {
   }
 
   .hero-section {
-    padding-top: 5.75rem !important;
+    padding-top: 5.5rem !important;
     padding-bottom: 2.5rem !important;
     min-height: auto;
   }
@@ -4384,19 +4430,35 @@ body.mode-night .pillar-spec-box strong {
 
   .hero-metrics-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
+    gap: 0.65rem;
   }
 
   .hero-metric-item {
-    padding: 0.7rem 0.65rem;
+    padding: 0.75rem 0.65rem;
   }
 
   .hero-metric-item .metric-number {
     font-size: 1.3rem;
+    color: #7c5206;
+  }
+
+  body.mode-night .hero-metric-item .metric-number {
+    color: #dfc285;
+  }
+
+  .hero-metric-item .metric-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.03em;
+    overflow-wrap: break-word;
+  }
+
+  .preview-body,
+  .cluster-card-body {
+    padding: 1.1rem !important;
   }
 
   .preview-media-wrap {
-    height: 230px;
+    height: 220px;
   }
 
   .hero-stage-actions {
@@ -4416,27 +4478,51 @@ body.mode-night .pillar-spec-box strong {
   }
 
   .masterplan-canvas-wrap {
-    min-height: 300px;
+    min-height: 280px;
   }
 
-  .booking-section-card,
-  .booking-form,
+  /* Eliminate Cramped Double-Nested Mobile Form Padding */
+  .booking-section-card {
+    padding: 1.15rem 0.9rem !important;
+    border-radius: 16px;
+  }
+
+  .booking-form {
+    padding: 1.05rem 0.85rem !important;
+  }
+
   .calculator-box,
+  .calc-results-card,
   .seo-matrix-card,
   .legal-content-card,
-  .rera-banner-box {
-    padding: 1.2rem !important;
+  .rera-banner-box,
+  .valencia-layout-stage,
+  .valencia-plan-card,
+  .valencia-testimonial-card {
+    padding: 1.05rem 0.95rem !important;
+  }
+
+  .seo-matrix-card:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .breakdown-item .b-label {
+    font-size: 0.64rem;
+  }
+
+  .breakdown-item .b-val {
+    font-size: 0.95rem;
   }
 
   .seo-table th,
   .seo-table td {
-    padding: 0.65rem 0.75rem;
-    font-size: 0.8rem;
+    padding: 0.6rem 0.65rem;
+    font-size: 0.78rem;
   }
 
   .seo-table th {
     white-space: normal;
-    min-width: 105px;
+    min-width: 96px;
   }
 
   .seo-highlight-badge {
@@ -4445,20 +4531,26 @@ body.mode-night .pillar-spec-box strong {
 
   .footer-top-grid {
     grid-template-columns: minmax(0, 1fr);
-    gap: 1.85rem;
-    margin-bottom: 2rem;
+    gap: 1.65rem;
+    margin-bottom: 1.75rem;
   }
 
   .site-footer {
-    padding: 3rem 0 2.25rem;
+    padding: 2.5rem 0 5.5rem !important;
   }
 
   .footer-bottom-bar {
     flex-direction: column;
     align-items: flex-start;
-    text-align: left;
+    text-align: left !important;
     gap: 0.65rem;
     font-size: 0.78rem;
+  }
+
+  .footer-bottom-bar > div {
+    text-align: left !important;
+    width: 100%;
+    max-width: 100% !important;
   }
 
   .site-footer a,
@@ -4469,12 +4561,17 @@ body.mode-night .pillar-spec-box strong {
   }
 
   .pillar-hero {
-    padding: 96px 0 40px 0 !important;
+    padding: 90px 0 32px 0 !important;
   }
 
   .pillar-specs-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 0.75rem;
+    gap: 0.65rem;
+    margin: 1.5rem 0 0.5rem 0 !important;
+  }
+
+  .pillar-spec-box {
+    padding: 0.95rem !important;
   }
 
   /* Responsive Modal Tightening */
@@ -4483,7 +4580,7 @@ body.mode-night .pillar-spec-box strong {
   }
 
   .vip-experience-card {
-    padding: 1.25rem !important;
+    padding: 1.15rem !important;
     border-radius: 16px;
   }
 
@@ -4507,10 +4604,10 @@ body.mode-night .pillar-spec-box strong {
   }
 
   .concierge-trigger-btn {
-    bottom: 4.55rem;
-    right: 0.9rem;
-    width: 48px;
-    height: 48px;
+    bottom: 4.35rem;
+    right: 0.75rem;
+    width: 44px;
+    height: 44px;
     padding: 0;
     justify-content: center;
     font-size: 0;
@@ -4518,7 +4615,7 @@ body.mode-night .pillar-spec-box strong {
   }
 
   .concierge-trigger-btn i {
-    font-size: 1.22rem;
+    font-size: 1.15rem;
   }
 
   .concierge-modal {
