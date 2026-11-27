@@ -1,695 +1,725 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://prideworld.city/</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/pride-world-city-Bird-eye-view.jpeg.bv.webp</image:loc>
-      <image:title>Pride World City 400-Acre Master Integrated Township Pune</image:title>
-      <image:caption>Bird-eye aerial panorama of Pride World City Charholi Budruk, Pune.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/og-share.jpg</image:loc>
-      <image:title>Pride World City Official Master Township Portal</image:title>
-      <image:caption>400-Acre integrated metropolis adjacent to D.Y. Patil Knowledge City, Charholi Pune.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Master-Layout-use-this.webp</image:loc>
-      <image:title>Pride World City 400-Acre Masterplan Map</image:title>
-      <image:caption>Masterplan sectors showing Valencia, Miami, Wellington, Montreal, Boston &amp; Pride Tech Park.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/celebrated-awards.webp</image:loc>
-      <image:title>Pride World City Township Awards &amp; Honors</image:title>
-      <image:caption>Recognized luxury integrated township excellence in Pune.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-3-1.webp</image:loc>
-      <image:title>Pride World City Central Boulevard Visual</image:title>
-      <image:caption>Pedestrian-friendly landscaped avenue inside Pride World City.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-4-1.webp</image:loc>
-      <image:title>Pride World City Evening Courtyard Lounge</image:title>
-      <image:caption>Landscaped twilight social courtyard inside Charholi township.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-8-1.webp</image:loc>
-      <image:title>Pride World City Designer Seating Decks</image:title>
-      <image:caption>Green sanctuary gardens and architectural lighting.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/valencia</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.98</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Twilight-Valencia-Apartment-Launch-Banner.webp.bv.webp</image:loc>
-      <image:title>Pride Valencia 2 &amp; 3 BHK Sun-Side Homes Charholi</image:title>
-      <image:caption>Twilight elevation of Pride Valencia New Launch towers (G+28).</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Valencia-Homes-Sunset-Launch-Banner.webp</image:loc>
-      <image:title>Pride Valencia Sunset Architectural Render</image:title>
-      <image:caption>100% East-West orientation homes across 5.9 acres.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Valencia-Teaser_CROSSWIND_Desktop.jpg</image:loc>
-      <image:title>Pride Valencia Cross-Ventilation Engineering</image:title>
-      <image:caption>Passive solar &amp; cross-breeze tower spacing at Pride Valencia.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/valencia-carousel-1.webp</image:loc>
-      <image:title>Pride Valencia Biodiversity Podium</image:title>
-      <image:caption>Car-free podium greens, butterfly park and pickleball court.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Say-Hola-to-Valencia-A-New-Chapter-at-Pride-World-City.webp</image:loc>
-      <image:title>Say Hola to Pride Valencia</image:title>
-      <image:caption>New chapter luxury 2 &amp; 3 BHK residences in Charholi Pune.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Enscape_2024-10-16-15-20-22_kitchen-1-1.webp</image:loc>
-      <image:title>Pride Valencia Modular Designer Kitchen Visual</image:title>
-      <image:caption>Modern ergonomic kitchen layout visual.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Enscape_2024-10-16-16-55-53_guest-2-1.webp</image:loc>
-      <image:title>Pride Valencia Guest Bedroom Interior Concept</image:title>
-      <image:caption>Sunlit spacious bedroom interior aesthetic.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/miami</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/miami-desktop-banner.webp</image:loc>
-      <image:title>Pride Miami Waterfront 2, 3 &amp; 4.5 BHK Residences</image:title>
-      <image:caption>Art-Deco skyline facade at Pride Miami Charholi.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Pride_Miami-Master-Layout_01Final.webp</image:loc>
-      <image:title>Pride Miami 9-Tower Waterfront Master Layout</image:title>
-      <image:caption>Detailed tower layout of Pride Miami waterfront cluster.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Miami-Final-Cam_05-Amenity.webp</image:loc>
-      <image:title>Pride Miami Waterfront Lagoon Amenity Deck</image:title>
-      <image:caption>Miami themed aquatic deck and resort leisure zones.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Miami-Final-Cam_06-Amenity.webp</image:loc>
-      <image:title>Pride Miami Podium Swimming Pool &amp; Cabanas</image:title>
-      <image:caption>Luxury poolside decks at Pride Miami.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Miami-Final-Cam_09-Amenity.webp</image:loc>
-      <image:title>Pride Miami Art Deco Grand Arrival Pavilion</image:title>
-      <image:caption>Illuminated entrance plaza at Pride Miami.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Miami-Final-Cam_10-Amenity-1.webp</image:loc>
-      <image:title>Pride Miami Landscaped Garden Walkways</image:title>
-      <image:caption>Evening garden paths and waterfront decks.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Miami-Final-Cam_11-Amenity.webp</image:loc>
-      <image:title>Pride Miami Sky Deck &amp; Clubhouse Facade</image:title>
-      <image:caption>Architectural details of Miami lifestyle clubhouse.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Miami-plan1.jpg</image:loc>
-      <image:title>Pride Miami Unit Floor Plan Variant 1</image:title>
-      <image:caption>Verified Miami residence floor plan configuration.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Miami-plan2.jpg</image:loc>
-      <image:title>Pride Miami Unit Floor Plan Variant 2</image:title>
-      <image:caption>Efficient carpet plan for Miami waterfront living.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Miami-plan3.jpg</image:loc>
-      <image:title>Pride Miami Unit Floor Plan Variant 3</image:title>
-      <image:caption>3 BHK spacious residence layout at Pride Miami.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Miami-plan4.jpg</image:loc>
-      <image:title>Pride Miami Unit Floor Plan Variant 4</image:title>
-      <image:caption>Large luxury residence layout at Pride Miami.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Miami-plan5.jpg</image:loc>
-      <image:title>Pride Miami Unit Floor Plan Variant 5</image:title>
-      <image:caption>Corner sky residence floor plan at Pride Miami.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Miami-plan6.jpg</image:loc>
-      <image:title>Pride Miami Unit Floor Plan Variant 6</image:title>
-      <image:caption>Penthouse/4.5 BHK layout variant at Pride Miami.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/wellington</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/wellington-overview.jpg</image:loc>
-      <image:title>Pride Wellington 7-Acre Lakefront Podium Overview</image:title>
-      <image:caption>14 resort towers overlooking 7-acre central lake.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/wellington-homepage-desktop-banner.webp</image:loc>
-      <image:title>Pride Wellington Lakeside Skyline Banner</image:title>
-      <image:caption>Resort-style waterfront 2 &amp; 3 BHK residences.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/W-enquiry-frm.jpg</image:loc>
-      <image:title>Pride Wellington Club &amp; Lounge Elevation</image:title>
-      <image:caption>Wellington concierge arrival zone.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/montreal</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/montreal-hero-banner.webp</image:loc>
-      <image:title>Pride Montreal Smart Tech &amp; 4 BHK Duplexes</image:title>
-      <image:caption>European inspired facade of Pride Montreal.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/montreal-desktop-homepage-banner.webp</image:loc>
-      <image:title>Pride Montreal Urban Smart Enclave</image:title>
-      <image:caption>Smart-home automation apartments in Charholi Pune.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/2-BHK-Montreal.jpg</image:loc>
-      <image:title>Pride Montreal 2 BHK Floor Plan</image:title>
-      <image:caption>2 BHK smart floor plan layout at Pride Montreal.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/3BHK-montreal.jpg</image:loc>
-      <image:title>Pride Montreal 3 BHK Floor Plan</image:title>
-      <image:caption>3 BHK spacious floor plan layout at Pride Montreal.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/montreal-swimming-pool.webp</image:loc>
-      <image:title>Pride Montreal Resort Swimming Pool</image:title>
-      <image:caption>Infinity pool deck and deck loungers at Montreal.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/montreal-outdoor-garden.webp</image:loc>
-      <image:title>Pride Montreal Botanical Podium Gardens</image:title>
-      <image:caption>Car-free landscaped garden zone at Montreal.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/montreal-ourdoor-play-area.webp</image:loc>
-      <image:title>Pride Montreal Children Outdoor Arena</image:title>
-      <image:caption>Safe dedicated kids recreational playground.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/kids-play-area-montreal.webp</image:loc>
-      <image:title>Pride Montreal Family Activity Zone</image:title>
-      <image:caption>Multi-age children adventure zone at Montreal.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/boston</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/boston-desktop-homepage-banner.webp</image:loc>
-      <image:title>Pride Boston Central 2X Advantage 2 BHK</image:title>
-      <image:caption>Two balconies &amp; two clubhouses at Boston Central.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Pride_Boston_Cam_01Final.webp</image:loc>
-      <image:title>Pride Boston Central Tower Facade</image:title>
-      <image:caption>Architectural exterior elevation of Boston Central.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/2-BHK-S-Boston.jpg</image:loc>
-      <image:title>Pride Boston 2 BHK Smart Floor Plan</image:title>
-      <image:caption>Efficient 2 BHK dual-balcony plan S variant.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/2-BHK-L-Boston.jpg</image:loc>
-      <image:title>Pride Boston 2 BHK Large Floor Plan</image:title>
-      <image:caption>Spacious 2 BHK dual-balcony plan L variant.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/BOSTON-A-B-C-P52100049648.webp</image:loc>
-      <image:title>Pride Boston Wings A B C Master Plan</image:title>
-      <image:caption>RERA P52100049648 tower footprint.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/kingsbury</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Scene_01_aerial-view.webp</image:loc>
-      <image:title>Pride Kingsbury Ready High-Rise Towers</image:title>
-      <image:caption>Delivered Kingsbury high-rise skyline in Pride World City.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Scene_01_aerial-view-2.webp</image:loc>
-      <image:title>Pride Kingsbury Township Panorama</image:title>
-      <image:caption>Aerial view across completed Kingsbury courtyard.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Scene_03_-childrens-play-area-1.webp</image:loc>
-      <image:title>Pride Kingsbury Family Play Arena</image:title>
-      <image:caption>Operational kids play lawn inside Kingsbury.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Scene_05_play-area-gazebo-1.webp</image:loc>
-      <image:title>Pride Kingsbury Senior Gazebo &amp; Park</image:title>
-      <image:caption>Shaded landscaped seating gazebos for families.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Scene_06_cricket-ground-1.webp</image:loc>
-      <image:title>Pride Kingsbury Multi-Sport Turf</image:title>
-      <image:caption>Outdoor sports cricket &amp; play arena.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/brooklyn</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Cam_12Final.jpg</image:loc>
-      <image:title>Pride Brooklyn Ready 1 &amp; 2 BHK Residences</image:title>
-      <image:caption>High-yield urban ready community at Brooklyn.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/manhattan</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Cam_07Final.jpg</image:loc>
-      <image:title>Pride Manhattan 2 &amp; 3 BHK Residences</image:title>
-      <image:caption>Cosmopolitan delivered residential cluster.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/atlantic</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Cam_21Final.jpg</image:loc>
-      <image:title>Pride Atlantic Scenic High-Rise</image:title>
-      <image:caption>Modern high-rise cluster overlooking greens.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Cam_22Final.jpg</image:loc>
-      <image:title>Pride Atlantic Podium Elevation</image:title>
-      <image:caption>Architectural podium view of Pride Atlantic.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/notting-hill</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Cam_03Final.jpg</image:loc>
-      <image:title>Pride Notting Hill British Manors</image:title>
-      <image:caption>Boutique low-density villas and pool duplexes.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Elevation_Cam_18.jpg</image:loc>
-      <image:title>Pride Notting Hill Estate Architecture</image:title>
-      <image:caption>Low-rise heritage facade in North Pune.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/long-island</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Cam_11_EveningFinal.jpg</image:loc>
-      <image:title>Pride Long Island Sky Villas</image:title>
-      <image:caption>Presidential triple-tower skyline elevation.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/soho</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Cam_13_EveningFinal.jpg</image:loc>
-      <image:title>Pride SoHo Live-Work Studios</image:title>
-      <image:caption>Dual-zoned residential and creator studio towers.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Cam_25_EveningFinal.jpg</image:loc>
-      <image:title>Pride SoHo Evening Arrival Courtyard</image:title>
-      <image:caption>Illuminated arrival zone at Pride SoHo.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/pride-tech-park</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Upcoming_business_techpark.webp</image:loc>
-      <image:title>Pride Tech Park Commercial Hub</image:title>
-      <image:caption>Grade-A IT Park &amp; corporate offices inside Pride World City.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Coming_soon_IT-Building.webp</image:loc>
-      <image:title>Pride Tech Park Commercial Tower</image:title>
-      <image:caption>Modern commercial IT building elevation.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Upcoming_mall_multiplex.webp</image:loc>
-      <image:title>Pride World City Mall &amp; Multiplex Zone</image:title>
-      <image:caption>Upcoming destination retail and entertainment hub.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/2-bhk-flats-in-charholi-pune</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.96</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/3-bhk-flats-in-charholi-pune</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.96</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/duplex-and-4-bhk-homes-pune</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.94</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/1-bhk-flats-in-charholi-pune</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.94</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/flats-in-lohegaon-dhanori-pune</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/flats-near-pune-airport-viman-nagar</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/flats-near-kharadi-eon-it-park</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/nri-real-estate-investment-pune</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/global-indian-international-school-pride-world-city</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Coming_soon_school.webp</image:loc>
-      <image:title>Global Indian International School Charholi</image:title>
-      <image:caption>Operational K-12 campus inside Pride World City.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/club-royale-and-7-acre-lake-charholi</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Completed_Club_charholi.webp</image:loc>
-      <image:title>Club Royale Clubhouse &amp; Waterfront Pool</image:title>
-      <image:caption>50,000 sq.ft luxury lifestyle club at Charholi.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/amenities.jpg</image:loc>
-      <image:title>Pride World City Master Township Amenities</image:title>
-      <image:caption>Resort-grade leisure amenities collage.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/town-plaza-and-hospital-charholi</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Completed_townplaza.webp</image:loc>
-      <image:title>Town Plaza High-Street Retail Charholi</image:title>
-      <image:caption>Operational retail strip inside Pride World City.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/pride-world-city-maharera-possession-status</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.96</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/dy-patil-knowledge-city-charholi-flats</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.91</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/pride-world-city-sample-flat-virtual-tour</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Enscape_2024-10-16-16-46-05_GUEST-1-1.webp</image:loc>
-      <image:title>Sample Flat Living Lounge Render</image:title>
-      <image:caption>Natural light &amp; designer interior finishes.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-17-1.webp</image:loc>
-      <image:title>Sample Residence Twilight Patio</image:title>
-      <image:caption>Private balcony view at dusk.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-18-1.webp</image:loc>
-      <image:title>Township Podium Promenade Interior View</image:title>
-      <image:caption>Lush green podium outlook.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/charholi-vs-wagholi-property-investment</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.93</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/charholi-vs-moshi-dudulgaon-real-estate</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.91</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/charholi-vs-dhanori-lohegaon-flats</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/pride-world-city-vs-amanora-magarpatta</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/flats-near-pune-metro-ring-road-charholi</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/2-bhk-flats-under-80-lakhs-pune</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/ready-to-move-flats-in-charholi-pune</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/pride-world-city-emi-stamp-duty-calculator</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.94</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/charholi-ready-reckoner-rate-and-price-trends</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.93</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/charholi-pune-real-estate</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-    <image:image>
-      <image:loc>https://prideworld.city/assets/images/pwc-location-google-map.jpg</image:loc>
-      <image:title>Pride World City Charholi Connectivity Map</image:title>
-      <image:caption>Distances to Airport, Kharadi IT Park &amp; Ring Road.</image:caption>
-      <image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://prideworld.city/faq</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/articles</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/pride-world-city-vs-pune-townships</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/pride-world-city-price-list-cost-sheet-guide</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.92</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/pride-world-city-resale-rental-yield-guide</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/which-cluster-to-buy-pride-world-city</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/charholi-airport-ring-road-infrastructure-report</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/privacy</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.50</priority>
-  </url>
-  <url>
-    <loc>https://prideworld.city/terms</loc>
-    <lastmod>2026-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.50</priority>
-  </url>
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://prideworld.city/</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/pride-world-city-Bird-eye-view.jpeg.bv.webp</image:loc>
+<image:title>Pride World City 400-Acre Master Integrated Township Pune</image:title>
+<image:caption>Bird-eye aerial panorama of Pride World City Charholi Budruk, Pune.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/og-share.jpg</image:loc>
+<image:title>Pride World City Official Master Township Portal</image:title>
+<image:caption>400-Acre integrated metropolis adjacent to D.Y. Patil Knowledge City, Charholi Pune.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Master-Layout-use-this.webp</image:loc>
+<image:title>Pride World City 400-Acre Masterplan Map</image:title>
+<image:caption>Masterplan sectors showing Valencia, Miami, Wellington, Montreal, Boston &amp; Pride Tech Park.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/celebrated-awards.webp</image:loc>
+<image:title>Pride World City Township Awards &amp; Honors</image:title>
+<image:caption>Recognized luxury integrated township excellence in Pune.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-3-1.webp</image:loc>
+<image:title>Pride World City Central Boulevard Visual</image:title>
+<image:caption>Pedestrian-friendly landscaped avenue inside Pride World City.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-4-1.webp</image:loc>
+<image:title>Pride World City Evening Courtyard Lounge</image:title>
+<image:caption>Landscaped twilight social courtyard inside Charholi township.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-8-1.webp</image:loc>
+<image:title>Pride World City Designer Seating Decks</image:title>
+<image:caption>Green sanctuary gardens and architectural lighting.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image><image:loc>https://prideworld.city/assets/images/Home_About_Section.webp</image:loc><image:title>Pride World City 400-Acre Integrated Township Architecture</image:title><image:caption>Township overview visual in Charholi Budruk Pune.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-1-1.webp</image:loc><image:title>Pride World City Central Podium Boulevard</image:title><image:caption>Landscaped avenues inside Pride World City.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-12-1.webp</image:loc><image:title>Pride World City Green Open Greens &amp; Seating</image:title><image:caption>70% open space biodiversity decks.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/BRTS-Bus-Stop.webp</image:loc><image:title>Pride World City Dedicated BRTS Transit Hub</image:title><image:caption>On-campus rapid transit connectivity across Pune.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/5-Star-Hotel.webp</image:loc><image:title>Pride World City Hospitality &amp; Business Hotel Zone</image:title><image:caption>Integrated 5-star business hospitality zone.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/Senior-Citizen-Living.webp</image:loc><image:title>Pride World City Senior Citizen Living Zone</image:title><image:caption>Multi-generational accessible pathways and plazas.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/Fire-Station.webp</image:loc><image:title>Pride World City Fire &amp; Emergency Safety Hub</image:title><image:caption>24/7 internal civic emergency station.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/Fuel-Station.webp</image:loc><image:title>Pride World City Internal Fuel &amp; EV Convenience Station</image:title><image:caption>On-site township mobility station.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/rera-qr.webp</image:loc><image:title>Pride World City MahaRERA Verification QR Code</image:title><image:caption>Official statutory verification QR reference.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image></url>
+<url>
+<loc>https://prideworld.city/valencia</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.98</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Twilight-Valencia-Apartment-Launch-Banner.webp.bv.webp</image:loc>
+<image:title>Pride Valencia 2 &amp; 3 BHK Sun-Side Homes Charholi</image:title>
+<image:caption>Twilight elevation of Pride Valencia New Launch towers (G+28).</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Valencia-Homes-Sunset-Launch-Banner.webp</image:loc>
+<image:title>Pride Valencia Sunset Architectural Render</image:title>
+<image:caption>100% East-West orientation homes across 5.9 acres.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Valencia-Teaser_CROSSWIND_Desktop.jpg</image:loc>
+<image:title>Pride Valencia Cross-Ventilation Engineering</image:title>
+<image:caption>Passive solar &amp; cross-breeze tower spacing at Pride Valencia.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/valencia-carousel-1.webp</image:loc>
+<image:title>Pride Valencia Biodiversity Podium</image:title>
+<image:caption>Car-free podium greens, butterfly park and pickleball court.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Say-Hola-to-Valencia-A-New-Chapter-at-Pride-World-City.webp</image:loc>
+<image:title>Say Hola to Pride Valencia</image:title>
+<image:caption>New chapter luxury 2 &amp; 3 BHK residences in Charholi Pune.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Enscape_2024-10-16-15-20-22_kitchen-1-1.webp</image:loc>
+<image:title>Pride Valencia Modular Designer Kitchen Visual</image:title>
+<image:caption>Modern ergonomic kitchen layout visual.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Enscape_2024-10-16-16-55-53_guest-2-1.webp</image:loc>
+<image:title>Pride Valencia Guest Bedroom Interior Concept</image:title>
+<image:caption>Sunlit spacious bedroom interior aesthetic.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image><image:loc>https://prideworld.city/assets/images/05-original.webp</image:loc><image:title>Pride Valencia Resort Pool &amp; Kids Splash Deck</image:title><image:caption>Lap pool and landscaped lounger deck at Valencia.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/06-original.webp</image:loc><image:title>Pride Valencia Pickleball &amp; Open-Air Fitness Court</image:title><image:caption>Multi-sport courts and open gym inside Valencia.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/07-original.webp</image:loc><image:title>Pride Valencia Adventure Kids Play Lawn</image:title><image:caption>Dedicated safe adventure play park for children.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/08-original.webp</image:loc><image:title>Pride Valencia Amphitheater &amp; Party Banquet Lawn</image:title><image:caption>Community social celebration plaza at Valencia.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/09-original.webp</image:loc><image:title>Pride Valencia Forest Trail &amp; Butterfly Garden</image:title><image:caption>Botanical walking trail inside Valencia enclave.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/11-original.png</image:loc><image:title>Pride Valencia 5.9-Acre Sector Master Plan</image:title><image:caption>Sun-side 5-tower placement blueprint for Valencia.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/10-original.webp.bv.webp</image:loc><image:title>Pride Valencia 100% East-West Architectural Sky Deck</image:title><image:caption>East-West sunlight &amp; cross-ventilation orientation.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/food-and-cafe-near-pwc-1536x895-1.webp</image:loc><image:title>Lifestyle Cafes &amp; Dining Near Pride Valencia</image:title><image:caption>Evening dining promenade inside Pride World City.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/pet-park-and-senior-citizen-area-pwc.webp.bv.webp</image:loc><image:title>Pride Valencia Pet Park &amp; Senior Citizen Plaza</image:title><image:caption>Pet agility zone and peaceful senior deck.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image></url>
+<url>
+<loc>https://prideworld.city/miami</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.95</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/miami-desktop-banner.webp</image:loc>
+<image:title>Pride Miami Waterfront 2, 3 &amp; 4.5 BHK Residences</image:title>
+<image:caption>Art-Deco skyline facade at Pride Miami Charholi.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Pride_Miami-Master-Layout_01Final.webp</image:loc>
+<image:title>Pride Miami 9-Tower Waterfront Master Layout</image:title>
+<image:caption>Detailed tower layout of Pride Miami waterfront cluster.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Miami-Final-Cam_05-Amenity.webp</image:loc>
+<image:title>Pride Miami Waterfront Lagoon Amenity Deck</image:title>
+<image:caption>Miami themed aquatic deck and resort leisure zones.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Miami-Final-Cam_06-Amenity.webp</image:loc>
+<image:title>Pride Miami Podium Swimming Pool &amp; Cabanas</image:title>
+<image:caption>Luxury poolside decks at Pride Miami.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Miami-Final-Cam_09-Amenity.webp</image:loc>
+<image:title>Pride Miami Art Deco Grand Arrival Pavilion</image:title>
+<image:caption>Illuminated entrance plaza at Pride Miami.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Miami-Final-Cam_10-Amenity-1.webp</image:loc>
+<image:title>Pride Miami Landscaped Garden Walkways</image:title>
+<image:caption>Evening garden paths and waterfront decks.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Miami-Final-Cam_11-Amenity.webp</image:loc>
+<image:title>Pride Miami Sky Deck &amp; Clubhouse Facade</image:title>
+<image:caption>Architectural details of Miami lifestyle clubhouse.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Miami-plan1.jpg</image:loc>
+<image:title>Pride Miami Unit Floor Plan Variant 1</image:title>
+<image:caption>Verified Miami residence floor plan configuration.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Miami-plan2.jpg</image:loc>
+<image:title>Pride Miami Unit Floor Plan Variant 2</image:title>
+<image:caption>Efficient carpet plan for Miami waterfront living.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Miami-plan3.jpg</image:loc>
+<image:title>Pride Miami Unit Floor Plan Variant 3</image:title>
+<image:caption>3 BHK spacious residence layout at Pride Miami.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Miami-plan4.jpg</image:loc>
+<image:title>Pride Miami Unit Floor Plan Variant 4</image:title>
+<image:caption>Large luxury residence layout at Pride Miami.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Miami-plan5.jpg</image:loc>
+<image:title>Pride Miami Unit Floor Plan Variant 5</image:title>
+<image:caption>Corner sky residence floor plan at Pride Miami.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Miami-plan6.jpg</image:loc>
+<image:title>Pride Miami Unit Floor Plan Variant 6</image:title>
+<image:caption>Penthouse/4.5 BHK layout variant at Pride Miami.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image><image:loc>https://prideworld.city/assets/images/Miami-1.webp</image:loc><image:title>Pride Miami Waterfront Towers Perspective</image:title><image:caption>Art-Deco waterfront elevation at Pride Miami.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/Miami-Final-Cam_01-Amenity-2.webp</image:loc><image:title>Pride Miami Clubhouse Poolside Pavilion</image:title><image:caption>Palm-lined clubhouse leisure deck at Pride Miami.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image></url>
+<url>
+<loc>https://prideworld.city/wellington</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.95</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/wellington-overview.jpg</image:loc>
+<image:title>Pride Wellington 7-Acre Lakefront Podium Overview</image:title>
+<image:caption>14 resort towers overlooking 7-acre central lake.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/wellington-homepage-desktop-banner.webp</image:loc>
+<image:title>Pride Wellington Lakeside Skyline Banner</image:title>
+<image:caption>Resort-style waterfront 2 &amp; 3 BHK residences.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/W-enquiry-frm.jpg</image:loc>
+<image:title>Pride Wellington Club &amp; Lounge Elevation</image:title>
+<image:caption>Wellington concierge arrival zone.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image><image:loc>https://prideworld.city/assets/images/Wellington-Master-Layout.jpg.bv.webp</image:loc><image:title>Pride Wellington 14-Tower Master Layout Map</image:title><image:caption>Complete 7-acre podium cluster plan of Wellington.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/3-BHK-L.png</image:loc><image:title>Pride Wellington 3 BHK Large Floor Plan</image:title><image:caption>Spacious lakefront 3 BHK residence blueprint.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/3-BHK-XL.png</image:loc><image:title>Pride Wellington 3 BHK XL Grand Floor Plan</image:title><image:caption>1,420 sq.ft carpet luxury floor plan at Wellington.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image></url>
+<url>
+<loc>https://prideworld.city/montreal</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.95</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/montreal-hero-banner.webp</image:loc>
+<image:title>Pride Montreal Smart Tech &amp; 4 BHK Duplexes</image:title>
+<image:caption>European inspired facade of Pride Montreal.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/montreal-desktop-homepage-banner.webp</image:loc>
+<image:title>Pride Montreal Urban Smart Enclave</image:title>
+<image:caption>Smart-home automation apartments in Charholi Pune.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/2-BHK-Montreal.jpg</image:loc>
+<image:title>Pride Montreal 2 BHK Floor Plan</image:title>
+<image:caption>2 BHK smart floor plan layout at Pride Montreal.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/3BHK-montreal.jpg</image:loc>
+<image:title>Pride Montreal 3 BHK Floor Plan</image:title>
+<image:caption>3 BHK spacious floor plan layout at Pride Montreal.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/montreal-swimming-pool.webp</image:loc>
+<image:title>Pride Montreal Resort Swimming Pool</image:title>
+<image:caption>Infinity pool deck and deck loungers at Montreal.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/montreal-outdoor-garden.webp</image:loc>
+<image:title>Pride Montreal Botanical Podium Gardens</image:title>
+<image:caption>Car-free landscaped garden zone at Montreal.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/montreal-ourdoor-play-area.webp</image:loc>
+<image:title>Pride Montreal Children Outdoor Arena</image:title>
+<image:caption>Safe dedicated kids recreational playground.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/kids-play-area-montreal.webp</image:loc>
+<image:title>Pride Montreal Family Activity Zone</image:title>
+<image:caption>Multi-age children adventure zone at Montreal.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image><image:loc>https://prideworld.city/assets/images/Montreal-Master-Layout-0.webp.bv.webp</image:loc><image:title>Pride Montreal 8-Tower Smart Cluster Plan</image:title><image:caption>Site layout for smart tech towers &amp; duplexes.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/MONTREAL-ABCD.png</image:loc><image:title>Pride Montreal Towers A B C D Footprint</image:title><image:caption>MahaRERA registered floor layout wings A-D.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/MONTREAL-EH.png</image:loc><image:title>Pride Montreal Towers E H Footprint</image:title><image:caption>Smart tech wings E-H architectural blueprint.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image></url>
+<url>
+<loc>https://prideworld.city/boston</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.95</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/boston-desktop-homepage-banner.webp</image:loc>
+<image:title>Pride Boston Central 2X Advantage 2 BHK</image:title>
+<image:caption>Two balconies &amp; two clubhouses at Boston Central.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Pride_Boston_Cam_01Final.webp</image:loc>
+<image:title>Pride Boston Central Tower Facade</image:title>
+<image:caption>Architectural exterior elevation of Boston Central.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/2-BHK-S-Boston.jpg</image:loc>
+<image:title>Pride Boston 2 BHK Smart Floor Plan</image:title>
+<image:caption>Efficient 2 BHK dual-balcony plan S variant.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/2-BHK-L-Boston.jpg</image:loc>
+<image:title>Pride Boston 2 BHK Large Floor Plan</image:title>
+<image:caption>Spacious 2 BHK dual-balcony plan L variant.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/BOSTON-A-B-C-P52100049648.webp</image:loc>
+<image:title>Pride Boston Wings A B C Master Plan</image:title>
+<image:caption>RERA P52100049648 tower footprint.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://prideworld.city/kingsbury</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Scene_01_aerial-view.webp</image:loc>
+<image:title>Pride Kingsbury Ready High-Rise Towers</image:title>
+<image:caption>Delivered Kingsbury high-rise skyline in Pride World City.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Scene_01_aerial-view-2.webp</image:loc>
+<image:title>Pride Kingsbury Township Panorama</image:title>
+<image:caption>Aerial view across completed Kingsbury courtyard.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Scene_03_-childrens-play-area-1.webp</image:loc>
+<image:title>Pride Kingsbury Family Play Arena</image:title>
+<image:caption>Operational kids play lawn inside Kingsbury.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Scene_05_play-area-gazebo-1.webp</image:loc>
+<image:title>Pride Kingsbury Senior Gazebo &amp; Park</image:title>
+<image:caption>Shaded landscaped seating gazebos for families.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Scene_06_cricket-ground-1.webp</image:loc>
+<image:title>Pride Kingsbury Multi-Sport Turf</image:title>
+<image:caption>Outdoor sports cricket &amp; play arena.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://prideworld.city/brooklyn</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.90</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Cam_12Final.jpg</image:loc>
+<image:title>Pride Brooklyn Ready 1 &amp; 2 BHK Residences</image:title>
+<image:caption>High-yield urban ready community at Brooklyn.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://prideworld.city/manhattan</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.90</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Cam_07Final.jpg</image:loc>
+<image:title>Pride Manhattan 2 &amp; 3 BHK Residences</image:title>
+<image:caption>Cosmopolitan delivered residential cluster.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://prideworld.city/atlantic</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.90</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Cam_21Final.jpg</image:loc>
+<image:title>Pride Atlantic Scenic High-Rise</image:title>
+<image:caption>Modern high-rise cluster overlooking greens.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Cam_22Final.jpg</image:loc>
+<image:title>Pride Atlantic Podium Elevation</image:title>
+<image:caption>Architectural podium view of Pride Atlantic.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://prideworld.city/notting-hill</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Cam_03Final.jpg</image:loc>
+<image:title>Pride Notting Hill British Manors</image:title>
+<image:caption>Boutique low-density villas and pool duplexes.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Elevation_Cam_18.jpg</image:loc>
+<image:title>Pride Notting Hill Estate Architecture</image:title>
+<image:caption>Low-rise heritage facade in North Pune.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://prideworld.city/long-island</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Cam_11_EveningFinal.jpg</image:loc>
+<image:title>Pride Long Island Sky Villas</image:title>
+<image:caption>Presidential triple-tower skyline elevation.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://prideworld.city/soho</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.90</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Cam_13_EveningFinal.jpg</image:loc>
+<image:title>Pride SoHo Live-Work Studios</image:title>
+<image:caption>Dual-zoned residential and creator studio towers.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Cam_25_EveningFinal.jpg</image:loc>
+<image:title>Pride SoHo Evening Arrival Courtyard</image:title>
+<image:caption>Illuminated arrival zone at Pride SoHo.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://prideworld.city/pride-tech-park</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Upcoming_business_techpark.webp</image:loc>
+<image:title>Pride Tech Park Commercial Hub</image:title>
+<image:caption>Grade-A IT Park &amp; corporate offices inside Pride World City.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Coming_soon_IT-Building.webp</image:loc>
+<image:title>Pride Tech Park Commercial Tower</image:title>
+<image:caption>Modern commercial IT building elevation.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Upcoming_mall_multiplex.webp</image:loc>
+<image:title>Pride World City Mall &amp; Multiplex Zone</image:title>
+<image:caption>Upcoming destination retail and entertainment hub.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image><image:loc>https://prideworld.city/assets/images/IT-Building.webp</image:loc><image:title>Pride Tech Park Grade-A Commercial IT Building</image:title><image:caption>Walk-to-work corporate office tower inside township.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/Business-and-Tech-Park.webp</image:loc><image:title>Pride Business &amp; Tech Park Master Complex</image:title><image:caption>Integrated commercial enterprise hub in Charholi Pune.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image></url>
+<url>
+<loc>https://prideworld.city/2-bhk-flats-in-charholi-pune</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.96</priority>
+</url>
+<url>
+<loc>https://prideworld.city/3-bhk-flats-in-charholi-pune</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.96</priority>
+</url>
+<url>
+<loc>https://prideworld.city/duplex-and-4-bhk-homes-pune</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.94</priority>
+</url>
+<url>
+<loc>https://prideworld.city/1-bhk-flats-in-charholi-pune</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.94</priority>
+</url>
+<url>
+<loc>https://prideworld.city/flats-in-lohegaon-dhanori-pune</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.95</priority>
+</url>
+<url>
+<loc>https://prideworld.city/flats-near-pune-airport-viman-nagar</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.95</priority>
+</url>
+<url>
+<loc>https://prideworld.city/flats-near-kharadi-eon-it-park</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.95</priority>
+</url>
+<url>
+<loc>https://prideworld.city/nri-real-estate-investment-pune</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+</url>
+<url>
+<loc>https://prideworld.city/global-indian-international-school-pride-world-city</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Coming_soon_school.webp</image:loc>
+<image:title>Global Indian International School Charholi</image:title>
+<image:caption>Operational K-12 campus inside Pride World City.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image><image:loc>https://prideworld.city/assets/images/School.webp</image:loc><image:title>Global Indian International School (GIIS) Campus</image:title><image:caption>Operational Cambridge &amp; CBSE K-12 campus inside gates.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/Learning-Academy.webp</image:loc><image:title>Township Education &amp; Learning Hub</image:title><image:caption>Academic institutions inside Pride World City.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image></url>
+<url>
+<loc>https://prideworld.city/club-royale-and-7-acre-lake-charholi</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Completed_Club_charholi.webp</image:loc>
+<image:title>Club Royale Clubhouse &amp; Waterfront Pool</image:title>
+<image:caption>50,000 sq.ft luxury lifestyle club at Charholi.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/amenities.jpg</image:loc>
+<image:title>Pride World City Master Township Amenities</image:title>
+<image:caption>Resort-grade leisure amenities collage.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image><image:loc>https://prideworld.city/assets/images/Club-Charholi.webp</image:loc><image:title>Club Royale / Club Charholi 50,000 Sq.Ft Recreation</image:title><image:caption>Flagship clubhouse and wellness amenities in Charholi.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image></url>
+<url>
+<loc>https://prideworld.city/town-plaza-and-hospital-charholi</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Completed_townplaza.webp</image:loc>
+<image:title>Town Plaza High-Street Retail Charholi</image:title>
+<image:caption>Operational retail strip inside Pride World City.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image><image:loc>https://prideworld.city/assets/images/Town-Plaza.webp</image:loc><image:title>Town Plaza High-Street Retail Destination</image:title><image:caption>Daily retail boulevard inside Pride World City.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/Multispeciality-Hospital.webp</image:loc><image:title>Planned 100-Bed Multispeciality Hospital Hub</image:title><image:caption>Dedicated healthcare &amp; medical care zone in township.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/Mall-Multiplex.webp</image:loc><image:title>Township Mall &amp; Multiplex Retail Precinct</image:title><image:caption>Upcoming family entertainment &amp; luxury shopping center.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image></url>
+<url>
+<loc>https://prideworld.city/pride-world-city-maharera-possession-status</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.96</priority>
+</url>
+<url>
+<loc>https://prideworld.city/dy-patil-knowledge-city-charholi-flats</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.91</priority>
+</url>
+<url>
+<loc>https://prideworld.city/pride-world-city-sample-flat-virtual-tour</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Enscape_2024-10-16-16-46-05_GUEST-1-1.webp</image:loc>
+<image:title>Sample Flat Living Lounge Render</image:title>
+<image:caption>Natural light &amp; designer interior finishes.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-17-1.webp</image:loc>
+<image:title>Sample Residence Twilight Patio</image:title>
+<image:caption>Private balcony view at dusk.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-18-1.webp</image:loc>
+<image:title>Township Podium Promenade Interior View</image:title>
+<image:caption>Lush green podium outlook.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://prideworld.city/charholi-vs-wagholi-property-investment</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.93</priority>
+</url>
+<url>
+<loc>https://prideworld.city/charholi-vs-moshi-dudulgaon-real-estate</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.91</priority>
+</url>
+<url>
+<loc>https://prideworld.city/charholi-vs-dhanori-lohegaon-flats</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+</url>
+<url>
+<loc>https://prideworld.city/pride-world-city-vs-amanora-magarpatta</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+</url>
+<url>
+<loc>https://prideworld.city/flats-near-pune-metro-ring-road-charholi</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+</url>
+<url>
+<loc>https://prideworld.city/2-bhk-flats-under-80-lakhs-pune</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.95</priority>
+</url>
+<url>
+<loc>https://prideworld.city/ready-to-move-flats-in-charholi-pune</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.95</priority>
+</url>
+<url>
+<loc>https://prideworld.city/pride-world-city-emi-stamp-duty-calculator</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.94</priority>
+</url>
+<url>
+<loc>https://prideworld.city/charholi-ready-reckoner-rate-and-price-trends</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.93</priority>
+</url>
+<url>
+<loc>https://prideworld.city/charholi-pune-real-estate</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.95</priority>
+<image:image>
+<image:loc>https://prideworld.city/assets/images/pwc-location-google-map.jpg</image:loc>
+<image:title>Pride World City Charholi Connectivity Map</image:title>
+<image:caption>Distances to Airport, Kharadi IT Park &amp; Ring Road.</image:caption>
+<image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location>
+</image:image>
+</url>
+<url>
+<loc>https://prideworld.city/faq</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.95</priority>
+</url>
+<url>
+<loc>https://prideworld.city/articles</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+</url>
+<url>
+<loc>https://prideworld.city/pride-world-city-vs-pune-townships</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://prideworld.city/pride-world-city-price-list-cost-sheet-guide</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.92</priority>
+</url>
+<url>
+<loc>https://prideworld.city/pride-world-city-resale-rental-yield-guide</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.88</priority>
+</url>
+<url>
+<loc>https://prideworld.city/which-cluster-to-buy-pride-world-city</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.88</priority>
+</url>
+<url>
+<loc>https://prideworld.city/charholi-airport-ring-road-infrastructure-report</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.88</priority>
+</url>
+<url>
+<loc>https://prideworld.city/privacy</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://prideworld.city/terms</loc>
+<lastmod>2026-11-27</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.50</priority>
+</url>
+<url><loc>https://prideworld.city/pride-world-city-master-plan-floor-plans</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq><priority>0.96</priority>
+    <image:image><image:loc>https://prideworld.city/assets/images/2-BHK-S-Boston.jpg.bv.webp</image:loc><image:title>Pride World City 2 BHK Compact Floor Plan</image:title><image:caption>Rectangular efficient 2 BHK apartment diagram.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image>
+    <image:image><image:loc>https://prideworld.city/assets/images/2-BHK-L-Boston.jpg.bv.webp</image:loc><image:title>Pride World City 2 BHK Spacious Floor Plan</image:title><image:caption>Large 2 BHK layout with utility &amp; sundeck balconies.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image></url>
+  <url><loc>https://prideworld.city/pride-world-city-reviews-owner-feedback</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://prideworld.city/flats-near-bhosari-chakan-midc-charholi</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq><priority>0.92</priority></url>
+  <url><loc>https://prideworld.city/pune-township-investment-roi-guide</loc><lastmod>2026-11-27</lastmod><changefreq>weekly</changefreq><priority>0.93</priority>
+    <image:image><image:loc>https://prideworld.city/assets/images/lifestyle-desktop-image.webp.bv.webp</image:loc><image:title>Integrated Township Lifestyle &amp; ROI Perspective</image:title><image:caption>High-yield 400-acre urban living in North Pune.</image:caption><image:geo_location>Charholi Budruk, Pune, Maharashtra, India</image:geo_location></image:image></url>
 </urlset>

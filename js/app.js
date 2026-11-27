@@ -65,13 +65,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.getElementById("navLinks");
   if (mobileMenuBtn && navLinks && !mobileMenuBtn.dataset.bound) {
     mobileMenuBtn.dataset.bound = "1";
+    mobileMenuBtn.setAttribute("aria-expanded", "false");
+    mobileMenuBtn.setAttribute("aria-controls", "navLinks");
     mobileMenuBtn.addEventListener("click", () => {
-      navLinks.classList.toggle("mobile-open");
+      const isOpen = navLinks.classList.toggle("mobile-open");
+      mobileMenuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
 
     navLinks.querySelectorAll(".nav-link").forEach(link => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("mobile-open");
+        mobileMenuBtn.setAttribute("aria-expanded", "false");
       });
     });
   }

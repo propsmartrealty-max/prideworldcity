@@ -1,6 +1,6 @@
-# Pride World City — Official 400-Acre Integrated Mega Township (Charholi Budruk, Pune)
+# Pride World City — Official 400-Acre Integrated Mega Township (Charholi Budruk / Charoli, Pune)
 
-> Pride World City is a 400-acre integrated mega township developed by Pride Group in Charholi Budruk, North Pune, Maharashtra, India. Situated 10 minutes (4.8 km) from Pune International Airport and 18 minutes (11 km) from Kharadi EON IT Park, it spans 5+ million sq. ft. of completed development and 8+ million sq. ft. under construction, home to 10,000+ families.
+> Pride World City (also searched as Pride City Charholi, Pride World City Charoli, Charohli, or PWC Charholi, PIN 412105) is a 400-acre integrated mega township developed by Pride Group in Charholi Budruk, North Pune, Maharashtra, India. Situated 10 minutes (4.8 km) from Pune International Airport and 18 minutes (11 km) from Kharadi EON IT Park, it spans 5+ million sq. ft. of completed development and 8+ million sq. ft. under construction, home to 10,000+ families.
 
 ## Primary Links & Complete Silo Pages
 - **Complete AI Grounding Context (`llms-full.txt`):** https://prideworld.city/llms-full.txt
@@ -8,6 +8,8 @@
 - **Live Queryable Facts API (`/api/facts`):** https://prideworld.city/api/facts
 - **AI Crawler Policy (`ai.txt`):** https://prideworld.city/ai.txt
 - **Master Township Portal:** https://prideworld.city/
+- **Master Plan, 1–4.5 BHK Floor Plans & Brochure:** https://prideworld.city/pride-world-city-master-plan-floor-plans
+- **2026 Resident Reviews, Pros & Cons & Reality Audit:** https://prideworld.city/pride-world-city-reviews-owner-feedback
 - **Pride Valencia (New Launch Sun-Side 2 & 3 BHK):** https://prideworld.city/valencia
 - **Pride Miami (Waterfront 2, 3 & 4.5 BHK):** https://prideworld.city/miami
 - **Pride Wellington (Lakefront 2 & 3 BHK, 7-Acre Podium):** https://prideworld.city/wellington
@@ -74,4 +76,4 @@
 - **GIIS School & Township Campus:** https://prideworld.city/global-indian-international-school-pride-world-city
 - **Club Royale & 7-Acre Lake:** https://prideworld.city/club-royale-and-7-acre-lake-charholi
 - **Town Plaza Retail & Hospital:** https://prideworld.city/town-plaza-and-hospital-charholi
-- **Corridor & Budget Comparisons:** `/charholi-vs-wagholi-property-investment`, `/charholi-vs-moshi-dudulgaon-real-estate`, `/charholi-vs-dhanori-lohegaon-flats`, `/pride-world-city-vs-amanora-magarpatta`, `/2-bhk-flats-under-80-lakhs-pune`, `/ready-to-move-flats-in-charholi-pune`, `/flats-near-pune-metro-ring-road-charholi`, `/dy-patil-knowledge-city-charholi-flats`, `/pride-world-city-sample-flat-virtual-tour`
+- **Corridor & Budget Comparisons:** `/charholi-vs-wagholi-property-investment`, `/charholi-vs-moshi-dudulgaon-real-estate`, `/charholi-vs-dhanori-lohegaon-flats`, `/pride-world-city-vs-amanora-magarpatta`, `/2-bhk-flats-under-80-lakhs-pune`, `/ready-to-move-flats-in-charholi-pune`, `/flats-near-pune-metro-ring-road-charholi`, `/flats-near-bhosari-chakan-midc-charholi`, `/dy-patil-knowledge-city-charholi-flats`, `/pride-world-city-sample-flat-virtual-tour`, `/pune-township-investment-roi-guide`

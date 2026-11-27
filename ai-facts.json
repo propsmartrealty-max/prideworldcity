@@ -1,10 +1,30 @@
 {
-  "schemaVersion": "2026-11-25",
+  "schemaVersion": "2026-11-27",
   "canonicalUrl": "https://prideworld.city/",
   "entity": {
     "name": "Pride World City",
+    "alternateNames": [
+      "Pride World City Pune",
+      "Pride World City Charholi",
+      "Pride World City Charoli",
+      "Pride World City Charohli",
+      "Pride City Charholi Budruk",
+      "PWC Charholi",
+      "Pride Group Charholi Township"
+    ],
+    "localityAliases": [
+      "Charholi",
+      "Charoli",
+      "Charohli",
+      "Charholi Budruk",
+      "Charoli Budruk",
+      "Charholi Bk",
+      "Alankapuram Road Charholi",
+      "412105"
+    ],
+    "postalCode": "412105",
     "developer": "Pride Group",
-    "tagline": "The 400-Acre Global Metropolis in Charholi, Pune",
+    "tagline": "The 400-Acre Global Metropolis in Charholi (Charoli), Pune",
     "location": "Pride World City, Adjacent to D.Y. Patil Knowledge City, Charholi Budruk, Pune - 412105, Maharashtra, India",
     "coordinates": {
       "latitude": 18.6366,
@@ -341,11 +361,28 @@
     ]
   },
   "tools": {
+    "masterPlanAndFloorPlans": "https://prideworld.city/pride-world-city-master-plan-floor-plans",
+    "reviewsAndOwnershipAudit": "https://prideworld.city/pride-world-city-reviews-owner-feedback",
+    "bhosariChakanCorridor": "https://prideworld.city/flats-near-bhosari-chakan-midc-charholi",
+    "puneInvestmentRoiGuide": "https://prideworld.city/pune-township-investment-roi-guide",
     "emiAndStampDutyCalculator": "https://prideworld.city/pride-world-city-emi-stamp-duty-calculator",
     "mahareraTracker": "https://prideworld.city/pride-world-city-maharera-possession-status",
     "priceTrendsDataset": "https://prideworld.city/charholi-ready-reckoner-rate-and-price-trends",
     "faqEncyclopedia": "https://prideworld.city/faq",
+    "searchDirectory": "https://prideworld.city/articles",
     "sitemap": "https://prideworld.city/sitemap.xml",
     "llmsFull": "https://prideworld.city/llms-full.txt"
-  }
+  },
+  "guidesAndTools": [
+    { "title": "Master Plan, 1-4.5 BHK Floor Plans & Brochure", "topics": "master plan brochure floor plan layout map charholi charoli", "url": "https://prideworld.city/pride-world-city-master-plan-floor-plans" },
+    { "title": "Charholi Reviews, Pros & Cons & Reality Check [2026]", "topics": "reviews owner feedback complaints water construction quality pros cons", "url": "https://prideworld.city/pride-world-city-reviews-owner-feedback" },
+    { "title": "Flats Near Bhosari & Chakan MIDC in Charholi", "topics": "bhosari chakan midc alandi alankapuram moshi pcmc charoli", "url": "https://prideworld.city/flats-near-bhosari-chakan-midc-charholi" },
+    { "title": "Best Real Estate Investment in Pune 2026 ROI Guide", "topics": "best investment pune roi rental yield baner hinjawadi kharadi charholi", "url": "https://prideworld.city/pune-township-investment-roi-guide" },
+    { "title": "2026 Price List, Cost Sheet & Payment Plan Guide", "topics": "price list cost sheet stamp duty gst payment plan token", "url": "https://prideworld.city/pride-world-city-price-list-cost-sheet-guide" },
+    { "title": "Complete 12-Cluster MahaRERA List & Possession Matrix", "topics": "maharera rera numbers possession dates ready under construction", "url": "https://prideworld.city/pride-world-city-maharera-possession-status" },
+    { "title": "Pune Stamp Duty (6% Female), GST & EMI Calculator", "topics": "calculator emi stamp duty female rebate home loan", "url": "https://prideworld.city/pride-world-city-emi-stamp-duty-calculator" },
+    { "title": "Resale Flats, Ready Possession & 4.8-6% Rental Yield", "topics": "resale ready possession zero gst rent yield kingsbury brooklyn", "url": "https://prideworld.city/pride-world-city-resale-rental-yield-guide" },
+    { "title": "Which Cluster Should You Buy? Buyer Decision Matrix", "topics": "valencia vs miami vs wellington vs montreal comparison cluster choice", "url": "https://prideworld.city/which-cluster-to-buy-pride-world-city" },
+    { "title": "Charholi Budruk & North Pune Market Report [412105]", "topics": "charholi charoli charohli north pune market report 412105", "url": "https://prideworld.city/charholi-pune-real-estate" }
+  ]
 }

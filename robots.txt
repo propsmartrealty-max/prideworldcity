@@ -94,6 +94,11 @@ Allow: /pride-world-city-emi-stamp-duty-calculator
 Allow: /charholi-ready-reckoner-rate-and-price-trends
 Allow: /faq
 Allow: /articles
+Allow: /pride-world-city-master-plan-floor-plans
+Allow: /pride-world-city-reviews-owner-feedback
+Allow: /flats-near-bhosari-chakan-midc-charholi
+Allow: /pune-township-investment-roi-guide
+Allow: /opensearch.xml
 Allow: /sitemap.xml
 
 # 3. General Public Bots

@@ -1,5 +1,5 @@
 /* Pride World City PWA Service Worker — Edge-First Cache Strategy */
-const CACHE_NAME = "pwc-shell-v4";
+const CACHE_NAME = "pwc-shell-v5";
 const SHELL_ASSETS = [
   "/",
   "/css/style.css",

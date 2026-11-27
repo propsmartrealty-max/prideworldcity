@@ -37,9 +37,11 @@ class ClusterManager {
       return `
       <div class="cluster-card" data-id="${c.id}">
         <div class="cluster-card-media">
-          <img src="${c.image}" alt="${c.name} - Pride World City" loading="lazy"/>
-          <span class="cluster-badge">${c.badge}</span>
-          <span class="cluster-status-pill"><i class="fa-solid fa-clock"></i> ${c.status.split('/')[0]}</span>
+          <img src="${c.image}" alt="${c.name} - Pride World City Charholi Pune" loading="lazy"/>
+          <div class="cluster-card-top-meta">
+            <span class="cluster-badge">${c.badge}</span>
+            <span class="cluster-status-pill"><i class="fa-solid fa-clock"></i> ${c.status.split('/')[0]}</span>
+          </div>
           <div class="cluster-price-overlay">
             <div>
               <div class="price-title">Starting Price</div>

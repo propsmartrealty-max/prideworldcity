@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Pride World City</ShortName>
+  <Description>Search Pride World City Pune, Charholi (Charoli / Charohli) clusters, floor plans, MahaRERA IDs, pricing, and market guides.</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="192" height="192" type="image/png">https://prideworld.city/assets/images/favicon-192.png</Image>
+  <Url type="text/html" method="get" template="https://prideworld.city/articles?q={searchTerms}" />
+  <Url type="application/json" method="get" template="https://prideworld.city/api/facts?q={searchTerms}" />
+</OpenSearchDescription>

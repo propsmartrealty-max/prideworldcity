@@ -197,11 +197,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinksEl = document.getElementById("navLinks");
   if (menuBtn && navLinksEl && !menuBtn.dataset.bound) {
     menuBtn.dataset.bound = "1";
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.setAttribute("aria-controls", "navLinks");
     menuBtn.addEventListener("click", () => {
-      navLinksEl.classList.toggle("mobile-open");
+      const isOpen = navLinksEl.classList.toggle("mobile-open");
+      menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
     navLinksEl.querySelectorAll(".nav-link").forEach((lnk) => {
-      lnk.addEventListener("click", () => navLinksEl.classList.remove("mobile-open"));
+      lnk.addEventListener("click", () => {
+        navLinksEl.classList.remove("mobile-open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
     });
   }
 

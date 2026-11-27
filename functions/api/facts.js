@@ -37,18 +37,27 @@ export async function onRequestGet(context) {
     let payload = facts;
 
     if (query) {
+      const normalizedQ = query
+        .replace(/charohli|charoli/g, "charholi")
+        .replace(/\bpwc\b/g, "pride world city")
+        .trim();
       const matchedClusters = (facts.clusters || []).filter((c) =>
-        `${c.id} ${c.name} ${c.maharera} ${c.tagline} ${(c.configurations || []).join(" ")}`.toLowerCase().includes(query)
+        `${c.id} ${c.name} ${c.maharera} ${c.tagline} ${(c.configurations || []).join(" ")}`.toLowerCase().includes(normalizedQ)
       );
       const matchedEcosystem = (facts.ecosystem || []).filter((e) =>
-        `${e.name} ${e.specs || ""} ${e.status || ""}`.toLowerCase().includes(query)
+        `${e.name} ${e.specs || ""} ${e.status || ""}`.toLowerCase().includes(normalizedQ)
+      );
+      const matchedGuides = (facts.guidesAndTools || []).filter((g) =>
+        `${g.title} ${g.topics || ""} ${g.url}`.toLowerCase().includes(normalizedQ)
       );
       payload = {
         query,
+        normalizedQuery: normalizedQ,
         entity: facts.entity,
         contact: facts.contact,
         matchedClusters,
         matchedEcosystem,
+        matchedGuides,
         tools: facts.tools
       };
     } else if (topic === "clusters" || topic === "pricing" || topic === "rera") {

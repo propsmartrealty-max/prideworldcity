@@ -1157,31 +1157,31 @@ const TOWNSHIP_DATA = {
         category: "Swimming pool & Kids Pool",
         tagline: "Hola to making a splash.",
         desc: "A resort lap pool for you, and a safe splash pool for the little ones with sun lounger deck.",
-        image: "assets/images/05-original.png"
+        image: "assets/images/05-original.webp"
       },
       {
         category: "Sports & Fitness",
         tagline: "Hola to staying active.",
         desc: "Jogging Track, Open Gym, Multipurpose Court, and dedicated Pickleball Court.",
-        image: "assets/images/06-original.png"
+        image: "assets/images/06-original.webp"
       },
       {
         category: "Children’s Spaces",
         tagline: "Hola to childhood, well spent.",
         desc: "Kids Play Area with modern adventure equipment, Sandpit, Creche, and soft-play zone.",
-        image: "assets/images/07-original.png"
+        image: "assets/images/07-original.webp"
       },
       {
         category: "Family & Social Spaces",
         tagline: "Hola to celebrations and get-togethers.",
         desc: "Multipurpose Banquet Hall, Party Lawn, Open-Air Amphitheater, and community gazebo.",
-        image: "assets/images/08-original.png"
+        image: "assets/images/08-original.webp"
       },
       {
         category: "Forest Trail & Biodiversity Park",
         tagline: "Hola to nature trails and clean air.",
         desc: "Forest Trail, Biodiversity Eco-Park, Butterfly Garden, and Fruit Orchard inside the enclave.",
-        image: "assets/images/09-original.png"
+        image: "assets/images/09-original.webp"
       },
       {
         category: "Pet Park & Senior Citizen Plaza",
