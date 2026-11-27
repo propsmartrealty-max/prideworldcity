@@ -1,5 +1,5 @@
 /**
- * Pride World City - Creative VIP Experience & Chauffeur Enquiry Modal Controller
+ * Pride World City - Creative VIP Experience & Site Visit Enquiry Modal Controller
  */
 
 (function () {
@@ -170,7 +170,7 @@
     }
 
     const icons = {
-      "Luxury Sedan Chauffeur Pickup": "fa-car-side",
+      "Luxury Sedan Pickup": "fa-car-side",
       "Electric Golf Buggy Tour": "fa-golf-ball-tee",
       "Club Royale Lounge Hospitality": "fa-mug-hot",
       "Instant WhatsApp Cost Sheet & Dossier": "fa-whatsapp",

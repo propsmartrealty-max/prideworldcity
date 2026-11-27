@@ -139,7 +139,7 @@ class PrideConcierge {
         <br/>
         🛣️ <strong>Proposed Ring Road & Metro:</strong> Direct Township Gate Corridor
         <br/><br/>
-        We offer complimentary chauffeur pickup from Pune Airport or your residence!
+        We offer complimentary luxury sedan pickup from Pune Airport or your residence!
       `, "bot");
       return;
     }
@@ -310,7 +310,7 @@ class PrideConcierge {
       this.addMessage(`
         I would be honored to arrange your <strong>VIP Site Experience</strong>!
         <br/><br/>
-        • Executive chauffeur pickup in a luxury sedan from anywhere in Pune / Mumbai
+        • Complimentary executive pickup in a luxury sedan from anywhere in Pune / Mumbai
         <br/>
         • Guided buggy tour across all 400 acres &amp; Club Royale
         <br/>
@@ -335,7 +335,7 @@ class PrideConcierge {
       <br/>
       • Custom payment milestones, MahaRERA certificates &amp; banking home loan pre-approvals
       <br/>
-      • Arranging complimentary chauffeur site pickup from Pune Airport or your residence
+      • Arranging complimentary executive site pickup from Pune Airport or your residence
       <br/><br/>
       How can I tailor your experience today?
     `, "bot");

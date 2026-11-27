@@ -531,7 +531,7 @@ function renderValenciaShowcase(v) {
             <i class="fa-solid fa-file-invoice-dollar"></i> Request Valencia Cost Sheet
           </button>
           <a href="/pride-world-city-vip-site-visit" class="btn valencia-btn-outline" onclick="if(window.openVipExperienceModal){event.preventDefault();selectValenciaCluster();window.openVipExperienceModal('Valencia');}">
-            <i class="fa-solid fa-calendar-check"></i> Book Valencia Chauffeur Tour
+            <i class="fa-solid fa-calendar-check"></i> Book Valencia VIP Tour
           </a>
         </div>
       </div>

@@ -329,7 +329,7 @@ const TOWNSHIP_DATA = {
       features: [
         "Double-height 22-foot Living Salons",
         "Private Plunge Pools in Duplex Variants",
-        "Chauffeur Waiting Quarters & Valet Hub",
+        "Executive Driver Lounge & Valet Hub",
         "Temperature-controlled Wine Cellar Storage",
         "Bespoke Butler & Concierge on Call",
         "English Rose Garden & Sculpted Fountains"
