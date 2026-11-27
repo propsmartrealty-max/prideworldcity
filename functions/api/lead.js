@@ -38,6 +38,8 @@ function buildWhatsappUrl(lead, waDigits = DEFAULT_WHATSAPP_NUMBER) {
 }
 
 async function dispatchEmailNotification(lead, whatsappUrl, env, targetEmail) {
+  let lastDiagnostic = { dispatched: false, provider: "none", status: 0, needsActivation: false, message: "" };
+
   // 1. Primary API delivery via Resend if configured in Cloudflare Pages Secrets
   if (env && env.RESEND_API_KEY) {
     try {
@@ -73,17 +75,48 @@ async function dispatchEmailNotification(lead, whatsappUrl, env, targetEmail) {
           html: `<h3>New Township Enquiry Received</h3><table style="border-collapse:collapse;font-family:sans-serif;font-size:14px;">${htmlRows}</table>`
         })
       });
-      if (res.ok) return { dispatched: true, provider: "resend" };
+      if (res.ok) return { dispatched: true, provider: "resend", status: res.status, needsActivation: false, message: "Sent via Resend" };
+      lastDiagnostic = { dispatched: false, provider: "resend", status: res.status, needsActivation: false, message: await res.text().catch(() => "") };
     } catch (_) {}
   }
 
-  // 2. Built-in zero-key relay via FormSubmit AJAX directly to propsmartrealty@gmail.com
+  // 2. Secondary API delivery via Web3Forms if configured in Cloudflare Pages Secrets
+  if (env && env.WEB3FORMS_ACCESS_KEY) {
+    try {
+      const w3Res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          access_key: env.WEB3FORMS_ACCESS_KEY,
+          subject: `New Pride World City Enquiry (${lead.referenceId}) - ${lead.cluster}`,
+          from_name: "Pride World City Portal",
+          name: lead.name,
+          phone: lead.phone,
+          email: lead.email || targetEmail,
+          cluster: lead.cluster,
+          configuration: lead.typology || "Not specified",
+          budget: lead.budget || "Not specified",
+          preferred_date: lead.preferredDate || "Not specified",
+          time_slot: lead.timeSlot || "Not specified",
+          visitor_location: `${lead.geo.city}, ${lead.geo.country}`,
+          source: lead.source,
+          whatsapp_link: whatsappUrl
+        })
+      });
+      const w3Json = await w3Res.json().catch(() => ({}));
+      if (w3Res.ok && w3Json && w3Json.success) {
+        return { dispatched: true, provider: "web3forms", status: w3Res.status, needsActivation: false, message: "Sent via Web3Forms" };
+      }
+      lastDiagnostic = { dispatched: false, provider: "web3forms", status: w3Res.status, needsActivation: false, message: (w3Json && w3Json.message) || "" };
+    } catch (_) {}
+  }
+
+  // 3. Zero-key relay via FormSubmit AJAX directly to propsmartrealty@gmail.com
   try {
-    const fsPayload = {
+    const fsParams = new URLSearchParams({
       _subject: `New Pride World City Enquiry (${lead.referenceId}) - ${lead.cluster}`,
       _template: "table",
       _captcha: "false",
-      ...(lead.email ? { _replyto: lead.email } : {}),
       Reference_ID: lead.referenceId,
       Full_Name: lead.name,
       Phone: lead.phone,
@@ -95,29 +128,39 @@ async function dispatchEmailNotification(lead, whatsappUrl, env, targetEmail) {
       Time_Slot: lead.timeSlot || "Not specified",
       Visitor_Location: `${lead.geo.city}, ${lead.geo.country}`,
       Source: lead.source,
-      WhatsApp_Followup_Link: whatsappUrl
-    };
+      WhatsApp_Followup: whatsappUrl
+    });
+    if (lead.email) {
+      fsParams.set("_replyto", lead.email);
+    }
 
     const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(targetEmail)}`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/x-www-form-urlencoded",
         "Accept": "application/json",
+        "User-Agent": "Mozilla/5.0 (compatible; PrideWorldCityPortal/2.0; +https://prideworld.city)",
         "Origin": "https://prideworld.city",
         "Referer": "https://prideworld.city/"
       },
-      body: JSON.stringify(fsPayload)
+      body: fsParams.toString()
     });
 
-    if (res.ok) {
-      const json = await res.json().catch(() => ({}));
-      if (json && (json.success === "true" || json.success === true)) {
-        return { dispatched: true, provider: "formsubmit" };
-      }
-    }
-  } catch (_) {}
+    const rawText = await res.text().catch(() => "");
+    let json = {};
+    try { json = JSON.parse(rawText); } catch (_) {}
+    const msg = (json && json.message) || rawText.slice(0, 160);
+    const needsActivation = /activat/i.test(msg);
 
-  return { dispatched: false, provider: "none" };
+    if (res.ok && json && (json.success === "true" || json.success === true)) {
+      return { dispatched: true, provider: "formsubmit", status: res.status, needsActivation: false, message: msg || "Sent via FormSubmit" };
+    }
+    lastDiagnostic = { dispatched: false, provider: "formsubmit", status: res.status, needsActivation, message: msg };
+  } catch (err) {
+    lastDiagnostic = { dispatched: false, provider: "formsubmit_error", status: 0, needsActivation: false, message: String(err && err.message || err).slice(0, 120) };
+  }
+
+  return lastDiagnostic;
 }
 
 export async function onRequestPost(context) {
@@ -272,10 +315,10 @@ export async function onRequestPost(context) {
       );
     }
 
-    // 8. Dispatch Email to propsmartrealty@gmail.com (await briefly so client knows if fallback needed)
+    // 8. Dispatch Email to propsmartrealty@gmail.com (allow up to 6s cleanly before yielding to browser relay)
     const emailResult = await Promise.race([
       dispatchEmailNotification(leadRecord, whatsappUrl, env, notifyEmail),
-      new Promise(resolve => setTimeout(() => resolve({ dispatched: false, provider: "timeout" }), 2500))
+      new Promise(resolve => setTimeout(() => resolve({ dispatched: false, provider: "timeout", status: 0, needsActivation: false, message: "Edge upstream timeout" }), 6000))
     ]);
 
     return new Response(
@@ -285,9 +328,13 @@ export async function onRequestPost(context) {
         notifyEmail,
         emailDispatched: Boolean(emailResult && emailResult.dispatched),
         emailProvider: (emailResult && emailResult.provider) || "none",
+        emailNeedsActivation: Boolean(emailResult && emailResult.needsActivation),
+        emailDiagnostic: (emailResult && emailResult.message) || "",
         whatsappNumber: notifyWhatsapp,
         whatsappUrl,
-        message: `Enquiry logged & forwarded to ${notifyEmail} + WhatsApp +91 77440 09295.`,
+        message: (emailResult && emailResult.dispatched)
+          ? `Enquiry logged & forwarded to ${notifyEmail} + WhatsApp +91 77440 09295.`
+          : `Enquiry logged (client email fallback ready for ${notifyEmail}) + WhatsApp +91 77440 09295.`,
         isNRI: leadRecord.geo.isNRI
       }),
       { status: 200, headers: JSON_HEADERS }

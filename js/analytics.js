@@ -64,39 +64,111 @@ const PrideAnalytics = {
   },
 
   /**
-   * Client-side fallback email dispatch via FormSubmit AJAX directly to propsmartrealty@gmail.com
+   * Build pre-filled mailto URI targeting propsmartrealty@gmail.com as fail-safe fallback
    */
-  async sendClientEmailFallback(leadData, referenceId, whatsappUrl) {
+  buildMailtoUrl(leadData = {}, referenceId = "") {
+    const subject = `Pride World City Enquiry (${referenceId || "PWC"}) - ${leadData.cluster || "Valencia"}`;
+    const bodyLines = [
+      `Reference ID: ${referenceId || "N/A"}`,
+      `Name: ${leadData.name || ""}`,
+      `Phone: ${leadData.phone || ""}`,
+      `Email: ${leadData.email || "Not provided"}`,
+      `Preferred Cluster: ${leadData.cluster || "Valencia"}`,
+      leadData.typology ? `Configuration: ${leadData.typology}` : null,
+      leadData.budget ? `Budget: ${leadData.budget}` : null,
+      leadData.date ? `Preferred Visit Date: ${leadData.date}` : null,
+      leadData.timeSlot ? `Time Slot: ${leadData.timeSlot}` : null,
+      `Source: ${leadData.source || "web_portal"}`
+    ].filter(Boolean);
+    return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
+  },
+
+  /**
+   * Submit via hidden iframe standard FormSubmit POST if fetch AJAX fails CORS/privacy blocks
+   */
+  submitFormIframeFallback(fields) {
     try {
-      const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(CONTACT_EMAIL)}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        keepalive: true,
-        body: JSON.stringify({
-          _subject: `New Pride World City Enquiry (${referenceId}) - ${leadData.cluster || "Valencia"}`,
-          _template: "table",
-          _captcha: "false",
-          ...(leadData.email ? { _replyto: leadData.email } : {}),
-          Reference_ID: referenceId,
-          Full_Name: leadData.name || "",
-          Phone: leadData.phone || "",
-          Email: leadData.email || "Not provided",
-          Cluster: leadData.cluster || "Valencia",
-          Configuration: leadData.typology || "Not specified",
-          Budget: leadData.budget || "Not specified",
-          Preferred_Date: leadData.date || "Not specified",
-          Time_Slot: leadData.timeSlot || "Not specified",
-          Source: leadData.source || "web_portal",
-          WhatsApp_Link: whatsappUrl
-        })
+      let iframe = document.getElementById("pwcFormSubmitFrame");
+      if (!iframe) {
+        iframe = document.createElement("iframe");
+        iframe.id = "pwcFormSubmitFrame";
+        iframe.name = "pwcFormSubmitFrame";
+        iframe.style.display = "none";
+        document.body.appendChild(iframe);
+      }
+      const form = document.createElement("form");
+      form.method = "POST";
+      form.action = `https://formsubmit.co/${encodeURIComponent(CONTACT_EMAIL)}`;
+      form.target = "pwcFormSubmitFrame";
+      form.style.display = "none";
+      Object.entries(fields).forEach(([k, v]) => {
+        const inp = document.createElement("input");
+        inp.type = "hidden";
+        inp.name = k;
+        inp.value = String(v || "");
+        form.appendChild(inp);
       });
-      return res.ok;
+      document.body.appendChild(form);
+      form.submit();
+      setTimeout(() => form.remove(), 4000);
+      return true;
     } catch (_) {
       return false;
     }
+  },
+
+  /**
+   * Client-side fallback email dispatch via FormSubmit directly to propsmartrealty@gmail.com
+   */
+  async sendClientEmailFallback(leadData, referenceId, whatsappUrl) {
+    const fields = {
+      _subject: `New Pride World City Enquiry (${referenceId}) - ${leadData.cluster || "Valencia"}`,
+      _template: "table",
+      _captcha: "false",
+      ...(leadData.email ? { _replyto: leadData.email } : {}),
+      Reference_ID: referenceId,
+      Full_Name: leadData.name || "",
+      Phone: leadData.phone || "",
+      Email: leadData.email || "Not provided",
+      Cluster: leadData.cluster || "Valencia",
+      Configuration: leadData.typology || "Not specified",
+      Budget: leadData.budget || "Not specified",
+      Preferred_Date: leadData.date || "Not specified",
+      Time_Slot: leadData.timeSlot || "Not specified",
+      Source: leadData.source || "web_portal",
+      WhatsApp_Link: whatsappUrl
+    };
+
+    try {
+      const formBody = new URLSearchParams(fields);
+      const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(CONTACT_EMAIL)}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+          "Accept": "application/json"
+        },
+        body: formBody.toString()
+      });
+
+      const data = await res.json().catch(() => ({}));
+      const msg = (data && data.message) || "";
+      const needsActivation = /activat/i.test(msg);
+      const ok = Boolean(res.ok && data && (data.success === "true" || data.success === true));
+      if (ok) {
+        return { dispatched: true, needsActivation: false, message: msg };
+      }
+      if (needsActivation) {
+        // Trigger native POST cleanly as backup activation signal and surface status honestly
+        return { dispatched: false, needsActivation: true, message: msg };
+      }
+    } catch (_) {
+      // Network/CORS blocked fetch — dispatch via standard hidden-iframe HTML FormSubmit POST
+      const iframeOk = this.submitFormIframeFallback(fields);
+      return { dispatched: iframeOk, needsActivation: false, message: iframeOk ? "Dispatched via standard POST relay" : "Fallback failed" };
+    }
+
+    const iframeOk = this.submitFormIframeFallback(fields);
+    return { dispatched: iframeOk, needsActivation: false, message: iframeOk ? "Dispatched via POST relay" : "FormSubmit rejected payload" };
   },
 
   /**
@@ -153,10 +225,17 @@ const PrideAnalytics = {
 
     const referenceId = (apiResult && apiResult.referenceId) || `PWC-${Math.floor(1000 + Math.random() * 9000)}`;
     const whatsappUrl = (apiResult && apiResult.whatsappUrl) || this.buildWhatsappUrl(leadData, referenceId);
+    const mailtoUrl = this.buildMailtoUrl(leadData, referenceId);
 
     let emailDispatched = Boolean(apiResult && apiResult.emailDispatched);
+    let emailNeedsActivation = Boolean(apiResult && apiResult.emailNeedsActivation);
+    let emailMessage = (apiResult && apiResult.emailDiagnostic) || "";
+
     if (!emailDispatched) {
-      emailDispatched = await this.sendClientEmailFallback(leadData, referenceId, whatsappUrl);
+      const clientRes = await this.sendClientEmailFallback(leadData, referenceId, whatsappUrl);
+      emailDispatched = Boolean(clientRes && clientRes.dispatched);
+      emailNeedsActivation = emailNeedsActivation || Boolean(clientRes && clientRes.needsActivation);
+      emailMessage = (clientRes && clientRes.message) || emailMessage;
     }
 
     return {
@@ -165,7 +244,10 @@ const PrideAnalytics = {
       notifyEmail: CONTACT_EMAIL,
       whatsappNumber: WHATSAPP_DIGITS,
       whatsappUrl,
+      mailtoUrl,
       emailDispatched,
+      emailNeedsActivation,
+      emailMessage,
       fallback: !apiResult
     };
   }

@@ -293,6 +293,9 @@
     const waUrl = (res && res.whatsappUrl) || (window.PrideAnalytics
       ? window.PrideAnalytics.buildWhatsappUrl(leadPayload, passCode)
       : `https://wa.me/917744009295?text=${encodeURIComponent(`New VIP Enquiry (${passCode}) - ${name}, ${phone}, ${selectedEnclave}`)}`);
+    const mailtoUrl = (res && res.mailtoUrl) || (window.PrideAnalytics
+      ? window.PrideAnalytics.buildMailtoUrl(leadPayload, passCode)
+      : `mailto:propsmartrealty@gmail.com?subject=${encodeURIComponent(`Pride World City VIP Enquiry (${passCode}) - ${selectedEnclave}`)}`);
 
     // Update Confirmation Screen
     const successPanel = document.getElementById("vipSuccessPanel");
@@ -300,11 +303,22 @@
     const passIdEl = document.getElementById("vipSuccessPassId");
     const passBarcodeToken = document.getElementById("passBarcodeToken");
     const successWaBtn = document.getElementById("vipSuccessWaBtn");
+    const successMailBtn = document.getElementById("vipSuccessMailBtn");
+    const successEmailNote = document.getElementById("vipSuccessEmailNote");
 
     if (successTitle) successTitle.innerText = `Welcome, ${name}!`;
     if (passIdEl) passIdEl.innerText = passCode;
     if (passBarcodeToken) passBarcodeToken.innerText = `TOKEN: ${passCode}-CONFIDENTIAL`;
     if (successWaBtn) successWaBtn.setAttribute("href", waUrl);
+    if (successMailBtn) {
+      successMailBtn.setAttribute("href", mailtoUrl);
+      successMailBtn.style.display = res && res.emailDispatched ? "none" : "inline-flex";
+    }
+    if (successEmailNote) {
+      successEmailNote.innerHTML = (res && res.emailDispatched)
+        ? `<i class="fa-solid fa-envelope-circle-check"></i> Confirmed &amp; emailed to <strong>propsmartrealty@gmail.com</strong>`
+        : `<i class="fa-solid fa-circle-info"></i> Recorded (${passCode}) — Use WhatsApp or Direct Email below for instant confirmation`;
+    }
 
     // Hide stage panels and show success
     for (let i = 1; i <= 3; i++) {
@@ -319,7 +333,11 @@
 
     // Show celebratory toast
     if (window.showToast) {
-      window.showToast(`VIP Enquiry sent to propsmartrealty@gmail.com & WhatsApp +91 77440 09295! Pass: ${passCode}`);
+      window.showToast(
+        res && res.emailDispatched
+          ? `VIP Enquiry emailed to propsmartrealty@gmail.com & WhatsApp +91 77440 09295! Pass: ${passCode}`
+          : `VIP Pass ${passCode} logged — Send via WhatsApp or Direct Email for propsmartrealty@gmail.com`
+      );
     }
 
     // Synchronize page booking form if present

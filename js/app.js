@@ -114,19 +114,41 @@ document.addEventListener("DOMContentLoaded", () => {
       const waUrl = (res && res.whatsappUrl) || (window.PrideAnalytics
         ? window.PrideAnalytics.buildWhatsappUrl(payload, refId)
         : `https://wa.me/917744009295?text=${encodeURIComponent(`New Enquiry (${refId}) - ${name}, ${phone}, ${cluster}, Date: ${date}`)}`);
+      const mailtoUrl = (res && res.mailtoUrl) || (window.PrideAnalytics
+        ? window.PrideAnalytics.buildMailtoUrl(payload, refId)
+        : `mailto:propsmartrealty@gmail.com?subject=${encodeURIComponent(`Pride World City Enquiry (${refId}) - ${cluster}`)}`);
 
       const confirmBox = document.getElementById("vipBookingConfirm");
       const confirmRefEl = document.getElementById("vipBookingConfirmRef");
       const confirmWaBtn = document.getElementById("vipBookingWaBtn");
+      const confirmMailBtn = document.getElementById("vipBookingMailBtn");
+      const confirmEmailStatus = document.getElementById("vipBookingEmailStatus");
       if (confirmRefEl) confirmRefEl.textContent = refId;
       if (confirmWaBtn) confirmWaBtn.setAttribute("href", waUrl);
+      if (confirmMailBtn) {
+        confirmMailBtn.setAttribute("href", mailtoUrl);
+        confirmMailBtn.style.display = res && res.emailDispatched ? "none" : "flex";
+      }
+      if (confirmEmailStatus) {
+        if (res && res.emailDispatched) {
+          confirmEmailStatus.innerHTML = `Email delivered to <strong>propsmartrealty@gmail.com</strong>. Tap below if WhatsApp did not open automatically:`;
+        } else if (res && res.emailNeedsActivation) {
+          confirmEmailStatus.innerHTML = `FormSubmit activation pending on <strong>propsmartrealty@gmail.com</strong> (check Inbox/Spam for Activate Form). Send directly via WhatsApp or Email below:`;
+        } else {
+          confirmEmailStatus.innerHTML = `Enquiry logged (${refId}). Use WhatsApp or Direct Email below to reach <strong>propsmartrealty@gmail.com</strong> immediately:`;
+        }
+      }
       if (confirmBox) confirmBox.style.display = "block";
 
       if (sendWhatsapp && window.PrideAnalytics && typeof window.PrideAnalytics.dispatchWhatsapp === "function") {
         window.PrideAnalytics.dispatchWhatsapp(waUrl);
       }
 
-      showToast(`Enquiry Sent (Ref: ${refId}) to propsmartrealty@gmail.com & WhatsApp +91 77440 09295! Welcome, ${name}!`);
+      showToast(
+        res && res.emailDispatched
+          ? `Enquiry Confirmed (Ref: ${refId}) — Sent to propsmartrealty@gmail.com & WhatsApp +91 77440 09295!`
+          : `Enquiry Logged (Ref: ${refId}) — Tap WhatsApp or Direct Email if propsmartrealty@gmail.com needs activation.`
+      );
       if (submitBtn) {
         submitBtn.disabled = false;
         submitBtn.innerHTML = `<i class="fa-solid fa-calendar-check"></i> Confirm VIP Reservation`;
