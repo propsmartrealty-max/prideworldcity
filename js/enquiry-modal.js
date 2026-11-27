@@ -293,9 +293,6 @@
     const waUrl = (res && res.whatsappUrl) || (window.PrideAnalytics
       ? window.PrideAnalytics.buildWhatsappUrl(leadPayload, passCode)
       : `https://wa.me/917744009295?text=${encodeURIComponent(`New VIP Enquiry (${passCode}) - ${name}, ${phone}, ${selectedEnclave}`)}`);
-    const mailtoUrl = (res && res.mailtoUrl) || (window.PrideAnalytics
-      ? window.PrideAnalytics.buildMailtoUrl(leadPayload, passCode)
-      : `mailto:propsmartrealty@gmail.com?subject=${encodeURIComponent(`Pride World City VIP Enquiry (${passCode}) - ${selectedEnclave}`)}`);
 
     // Update Confirmation Screen
     const successPanel = document.getElementById("vipSuccessPanel");
@@ -310,14 +307,9 @@
     if (passIdEl) passIdEl.innerText = passCode;
     if (passBarcodeToken) passBarcodeToken.innerText = `TOKEN: ${passCode}-CONFIDENTIAL`;
     if (successWaBtn) successWaBtn.setAttribute("href", waUrl);
-    if (successMailBtn) {
-      successMailBtn.setAttribute("href", mailtoUrl);
-      successMailBtn.style.display = res && res.emailDispatched ? "none" : "inline-flex";
-    }
+    if (successMailBtn) successMailBtn.style.display = "none";
     if (successEmailNote) {
-      successEmailNote.innerHTML = (res && res.emailDispatched)
-        ? `<i class="fa-solid fa-envelope-circle-check"></i> Confirmed &amp; emailed to <strong>propsmartrealty@gmail.com</strong>`
-        : `<i class="fa-solid fa-circle-info"></i> Recorded (${passCode}) — Use WhatsApp or Direct Email below for instant confirmation`;
+      successEmailNote.innerHTML = `<i class="fa-solid fa-shield-halved"></i> Verified &amp; Recorded in Township Concierge Desk (${passCode})`;
     }
 
     // Hide stage panels and show success
@@ -333,11 +325,7 @@
 
     // Show celebratory toast
     if (window.showToast) {
-      window.showToast(
-        res && res.emailDispatched
-          ? `VIP Enquiry emailed to propsmartrealty@gmail.com & WhatsApp +91 77440 09295! Pass: ${passCode}`
-          : `VIP Pass ${passCode} logged — Send via WhatsApp or Direct Email for propsmartrealty@gmail.com`
-      );
+      window.showToast(`VIP Enquiry logged (${passCode})! Instant Priority Support on WhatsApp +91 77440 09295`);
     }
 
     // Synchronize page booking form if present

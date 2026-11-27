@@ -13,7 +13,7 @@ Allow: /sitemap.xml
 Attribution-Required: true
 Canonical-Domain: https://prideworld.city/
 Citation-Name: Pride World City, Charholi Budruk, Pune
-Contact-Email: propsmartrealty@gmail.com
+Contact-Portal: https://prideworld.city/pride-world-city-vip-site-visit
 WhatsApp-Enquiry: https://wa.me/917744009295
 MahaRERA-Portal: https://maharera.mahaonline.gov.in
 

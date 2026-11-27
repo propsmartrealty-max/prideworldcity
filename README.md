@@ -93,7 +93,7 @@ Blending ultra-modern aesthetics (inspired by Apple, Aman Resorts, Sobha, and Fo
   * Direct booking of VIP Site Tours inside the chat dialogue.
 
 ### 7. VIP Site Visit Booking Suite
-* Complimentary executive executive sedan pickup from anywhere in Pune, Mumbai, or Pune Airport.
+* Complimentary executive sedan pickup from anywhere in Pune, Mumbai, or Pune Airport.
 * Electric golf buggy tour booking across the 400 acres.
 * Integrated toast notifications with instant confirmation feedback.
 

@@ -1,10 +1,9 @@
 /**
  * Cloudflare Pages Function: POST /api/lead
  * Enterprise Lead Capture, Turnstile Verification, Honeypot Guard, KV/D1 Persistence,
- * Direct Email Delivery (propsmartrealty@gmail.com) & Pre-filled WhatsApp Payload (917744009295)
+ * Private Server Email Delivery (via Cloudflare Pages Secrets) & Pre-filled WhatsApp Payload (917744009295)
  */
 
-const DEFAULT_NOTIFY_EMAIL = "propsmartrealty@gmail.com";
 const DEFAULT_WHATSAPP_NUMBER = "917744009295";
 
 const JSON_HEADERS = {
@@ -41,7 +40,7 @@ async function dispatchEmailNotification(lead, whatsappUrl, env, targetEmail) {
   let lastDiagnostic = { dispatched: false, provider: "none", status: 0, needsActivation: false, message: "" };
 
   // 1. Primary API delivery via Resend if configured in Cloudflare Pages Secrets
-  if (env && env.RESEND_API_KEY) {
+  if (env && env.RESEND_API_KEY && targetEmail) {
     try {
       const fromAddress = env.RESEND_FROM || "Pride World City Portal <enquiries@prideworld.city>";
       const htmlRows = [
@@ -111,53 +110,56 @@ async function dispatchEmailNotification(lead, whatsappUrl, env, targetEmail) {
     } catch (_) {}
   }
 
-  // 3. Zero-key relay via FormSubmit AJAX directly to propsmartrealty@gmail.com
-  try {
-    const fsParams = new URLSearchParams({
-      _subject: `New Pride World City Enquiry (${lead.referenceId}) - ${lead.cluster}`,
-      _template: "table",
-      _captcha: "false",
-      Reference_ID: lead.referenceId,
-      Full_Name: lead.name,
-      Phone: lead.phone,
-      Email: lead.email || "Not provided",
-      Cluster: lead.cluster,
-      Configuration: lead.typology || "Not specified",
-      Budget: lead.budget || "Not specified",
-      Preferred_Date: lead.preferredDate || "Not specified",
-      Time_Slot: lead.timeSlot || "Not specified",
-      Visitor_Location: `${lead.geo.city}, ${lead.geo.country}`,
-      Source: lead.source,
-      WhatsApp_Followup: whatsappUrl
-    });
-    if (lead.email) {
-      fsParams.set("_replyto", lead.email);
+  // 3. Server-side FormSubmit relay (set env.LEAD_FORMSUBMIT_ALIAS or env.LEAD_NOTIFY_EMAIL in Cloudflare Secrets)
+  const fsTarget = (env && (env.LEAD_FORMSUBMIT_ALIAS || env.LEAD_NOTIFY_EMAIL || targetEmail)) || "";
+  if (fsTarget) {
+    try {
+      const fsParams = new URLSearchParams({
+        _subject: `New Pride World City Enquiry (${lead.referenceId}) - ${lead.cluster}`,
+        _template: "table",
+        _captcha: "false",
+        Reference_ID: lead.referenceId,
+        Full_Name: lead.name,
+        Phone: lead.phone,
+        Email: lead.email || "Not provided",
+        Cluster: lead.cluster,
+        Configuration: lead.typology || "Not specified",
+        Budget: lead.budget || "Not specified",
+        Preferred_Date: lead.preferredDate || "Not specified",
+        Time_Slot: lead.timeSlot || "Not specified",
+        Visitor_Location: `${lead.geo.city}, ${lead.geo.country}`,
+        Source: lead.source,
+        WhatsApp_Followup: whatsappUrl
+      });
+      if (lead.email) {
+        fsParams.set("_replyto", lead.email);
+      }
+
+      const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(fsTarget)}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+          "Accept": "application/json",
+          "User-Agent": "Mozilla/5.0 (compatible; PrideWorldCityPortal/2.0; +https://prideworld.city)",
+          "Origin": "https://prideworld.city",
+          "Referer": "https://prideworld.city/"
+        },
+        body: fsParams.toString()
+      });
+
+      const rawText = await res.text().catch(() => "");
+      let json = {};
+      try { json = JSON.parse(rawText); } catch (_) {}
+      const msg = (json && json.message) || rawText.slice(0, 160);
+      const needsActivation = /activat/i.test(msg);
+
+      if (res.ok && json && (json.success === "true" || json.success === true)) {
+        return { dispatched: true, provider: "formsubmit", status: res.status, needsActivation: false, message: "Sent via FormSubmit" };
+      }
+      lastDiagnostic = { dispatched: false, provider: "formsubmit", status: res.status, needsActivation, message: msg };
+    } catch (err) {
+      lastDiagnostic = { dispatched: false, provider: "formsubmit_error", status: 0, needsActivation: false, message: String(err && err.message || err).slice(0, 120) };
     }
-
-    const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(targetEmail)}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Accept": "application/json",
-        "User-Agent": "Mozilla/5.0 (compatible; PrideWorldCityPortal/2.0; +https://prideworld.city)",
-        "Origin": "https://prideworld.city",
-        "Referer": "https://prideworld.city/"
-      },
-      body: fsParams.toString()
-    });
-
-    const rawText = await res.text().catch(() => "");
-    let json = {};
-    try { json = JSON.parse(rawText); } catch (_) {}
-    const msg = (json && json.message) || rawText.slice(0, 160);
-    const needsActivation = /activat/i.test(msg);
-
-    if (res.ok && json && (json.success === "true" || json.success === true)) {
-      return { dispatched: true, provider: "formsubmit", status: res.status, needsActivation: false, message: msg || "Sent via FormSubmit" };
-    }
-    lastDiagnostic = { dispatched: false, provider: "formsubmit", status: res.status, needsActivation, message: msg };
-  } catch (err) {
-    lastDiagnostic = { dispatched: false, provider: "formsubmit_error", status: 0, needsActivation: false, message: String(err && err.message || err).slice(0, 120) };
   }
 
   return lastDiagnostic;
@@ -240,8 +242,8 @@ export async function onRequestPost(context) {
       }
     }
 
-    // 4. Enrich with Cloudflare Edge Geo Telemetry & Target Destinations
-    const notifyEmail = (env && env.LEAD_NOTIFY_EMAIL) || DEFAULT_NOTIFY_EMAIL;
+    // 4. Enrich with Cloudflare Edge Geo Telemetry & Private Server Destinations
+    const notifyEmail = (env && env.LEAD_NOTIFY_EMAIL) || "";
     const notifyWhatsapp = (env && env.LEAD_WHATSAPP_NUMBER) || DEFAULT_WHATSAPP_NUMBER;
     const cf = request.cf || {};
     const referenceId = `PWC-${Date.now().toString(36).toUpperCase()}-${Math.floor(100 + Math.random() * 900)}`;
@@ -257,7 +259,6 @@ export async function onRequestPost(context) {
       preferredDate,
       timeSlot,
       source,
-      notifyEmail,
       notifyWhatsapp,
       geo: {
         country: cf.country || "Unknown",
@@ -315,7 +316,7 @@ export async function onRequestPost(context) {
       );
     }
 
-    // 8. Dispatch Email to propsmartrealty@gmail.com (allow up to 6s cleanly before yielding to browser relay)
+    // 8. Dispatch Private Server-Side Email (never return recipient email in HTTP response)
     const emailResult = await Promise.race([
       dispatchEmailNotification(leadRecord, whatsappUrl, env, notifyEmail),
       new Promise(resolve => setTimeout(() => resolve({ dispatched: false, provider: "timeout", status: 0, needsActivation: false, message: "Edge upstream timeout" }), 6000))
@@ -325,16 +326,12 @@ export async function onRequestPost(context) {
       JSON.stringify({
         ok: true,
         referenceId,
-        notifyEmail,
         emailDispatched: Boolean(emailResult && emailResult.dispatched),
         emailProvider: (emailResult && emailResult.provider) || "none",
         emailNeedsActivation: Boolean(emailResult && emailResult.needsActivation),
-        emailDiagnostic: (emailResult && emailResult.message) || "",
         whatsappNumber: notifyWhatsapp,
         whatsappUrl,
-        message: (emailResult && emailResult.dispatched)
-          ? `Enquiry logged & forwarded to ${notifyEmail} + WhatsApp +91 77440 09295.`
-          : `Enquiry logged (client email fallback ready for ${notifyEmail}) + WhatsApp +91 77440 09295.`,
+        message: "Enquiry logged & routed to Official Concierge Desk + WhatsApp +91 77440 09295.",
         isNRI: leadRecord.geo.isNRI
       }),
       { status: 200, headers: JSON_HEADERS }
