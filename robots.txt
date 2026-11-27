@@ -98,6 +98,8 @@ Allow: /pride-world-city-master-plan-floor-plans
 Allow: /pride-world-city-reviews-owner-feedback
 Allow: /flats-near-bhosari-chakan-midc-charholi
 Allow: /pune-township-investment-roi-guide
+Allow: /pride-world-city-civic-ecosystem
+Allow: /pride-world-city-vip-site-visit
 Allow: /opensearch.xml
 Allow: /sitemap.xml
 

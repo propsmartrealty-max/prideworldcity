@@ -304,9 +304,18 @@ document.addEventListener("DOMContentLoaded", () => {
     bar.innerHTML = `
       <a href="tel:+${WHATSAPP_DIGITS}" class="mobile-cta-btn mobile-cta-call"><i class="fa-solid fa-phone"></i> Call Now</a>
       <a href="${waHref}" target="_blank" rel="noopener noreferrer" class="mobile-cta-btn mobile-cta-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-      <a href="/#vip-booking" class="mobile-cta-btn mobile-cta-vip"><i class="fa-solid fa-calendar-check"></i> VIP Tour</a>
+      <a href="/pride-world-city-vip-site-visit" class="mobile-cta-btn mobile-cta-vip"><i class="fa-solid fa-calendar-check"></i> VIP Tour</a>
     `;
     document.body.appendChild(bar);
+    const mobileVipBtn = bar.querySelector(".mobile-cta-vip");
+    if (mobileVipBtn && document.getElementById("vipExperienceModal")) {
+      mobileVipBtn.addEventListener("click", (e) => {
+        if (typeof window.openVipExperienceModal === "function") {
+          e.preventDefault();
+          window.openVipExperienceModal();
+        }
+      });
+    }
   }
 
   // Smooth Scroll-Triggered Stagger Reveal & Metric Number Polish (60fps, Zero CLS)

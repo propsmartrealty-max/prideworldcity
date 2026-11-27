@@ -47,8 +47,8 @@
       });
     }
 
-    // 6. Hook Hero VIP button
-    const heroVipBtn = document.querySelector(".hero-cta-group a[href='#vip-booking']");
+    // 6. Hook Hero VIP button & Mobile Sticky VIP CTA
+    const heroVipBtn = document.querySelector(".hero-cta-group a[href='/pride-world-city-vip-site-visit']");
     if (heroVipBtn) {
       heroVipBtn.addEventListener("click", (e) => {
         e.preventDefault();

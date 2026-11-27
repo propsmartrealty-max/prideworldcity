@@ -341,7 +341,7 @@ class MasterplanViewer {
         `).join("")}
       </div>
       <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-        <a href="#clusters" class="btn btn-outline-gold" style="padding: 0.45rem 0.85rem; font-size: 0.78rem; border-radius: var(--radius-sm);">
+        <a href="/which-cluster-to-buy-pride-world-city" class="btn btn-outline-gold" style="padding: 0.45rem 0.85rem; font-size: 0.78rem; border-radius: var(--radius-sm);" onclick="if(document.getElementById('clusters')){event.preventDefault();document.getElementById('clusters').scrollIntoView({behavior:'smooth'});}">
           <i class="fa-solid fa-building"></i> View Enclaves
         </a>
         <button onclick="window.openVipExperienceModal()" class="btn btn-gold" style="padding: 0.45rem 0.85rem; font-size: 0.78rem; border-radius: var(--radius-sm);">
