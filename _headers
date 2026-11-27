@@ -54,9 +54,9 @@
   X-Content-Type-Options: nosniff
   Access-Control-Allow-Origin: *
 
-# Daily Cache with Hourly Revalidation for Township Datasets
+# Short Browser Cache with Revalidation for Township Datasets
 /data/*
-  Cache-Control: public, max-age=86400, stale-while-revalidate=3600
+  Cache-Control: public, max-age=300, stale-while-revalidate=3600
   X-Content-Type-Options: nosniff
   Access-Control-Allow-Origin: *
 
