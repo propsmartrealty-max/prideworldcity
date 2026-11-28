@@ -163,7 +163,7 @@ class PrideConcierge {
     // 5. RERA / Approvals
     if (q.includes("rera") || q.includes("approval") || q.includes("legal") || q.includes("possession")) {
       this.addMessage(`
-        All clusters at Pride World City are 100% MahaRERA compliant with clear titles and sanctioned plans:
+        All clusters listed on this advisory portal carry active MahaRERA registrations with public project records:
         <br/><br/>
         • <strong>Miami:</strong> <code>PR1260002600188</code> & <code>P52100028741</code><br/>
         • <strong>Boston Central:</strong> <code>P52100078307</code> & <code>P52100049648</code><br/>
@@ -258,7 +258,7 @@ class PrideConcierge {
         📍 <strong>Viman Nagar:</strong> ₹11,500 - ₹16,500/sq.ft (35-45% higher entry ticket, yield ~3.4%)<br/>
         💻 <strong>Kharadi IT Park:</strong> ₹8,900 - ₹13,200/sq.ft (yield ~3.8%)<br/>
         🏢 <strong>Hinjawadi:</strong> ₹6,800 - ₹9,500/sq.ft (60+ mins from Airport)<br/><br/>
-        <strong>Why Charholi is Pune's #1 Value Arbitrage:</strong><br/>
+        <strong>Why Charholi Stands Out in North Pune:</strong><br/>
         • 10 mins from Pune Airport Terminal 2<br/>
         • 18 mins to Kharadi EON Free Zone via 8-lane expressway<br/>
         • 1.8 km to upcoming PMRDA 128-km Ring Road interchange<br/>
@@ -273,7 +273,7 @@ class PrideConcierge {
       this.addMessage(`
         <strong>Say Hola to Valencia — New Launch at Pride World City!</strong>
         <br/><br/>
-        • 100% East-West facing Sun-Side 2 &amp; 3 BHK homes across 5.9 acres (5 towers).
+        • East-West facing Sun-Side 2 &amp; 3 BHK homes across 5.9 acres (5 towers).
         <br/>
         • 2 BHK (755 - 795 sq.ft): Starting from <strong>₹92.49 L* All Inclusive</strong>.
         <br/>
@@ -314,7 +314,7 @@ class PrideConcierge {
         <br/>
         • Guided buggy tour across all 400 acres &amp; Club Royale
         <br/>
-        • Direct Desk: <strong>+91 77440 09295</strong> &bull; <strong>Official Concierge Portal</strong>
+        • Advisory Desk: <strong>+91 77440 09295</strong> &bull; <strong>Propsmart Realty (Authorized Partner)</strong>
         <br/><br/>
         <div class="chat-quick-replies">
           <button class="quick-reply-pill" onclick="window.scrollToSection('vip-booking')">Fill 30-Sec Booking Form</button>

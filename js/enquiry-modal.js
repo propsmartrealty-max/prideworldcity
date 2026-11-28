@@ -266,7 +266,15 @@
     const phone = document.getElementById("vipGuestPhone").value;
     const email = document.getElementById("vipGuestEmail").value;
     const date = document.getElementById("vipGuestDate").value;
-    const whatsapp = document.getElementById("vipWhatsappConsent") ? document.getElementById("vipWhatsappConsent").checked : true;
+    const consentEl = document.getElementById("vipWhatsappConsent");
+    if (consentEl && !consentEl.checked) {
+      if (window.showToast) {
+        window.showToast("Please accept the Privacy Policy & communication consent checkbox to proceed.");
+      }
+      consentEl.focus();
+      return;
+    }
+    const whatsapp = Boolean(consentEl && consentEl.checked);
 
     const leadPayload = {
       name,
@@ -309,7 +317,7 @@
     if (successWaBtn) successWaBtn.setAttribute("href", waUrl);
     if (successMailBtn) successMailBtn.style.display = "none";
     if (successEmailNote) {
-      successEmailNote.innerHTML = `<i class="fa-solid fa-shield-halved"></i> Verified &amp; Recorded in Township Concierge Desk (${passCode})`;
+      successEmailNote.innerHTML = `<i class="fa-solid fa-shield-halved"></i> Verified &amp; Recorded with Propsmart Realty Advisory Desk (${passCode})`;
     }
 
     // Hide stage panels and show success

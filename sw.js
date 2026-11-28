@@ -1,10 +1,10 @@
 /* Pride World City PWA Service Worker — Edge-First Cache Strategy */
-const CACHE_NAME = "pwc-shell-v10";
+const CACHE_NAME = "pwc-shell-v11";
 const SHELL_ASSETS = [
   "/",
-  "/css/style.css?v=20261127g",
-  "/js/analytics.js?v=20261127g",
-  "/data/township-data.js?v=20261127h",
+  "/css/style.css?v=20261127i",
+  "/js/analytics.js?v=20261127i",
+  "/data/township-data.js?v=20261127i",
   "/assets/images/pride-world-city-logo.svg",
   "/assets/images/favicon-192.png",
   "/favicon.ico"

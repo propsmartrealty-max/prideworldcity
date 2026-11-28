@@ -80,7 +80,7 @@
         `Registration: ${inr(regFee)}`,
         `Estimated All-In Outlay: ${inr(totalAllIn)}`,
         `Estimated EMI (${tenureYrs}Y @ ${annualRate}%): ${inr(emi)}/mo`,
-        "Please share the official RERA cost sheet for this unit."
+        "Please share the itemized MahaRERA cost sheet for this unit."
       ].join("\n");
       waBtn.setAttribute("href", `https://wa.me/917744009295?text=${encodeURIComponent(summary)}`);
     }

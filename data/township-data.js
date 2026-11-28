@@ -46,7 +46,7 @@ const TOWNSHIP_DATA = {
       towers: "5 Elegant High-Rise Towers (G + 28 Floors)",
       reraNo: "P52100052309",
       tagline: "Hola to the Brighter Side of Life",
-      description: "A new chapter at Pride World City. Sited across 5.9 acres with 5 signature towers, Valencia offers 100% East-West facing sun-side residences where the sun becomes part of your everyday lifestyle. Unobstructed morning sunrise, evening golden twilight, and 20+ curated amenities.",
+      description: "A new chapter at Pride World City. Sited across 5.9 acres with 5 towers, Valencia offers East-West facing sun-side residences planned for morning sunrise, evening twilight, and 20+ curated amenities.",
       image: "assets/images/Twilight-Valencia-Apartment-Launch-Banner.webp.bv.webp",
       entranceImage: "assets/images/19-entrance-evening-838x386.jpg",
       masterLayoutImage: "assets/images/11-original.png",
@@ -54,7 +54,7 @@ const TOWNSHIP_DATA = {
       logo: "assets/images/Pride-World-City-Valencia-Logo.webp",
       accentColor: "#f43f5e",
       features: [
-        "100% East-West Facing Towers (Sun-Side Living)",
+        "All East-West Facing Towers (Sun-Side Living)",
         "5.9 Acres Self-Sustained Master Enclave",
         "Swimming Pool & Dedicated Kids Pool",
         "Pickleball Court, Open Gym & Jogging Loop",
@@ -66,8 +66,8 @@ const TOWNSHIP_DATA = {
           name: "2 BHK Sun-Side Residence",
           carpet: "755 - 795 sq. ft.",
           balcony: "72 sq. ft.",
-          price: "₹ 92.49 L* Onwards (All Inclusive)",
-          orientation: "100% East-West Open (All-Day Sun)",
+          price: "₹ 92.49 L* Onwards (Base Indicative)",
+          orientation: "East-West Open Orientation (Sun-Side)",
           rooms: "2 Bedrooms, 2 Bathrooms, Living, Dining, Kitchen, Utility, Sun-Deck",
           planImage: "assets/images/2-BHK-S-Boston.jpg.bv.webp",
           svgType: "2bhk"
@@ -285,7 +285,7 @@ const TOWNSHIP_DATA = {
           name: "3 BHK Riviera Suite",
           carpet: "1,120 sq. ft.",
           balcony: "130 sq. ft.",
-          orientation: "100% Cross Ventilation / Lake View",
+          orientation: "Dual-Aspect Cross Ventilation / Lake View",
           rooms: "3 Bedrooms, 3 Baths, Dining Foyer, Scenic Sundeck",
           planImage: "assets/images/Miami-plan3.jpg",
           svgType: "3bhk"
@@ -693,7 +693,7 @@ const TOWNSHIP_DATA = {
     { category: "Active Seniors", title: "Reflexology & Senior Citizen Plaza", desc: "Peaceful landscaped acupressure pebble paths, shaded gazebos, yoga pavilion, and laughing clubs." },
     { category: "Work & Commerce", title: "Pride Tech District & Co-Work", desc: "Grade-A enterprise tech hub with modern collaborative co-working pods, meeting suites, and gigabit fiber internet." },
     { category: "Green Mobility", title: "Electric Buggies & EV Charging", desc: "Complimentary on-demand electric golf carts for internal movement and EV fast-charging stations across all sectors." },
-    { category: "Smart Infrastructure", title: "Eco-Township Sustainability Hub", desc: "100% STP treated water for landscaping, extensive rainwater harvesting wells, and rooftop solar power grid." }
+    { category: "Smart Infrastructure", title: "Eco-Township Sustainability Hub", desc: "STP-treated water recycling for landscaping, rainwater harvesting wells, and rooftop solar power provisions." }
   ],
 
   connectivity: [
@@ -710,44 +710,44 @@ const TOWNSHIP_DATA = {
   testimonials: [
     {
       name: "Rohit & Ananya Deshmukh",
-      cluster: "Kingsbury Residents (Living since 2022)",
-      role: "VP Engineering at Kharadi IT Park",
-      quote: "Moving to Pride World City was the single best decision for our family. My office in Kharadi is barely 18 minutes away, and my children walk to their school within the township without stepping outside the security perimeter. The green lung spaces here are unmatched in Pune.",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+      cluster: "Kingsbury Residents",
+      role: "Engineering Leadership, Kharadi IT Park",
+      quote: "Living inside a 400-acre gated township cuts commute stress significantly. Kharadi IT Park is roughly 18 minutes away, while GIIS school inside the campus keeps daily routines safe for children.",
+      avatar: ""
     },
     {
       name: "Capt. Vikram & Shalini Malhotra",
       cluster: "Long Island Sky Villa Owners",
       role: "Commercial Airline Pilot",
-      quote: "As a pilot operating out of Pune International Airport, being 10 minutes away from the terminal while enjoying 360-degree views of the Sahyadri mountains from our 24th floor sky villa is pure serenity. Club Royale rivals any 5-star resort in Goa.",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
+      quote: "Operating out of Pune International Airport, being roughly 10 minutes from Terminal 2 while returning to elevated views near the Sahyadri hills has been a major lifestyle upgrade.",
+      avatar: ""
     },
     {
       name: "Dr. Priya Kulkarni & Rajesh Kulkarni",
-      cluster: "Wellington Phase Resident",
-      role: "Chief Medical Officer & FinTech Founder",
-      quote: "The sheer scale of 400 acres means you have space to breathe. Evening walks along the central lake, weekend tennis matches at the sports arena, and the high-street retail make it a completely independent city within a city.",
-      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80"
+      cluster: "Wellington Phase Residents",
+      role: "Medical & FinTech Professionals",
+      quote: "The scale of open green walkways around the 7-acre central lake and Club Royale means families have recreation and high-street essentials right within the masterplan.",
+      avatar: ""
     },
     {
       name: "Capt. Atul Sinha",
       cluster: "Montreal Smart Duplex Owner",
       role: "Aviation Captain & NRI Investor",
-      quote: "We were looking for something secluded, peaceful and yet providing world-class amenities. We found that Pride World City is the absolute benchmark of integrated master communities in Maharashtra.",
+      quote: "We looked for a peaceful residential enclave with comprehensive township amenities in North Pune and chose Pride World City Montreal for its smart layout and open environment.",
       avatar: "assets/images/Atul-Sinha.webp"
     },
     {
       name: "Pushpraj & Family",
       cluster: "Valencia Sun-Side Resident",
-      role: "Senior Director, Global Tech",
-      quote: "Valencia's 100% East-West orientation means our apartment is bathed in natural morning light and cooling cross-breeze. The private forest trail and open green belts give our kids an active, healthy childhood.",
+      role: "Senior Technology Director",
+      quote: "Valencia's East-West tower orientation brings natural morning light and breeze across our layout, while planned forest trails and open green zones suit family living.",
       avatar: "assets/images/Pushpraj.webp"
     },
     {
       name: "Rajesh K.",
       cluster: "Miami Lakefront Resident",
-      role: "FinTech Founder & Angel Investor",
-      quote: "The master planning at Pride World City is exceptional. Stepping out to the 7-acre lake promenade, having pickleball courts and sports arenas within walking distance elevates day-to-day living into an everyday vacation.",
+      role: "Technology Founder",
+      quote: "Master planning around the 7-acre lake promenade, pickleball courts, and landscaped avenues makes day-to-day life feel relaxed compared with standalone city buildings.",
       avatar: "assets/images/Rajesh.webp"
     }
   ],
@@ -827,7 +827,7 @@ const TOWNSHIP_DATA = {
     },
     {
       q: "Is Pride World City MahaRERA registered and what are the certificates?",
-      a: "Yes, 100% of Pride World City enclaves are officially registered under MahaRERA: Valencia (P52100052309), Miami (PR1260002600188), Boston (P52100078307), Montreal (P52100077138), Wellington (P52100054534), Kingsbury (P52100000854), SoHo (P52100029810), and Long Island (P52100017892). Verification can be validated on maharera.mahaonline.gov.in."
+      a: "Pride World City enclaves are registered with MahaRERA: Valencia (P52100052309), Miami (PR1260002600188), Boston (P52100078307), Montreal (P52100077138), Wellington (P52100054534), Kingsbury (P52100000854), SoHo (P52100029810), and Long Island (P52100017892). Verification is available on maharera.mahaonline.gov.in."
     },
     {
       q: "Which banks offer pre-approved home loans for Pride World City?",
@@ -1060,7 +1060,7 @@ const TOWNSHIP_DATA = {
       category: "masterplan",
       categoryLabel: "Township Masterplan",
       image: "assets/images/11-original.png",
-      desc: "Official master layout diagram of Valencia's 5.9-acre enclave within Pride World City."
+      desc: "Master layout diagram of Valencia's 5.9-acre enclave within Pride World City (illustrative planning view)."
     },
     {
       id: "g16",
@@ -1076,7 +1076,7 @@ const TOWNSHIP_DATA = {
       category: "masterplan",
       categoryLabel: "Township Masterplan",
       image: "assets/images/Pride_Miami-Master-Layout_01Final.webp",
-      desc: "Official master layout of Miami enclave featuring 9 residential towers and central amenity parklands."
+      desc: "Master layout diagram of Miami enclave featuring 9 residential towers and central amenity parklands (illustrative)."
     },
     {
       id: "g18",
@@ -1301,7 +1301,7 @@ const TOWNSHIP_DATA = {
       },
       {
         title: "Township vs Standalone Apartment Advantage",
-        desc: "Pride World City provides 100% water self-sufficiency (7-acre freshwater lake, rainwater harvesting, STP), 70% open green reserves, on-campus K-12 Cambridge education, and zero dependence on municipal water tankers."
+        desc: "Pride World City incorporates on-site water recycling infrastructure (7-acre freshwater lake, rainwater harvesting, STP), 70% planned open spaces, on-campus K-12 Cambridge education, and township security management."
       }
     ]
   }

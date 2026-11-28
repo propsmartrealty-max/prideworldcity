@@ -3,28 +3,25 @@
   "canonicalUrl": "https://prideworld.city/",
   "entity": {
     "name": "Pride World City",
+    "operatingPartner": "Propsmart Realty (Authorized Channel Partner & Advisory Portal)",
+    "developerWebsite": "https://www.prideworldcity.com/",
     "alternateNames": [
       "Pride World City Pune",
       "Pride World City Charholi",
-      "Pride World City Charoli",
-      "Pride World City Charohli",
       "Pride City Charholi Budruk",
       "PWC Charholi",
       "Pride Group Charholi Township"
     ],
     "localityAliases": [
       "Charholi",
-      "Charoli",
-      "Charohli",
       "Charholi Budruk",
-      "Charoli Budruk",
       "Charholi Bk",
       "Alankapuram Road Charholi",
       "412105"
     ],
     "postalCode": "412105",
     "developer": "Pride Group",
-    "tagline": "The 400-Acre Global Metropolis in Charholi (Charoli), Pune",
+    "tagline": "400-Acre Integrated Mega Township in Charholi Budruk, Pune",
     "location": "Pride World City, Adjacent to D.Y. Patil Knowledge City, Charholi Budruk, Pune - 412105, Maharashtra, India",
     "coordinates": {
       "latitude": 18.6366,
@@ -356,7 +353,7 @@
       },
       {
         "title": "Township vs Standalone Apartment Advantage",
-        "desc": "Pride World City provides 100% water self-sufficiency (7-acre freshwater lake, rainwater harvesting, STP), 70% open green reserves, on-campus K-12 Cambridge education, and zero dependence on municipal water tankers."
+        "desc": "Pride World City incorporates on-site water recycling infrastructure (7-acre freshwater lake, rainwater harvesting, STP), 70% planned open spaces, on-campus K-12 Cambridge education, and 24x7 township security management."
       }
     ]
   },
@@ -376,16 +373,16 @@
     "llmsFull": "https://prideworld.city/llms-full.txt"
   },
   "guidesAndTools": [
-    { "title": "Master Plan, 1-4.5 BHK Floor Plans & Brochure", "topics": "master plan brochure floor plan layout map charholi charoli", "url": "https://prideworld.city/pride-world-city-master-plan-floor-plans" },
+    { "title": "Master Plan, 1-4.5 BHK Floor Plans & Brochure", "topics": "master plan brochure floor plan layout map charholi", "url": "https://prideworld.city/pride-world-city-master-plan-floor-plans" },
     { "title": "Charholi Reviews, Pros & Cons & Reality Check [2026]", "topics": "reviews owner feedback complaints water construction quality pros cons", "url": "https://prideworld.city/pride-world-city-reviews-owner-feedback" },
-    { "title": "Flats Near Bhosari & Chakan MIDC in Charholi", "topics": "bhosari chakan midc alandi alankapuram moshi pcmc charoli", "url": "https://prideworld.city/flats-near-bhosari-chakan-midc-charholi" },
-    { "title": "Best Real Estate Investment in Pune 2026 ROI Guide", "topics": "best investment pune roi rental yield baner hinjawadi kharadi charholi", "url": "https://prideworld.city/pune-township-investment-roi-guide" },
+    { "title": "Flats Near Bhosari & Chakan MIDC in Charholi", "topics": "bhosari chakan midc alandi alankapuram moshi pcmc charholi", "url": "https://prideworld.city/flats-near-bhosari-chakan-midc-charholi" },
+    { "title": "Real Estate Investment in Pune 2026 ROI Guide", "topics": "investment pune roi rental yield baner hinjawadi kharadi charholi", "url": "https://prideworld.city/pune-township-investment-roi-guide" },
     { "title": "2026 Price List, Cost Sheet & Payment Plan Guide", "topics": "price list cost sheet stamp duty gst payment plan token", "url": "https://prideworld.city/pride-world-city-price-list-cost-sheet-guide" },
     { "title": "Complete 12-Cluster MahaRERA List & Possession Matrix", "topics": "maharera rera numbers possession dates ready under construction", "url": "https://prideworld.city/pride-world-city-maharera-possession-status" },
     { "title": "Pune Stamp Duty (6% Female), GST & EMI Calculator", "topics": "calculator emi stamp duty female rebate home loan", "url": "https://prideworld.city/pride-world-city-emi-stamp-duty-calculator" },
-    { "title": "Resale Flats, Ready Possession & 4.8-6% Rental Yield", "topics": "resale ready possession zero gst rent yield kingsbury brooklyn", "url": "https://prideworld.city/pride-world-city-resale-rental-yield-guide" },
+    { "title": "Resale Flats, Ready Possession & 4.8-6% Rental Yield", "topics": "resale ready possession oc exempt gst rent yield kingsbury brooklyn", "url": "https://prideworld.city/pride-world-city-resale-rental-yield-guide" },
     { "title": "Which Cluster Should You Buy? Buyer Decision Matrix", "topics": "valencia vs miami vs wellington vs montreal comparison cluster choice", "url": "https://prideworld.city/which-cluster-to-buy-pride-world-city" },
-    { "title": "Charholi Budruk & North Pune Market Report [412105]", "topics": "charholi charoli charohli north pune market report 412105", "url": "https://prideworld.city/charholi-pune-real-estate" },
+    { "title": "Charholi Budruk & North Pune Market Report [412105]", "topics": "charholi budruk north pune market report 412105", "url": "https://prideworld.city/charholi-pune-real-estate" },
     { "title": "Pride World City 400-Acre Civic Ecosystem (GIIS, Tech Park, Lake, Hospital)", "topics": "civic ecosystem giis school club royale 7 acre lake town plaza hospital brts", "url": "https://prideworld.city/pride-world-city-civic-ecosystem" },
     { "title": "VIP Site Visit & Golf Buggy Booking", "topics": "vip tour site visit booking executive pickup buggy pickup brochure", "url": "https://prideworld.city/pride-world-city-vip-site-visit" }
   ]

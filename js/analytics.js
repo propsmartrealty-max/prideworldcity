@@ -8,16 +8,47 @@ function gtag() {
   window.dataLayer.push(arguments);
 }
 
-// Default Google Consent Mode v2 initialization (DPDP / Privacy Ready)
+// Default Google Consent Mode v2 initialization (EU User Consent Policy & DPDP Act 2023 Ready)
+const EEA_UK_CH_REGIONS = [
+  "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR",
+  "HU", "IS", "IE", "IT", "LV", "LI", "LT", "LU", "MT", "NL", "NO", "PL",
+  "PT", "RO", "SK", "SI", "ES", "SE", "GB", "CH"
+];
+
 gtag("consent", "default", {
-  ad_storage: "granted",
-  ad_user_data: "granted",
-  ad_personalization: "granted",
-  analytics_storage: "granted",
+  ad_storage: "denied",
+  ad_user_data: "denied",
+  ad_personalization: "denied",
+  analytics_storage: "denied",
+  functionality_storage: "granted",
+  security_storage: "granted",
+  region: EEA_UK_CH_REGIONS,
+  wait_for_update: 500
+});
+
+let storedConsent = null;
+try {
+  storedConsent = localStorage.getItem("pwc_consent_v2");
+} catch (_) {}
+
+gtag("consent", "default", {
+  ad_storage: storedConsent === "denied" ? "denied" : "granted",
+  ad_user_data: storedConsent === "denied" ? "denied" : "granted",
+  ad_personalization: storedConsent === "denied" ? "denied" : "granted",
+  analytics_storage: storedConsent === "denied" ? "denied" : "granted",
   functionality_storage: "granted",
   security_storage: "granted",
   wait_for_update: 500
 });
+
+if (storedConsent === "granted" || storedConsent === "denied") {
+  gtag("consent", "update", {
+    ad_storage: storedConsent,
+    ad_user_data: storedConsent,
+    ad_personalization: storedConsent,
+    analytics_storage: storedConsent
+  });
+}
 
 const WHATSAPP_DIGITS = "917744009295";
 const PHONE_DISPLAY = "+91 77440 09295";
@@ -198,6 +229,58 @@ document.addEventListener("DOMContentLoaded", () => {
   // Register lightweight offline PWA Service Worker
   if ("serviceWorker" in navigator && window.location.protocol === "https:") {
     navigator.serviceWorker.register("/sw.js").catch(() => {});
+  }
+
+  // Non-blocking Consent Mode v2 Banner & Re-openable Cookie Preferences
+  function setConsentPreference(granted) {
+    const state = granted ? "granted" : "denied";
+    try {
+      localStorage.setItem("pwc_consent_v2", state);
+    } catch (_) {}
+    gtag("consent", "update", {
+      ad_storage: state,
+      ad_user_data: state,
+      ad_personalization: state,
+      analytics_storage: state
+    });
+    const banner = document.getElementById("pwcConsentBanner");
+    if (banner) banner.remove();
+  }
+
+  function showConsentBanner() {
+    if (document.getElementById("pwcConsentBanner")) return;
+    const banner = document.createElement("aside");
+    banner.id = "pwcConsentBanner";
+    banner.className = "pwc-consent-banner";
+    banner.setAttribute("role", "dialog");
+    banner.setAttribute("aria-label", "Privacy and Cookie Preferences");
+    banner.innerHTML = `
+      <p style="margin: 0; font-size: 0.8rem; line-height: 1.5; color: var(--text-muted);">
+        <strong style="color: var(--text-main);">Privacy &amp; Cookies:</strong> We use essential storage and optional analytics to improve this Pride World City advisory portal. Read our <a href="/privacy" style="color: var(--accent-gold); text-decoration: underline;">Privacy Policy</a> &amp; <a href="/terms" style="color: var(--accent-gold); text-decoration: underline;">Terms</a>.
+      </p>
+      <div class="pwc-consent-actions">
+        <button type="button" id="pwcConsentAccept" class="btn btn-gold" style="padding: 0.45rem 0.9rem; font-size: 0.78rem;">Accept All</button>
+        <button type="button" id="pwcConsentReject" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.78rem;">Essential Only</button>
+      </div>
+    `;
+    document.body.appendChild(banner);
+    const acceptBtn = document.getElementById("pwcConsentAccept");
+    const rejectBtn = document.getElementById("pwcConsentReject");
+    if (acceptBtn) acceptBtn.addEventListener("click", () => setConsentPreference(true));
+    if (rejectBtn) rejectBtn.addEventListener("click", () => setConsentPreference(false));
+  }
+
+  window.openPrivacyPreferences = showConsentBanner;
+  document.addEventListener("click", (e) => {
+    const trigger = e.target.closest("[data-open-consent]");
+    if (trigger) {
+      e.preventDefault();
+      showConsentBanner();
+    }
+  });
+
+  if (!storedConsent) {
+    setTimeout(showConsentBanner, 1200);
   }
 
   fetch("/api/geo")

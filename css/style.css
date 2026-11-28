@@ -4822,6 +4822,103 @@ body.mode-night .pillar-spec-box strong {
   box-shadow: 0 6px 16px rgba(184, 134, 11, 0.2);
 }
 
+/* Google Standards, WCAG 2.1 AA Focus, Consent Banner & Statutory Disclaimers */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+
+.vip-modal-card h2,
+.vip-modal-card h3,
+.vip-modal-card h4 {
+  color: #ffffff !important;
+}
+
+.testimonial-initials {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.2), rgba(15, 23, 42, 0.14));
+  border: 2px solid var(--border-gold);
+  color: var(--accent-gold);
+  font-weight: 800;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.calculator-disclaimer {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  line-height: 1.55;
+  margin-top: 0.9rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.footer-partner-notice {
+  font-size: 0.76rem;
+  color: var(--text-dim);
+  line-height: 1.55;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.consent-settings-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text-dim);
+  font: inherit;
+  font-size: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pwc-consent-banner {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  max-width: 440px;
+  width: calc(100% - 2rem);
+  z-index: 10050;
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.15rem;
+  box-shadow: var(--shadow-lux);
+  backdrop-filter: blur(12px);
+}
+
+body.mode-night .pwc-consent-banner {
+  background: rgba(15, 23, 42, 0.96);
+}
+
+.pwc-consent-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .pwc-consent-banner {
+    bottom: 4.75rem;
+    left: 0.75rem;
+    right: 0.75rem;
+    width: auto;
+    max-width: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .text-gold-gradient,
   .hero-backdrop-glow,

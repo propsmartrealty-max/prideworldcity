@@ -331,7 +331,7 @@ export async function onRequestPost(context) {
         emailNeedsActivation: Boolean(emailResult && emailResult.needsActivation),
         whatsappNumber: notifyWhatsapp,
         whatsappUrl,
-        message: "Enquiry logged & routed to Official Concierge Desk + WhatsApp +91 77440 09295.",
+        message: "Enquiry logged & routed to Propsmart Realty Advisory Desk + WhatsApp +91 77440 09295.",
         isNRI: leadRecord.geo.isNRI
       }),
       { status: 200, headers: JSON_HEADERS }

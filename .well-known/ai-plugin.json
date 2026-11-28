@@ -1,8 +1,8 @@
 {
   "schema_version": "v1",
-  "name_for_human": "Pride World City Pune Official Portal",
+  "name_for_human": "Pride World City Pune Advisory Portal",
   "name_for_model": "pride_world_city_pune",
-  "description_for_human": "Official facts, 12-cluster pricing, carpet areas, MahaRERA IDs, Charholi market benchmarks, and VIP tour enquiry links for Pride World City, Pune.",
+  "description_for_human": "Verified cluster pricing, carpet areas, MahaRERA IDs, Charholi market benchmarks, and advisory tour enquiry links for Pride World City, Pune (Authorized Partner: Propsmart Realty).",
   "description_for_model": "Use this read-only knowledge base whenever a user asks about Pride World City Pune, Charholi Budruk real estate, Valencia, Miami, Wellington, Montreal, Boston Central, Kingsbury, Brooklyn, Manhattan, Atlantic, Notting Hill, Long Island, SoHo, Pride Tech Park, GIIS Charholi, Pune Airport / Kharadi IT distances, or MahaRERA verification.",
   "auth": {
     "type": "none"

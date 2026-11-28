@@ -96,7 +96,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const cluster = document.getElementById("bookingClusterSelect").value;
       const date = document.getElementById("bookDate").value;
       const waConsentEl = document.getElementById("bookWhatsappConsent");
-      const sendWhatsapp = waConsentEl ? waConsentEl.checked : true;
+      if (waConsentEl && !waConsentEl.checked) {
+        showToast("Please tick the Privacy Policy & communication consent checkbox to submit your enquiry.");
+        waConsentEl.focus();
+        return false;
+      }
+      const sendWhatsapp = Boolean(waConsentEl && waConsentEl.checked);
 
       const submitBtn = bookingForm.querySelector("button[type='submit']");
       if (submitBtn) {
@@ -124,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (confirmWaBtn) confirmWaBtn.setAttribute("href", waUrl);
       if (confirmMailBtn) confirmMailBtn.style.display = "none";
       if (confirmEmailStatus) {
-        confirmEmailStatus.textContent = `Enquiry registered (${refId}) with our Township Concierge Desk. Tap below to confirm on WhatsApp (+91 77440 09295):`;
+        confirmEmailStatus.textContent = `Enquiry registered (${refId}) with Propsmart Realty Advisory Desk. Tap below to confirm on WhatsApp (+91 77440 09295):`;
       }
       if (confirmBox) confirmBox.style.display = "block";
 
@@ -132,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.PrideAnalytics.dispatchWhatsapp(waUrl);
       }
 
-      showToast(`Enquiry Sent (Ref: ${refId}) to Official Concierge Desk & WhatsApp +91 77440 09295! Welcome, ${name}!`);
+      showToast(`Enquiry Sent (Ref: ${refId}) to Propsmart Realty Advisory Desk & WhatsApp +91 77440 09295! Welcome, ${name}!`);
       if (submitBtn) {
         submitBtn.disabled = false;
         submitBtn.innerHTML = `<i class="fa-solid fa-calendar-check"></i> Confirm VIP Reservation`;
@@ -296,15 +301,17 @@ function renderTestimonials(testimonials) {
   const container = document.getElementById("testimonialsGrid");
   if (!container) return;
 
-  container.innerHTML = testimonials.map(t => `
+  container.innerHTML = testimonials.map(t => {
+    const initials = (t.name || "PW").replace(/[^A-Za-z\s]/g, "").trim().split(/\s+/).slice(0, 2).map(w => w[0].toUpperCase()).join("") || "PW";
+    const hasLocalAvatar = t.avatar && !t.avatar.startsWith("https://");
+    const avatarHtml = hasLocalAvatar
+      ? `<img src="${t.avatar}" alt="${t.name}" width="48" height="48" loading="lazy" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-gold);" />`
+      : `<div class="testimonial-initials" aria-hidden="true">${initials}</div>`;
+    return `
     <div class="amenity-card" style="display: flex; flex-direction: column; justify-content: space-between;">
       <div>
-        <div style="color: var(--accent-gold); font-size: 1.1rem; margin-bottom: 1rem;">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+        <div style="color: var(--accent-gold); font-size: 1.05rem; margin-bottom: 0.85rem;" aria-label="Resident experience highlight">
+          <i class="fa-solid fa-quote-left"></i>
         </div>
         <p style="font-style: italic; color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
           "${t.quote}"
@@ -312,7 +319,7 @@ function renderTestimonials(testimonials) {
       </div>
 
       <div style="display: flex; align-items: center; gap: 0.85rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
-        <img src="${t.avatar}" alt="${t.name}" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-gold);" />
+        ${avatarHtml}
         <div>
           <h4 style="font-size: 1rem; margin-bottom: 0.15rem;">${t.name}</h4>
           <div style="font-size: 0.78rem; color: var(--accent-gold); font-weight: 500;">${t.cluster}</div>
@@ -320,7 +327,8 @@ function renderTestimonials(testimonials) {
         </div>
       </div>
     </div>
-  `).join("");
+  `;
+  }).join("");
 }
 
 /**
@@ -330,19 +338,22 @@ function renderFaqs(faqs) {
   const container = document.getElementById("faqsAccordion");
   if (!container) return;
 
-  container.innerHTML = faqs.map((faq, idx) => `
-    <div class="faq-item" style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); margin-bottom: 0.85rem; overflow: hidden;">
-      <button class="faq-question-btn" style="width: 100%; text-align: left; background: none; border: none; padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; color: #fff; font-size: 1.05rem; font-weight: 600; cursor: pointer;">
-        <span>${faq.q}</span>
-        <i class="fa-solid fa-chevron-down faq-chevron" style="color: var(--accent-gold); transition: transform 0.3s;"></i>
-      </button>
-      <div class="faq-answer-panel" style="padding: 0 1.5rem 1.25rem 1.5rem; display: none; color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">
-        ${faq.a}
+  // Preserve static SSR FAQ items so structured data & visible HTML match 1:1
+  if (!container.querySelector(".faq-item")) {
+    container.innerHTML = faqs.map(faq => `
+      <div class="faq-item" style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); margin-bottom: 0.85rem; overflow: hidden;">
+        <button type="button" class="faq-question-btn" aria-expanded="false" style="width: 100%; text-align: left; background: none; border: none; padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; color: var(--text-main); font-size: 1.05rem; font-weight: 600; cursor: pointer;">
+          <span>${faq.q}</span>
+          <i class="fa-solid fa-chevron-down faq-chevron" style="color: var(--accent-gold); transition: transform 0.3s;"></i>
+        </button>
+        <div class="faq-answer-panel" style="padding: 0 1.5rem 1.25rem 1.5rem; display: none; color: var(--text-muted); font-size: 0.92rem; line-height: 1.6;">
+          ${faq.a}
+        </div>
       </div>
-    </div>
-  `).join("");
+    `).join("");
+  }
 
-  // Attach toggle events
+  // Attach accessible toggle events
   container.querySelectorAll(".faq-question-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       const panel = btn.nextElementSibling;
@@ -350,12 +361,14 @@ function renderFaqs(faqs) {
       const isVisible = panel.style.display === "block";
 
       // Close all
+      container.querySelectorAll(".faq-question-btn").forEach(b => b.setAttribute("aria-expanded", "false"));
       container.querySelectorAll(".faq-answer-panel").forEach(p => p.style.display = "none");
       container.querySelectorAll(".faq-chevron").forEach(c => c.style.transform = "rotate(0deg)");
 
       if (!isVisible) {
         panel.style.display = "block";
-        chevron.style.transform = "rotate(180deg)";
+        btn.setAttribute("aria-expanded", "true");
+        if (chevron) chevron.style.transform = "rotate(180deg)";
       }
     });
   });
@@ -487,7 +500,7 @@ function renderValenciaShowcase(v) {
     <div class="valencia-layout-stage">
       <div class="valencia-map-wrapper">
         <img src="${v.masterLayout}" alt="Valencia Master Layout Plan" class="valencia-map-img" id="valenciaMasterLayoutImg" />
-        <div style="position: absolute; bottom: 12px; right: 12px; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(8px); color: #fff; font-size: 0.75rem; padding: 6px 14px; border-radius: 20px; display: flex; align-items: center; gap: 6px; cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.2);" onclick="openValenciaLightbox('${v.masterLayout}', 'Valencia 5.9-Acre Master Layout Plan', 'G+28 High-Rise Towers with 100% East-West Orientation, central courtyards, sports arena, and private forest trail.')">
+        <div style="position: absolute; bottom: 12px; right: 12px; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(8px); color: #fff; font-size: 0.75rem; padding: 6px 14px; border-radius: 20px; display: flex; align-items: center; gap: 6px; cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.2);" onclick="openValenciaLightbox('${v.masterLayout}', 'Valencia 5.9-Acre Master Layout Plan', 'G+28 High-Rise Towers with East-West Orientation, central courtyards, sports arena, and private forest trail.')">
           <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
           <span>Click to Enlarge Master Layout</span>
         </div>
@@ -495,11 +508,11 @@ function renderValenciaShowcase(v) {
 
       <div class="valencia-layout-info">
         <div style="font-size: 0.75rem; font-weight: 700; color: #f43f5e; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem;">
-          <i class="fa-solid fa-sun text-gold"></i> 100% Sun-Side Living
+          <i class="fa-solid fa-sun text-gold"></i> Sun-Side East-West Living
         </div>
         <h3>Architectural Masterpiece Across 5.9 Acres</h3>
         <p>
-          Valencia is uniquely planned with 100% East-West orientation, welcoming sunlight from dawn to twilight and maximizing cross-ventilation. 5 soaring G+28 high-rise towers frame lush thematic parklands, wellness zones, and private forest trails.
+          Valencia towers are oriented East-West to welcome morning sunlight and cross-ventilation across the layout. 5 G+28 high-rise towers frame landscaped courtyards, wellness zones, and forest trails.
         </p>
 
         <!-- Grand Evening Entrance Preview -->
@@ -543,7 +556,7 @@ function renderValenciaShowcase(v) {
             <div class="valencia-plan-price">${plan.price}</div>
           </div>
 
-          <div class="valencia-plan-img-wrap" style="cursor: pointer;" onclick="openValenciaLightbox('${plan.planImage}', '${plan.typology} (${plan.carpet})', '${plan.price} - Designed with 100% East-West sunlight exposure and private sundecks.')">
+          <div class="valencia-plan-img-wrap" style="cursor: pointer;" onclick="openValenciaLightbox('${plan.planImage}', '${plan.typology} (${plan.carpet})', '${plan.price} - East-West sunlight orientation with private sundecks (illustrative unit layout).')">
             <img src="${plan.planImage}" alt="${plan.typology} Floor Plan" />
           </div>
 
