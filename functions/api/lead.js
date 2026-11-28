@@ -5,6 +5,7 @@
  */
 
 const DEFAULT_WHATSAPP_NUMBER = "917744009295";
+const DEFAULT_NOTIFY_EMAIL = "propsmartrealty@gmail.com";
 
 const JSON_HEADERS = {
   "Content-Type": "application/json; charset=utf-8",
@@ -111,7 +112,7 @@ async function dispatchEmailNotification(lead, whatsappUrl, env, targetEmail) {
   }
 
   // 3. Server-side FormSubmit relay (set env.LEAD_FORMSUBMIT_ALIAS or env.LEAD_NOTIFY_EMAIL in Cloudflare Secrets)
-  const fsTarget = (env && (env.LEAD_FORMSUBMIT_ALIAS || env.LEAD_NOTIFY_EMAIL || targetEmail)) || "";
+  const fsTarget = (env && (env.LEAD_FORMSUBMIT_ALIAS || env.LEAD_NOTIFY_EMAIL)) || targetEmail || DEFAULT_NOTIFY_EMAIL;
   if (fsTarget) {
     try {
       const fsParams = new URLSearchParams({
@@ -243,7 +244,7 @@ export async function onRequestPost(context) {
     }
 
     // 4. Enrich with Cloudflare Edge Geo Telemetry & Private Server Destinations
-    const notifyEmail = (env && env.LEAD_NOTIFY_EMAIL) || "";
+    const notifyEmail = (env && env.LEAD_NOTIFY_EMAIL) || DEFAULT_NOTIFY_EMAIL;
     const notifyWhatsapp = (env && env.LEAD_WHATSAPP_NUMBER) || DEFAULT_WHATSAPP_NUMBER;
     const cf = request.cf || {};
     const referenceId = `PWC-${Date.now().toString(36).toUpperCase()}-${Math.floor(100 + Math.random() * 900)}`;

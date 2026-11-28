@@ -36,6 +36,7 @@ Allow: /google-shopping-feed.xml
 Allow: /google-merchant-center-feed.csv
 Allow: /pride-world-city-locations.kml
 Allow: /site.webmanifest
+Allow: /sw.js
 Disallow: /scratch/
 Disallow: /*.py$
 Disallow: /private/
