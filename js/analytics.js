@@ -98,6 +98,26 @@ const PrideAnalytics = {
    * Target email stays strictly private on the server edge.
    */
   async submitLead(leadData) {
+    // Google Ads & GA4 Enhanced Conversions (SHA-256 Client-Side Hashing)
+    if (window.crypto && window.crypto.subtle && (leadData.email || leadData.phone)) {
+      try {
+        const sha256 = async (str) => {
+          if (!str) return undefined;
+          const norm = str.trim().toLowerCase();
+          const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(norm));
+          return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, "0")).join("");
+        };
+        const [hashedEmail, hashedPhone] = await Promise.all([
+          sha256(leadData.email),
+          sha256(leadData.phone ? leadData.phone.replace(/[^0-9]/g, "") : "")
+        ]);
+        const userData = {};
+        if (hashedEmail) userData.sha256_email_address = hashedEmail;
+        if (hashedPhone) userData.sha256_phone_number = hashedPhone;
+        gtag("set", "user_data", userData);
+      } catch (_) {}
+    }
+
     this.track("generate_lead", {
       cluster: leadData.cluster || "Valencia",
       typology: leadData.typology || "",
@@ -138,6 +158,17 @@ const PrideAnalytics = {
 window.PrideAnalytics = PrideAnalytics;
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Plug-and-play Google Tag / GA4 / Google Ads loader (loads when tag ID meta/global is present)
+  const tagMeta = document.querySelector('meta[name="google-tag-id"], meta[name="google-analytics-id"], meta[name="google-ads-id"]');
+  const googleTagId = (tagMeta && tagMeta.content) || window.PWC_GOOGLE_TAG_ID;
+  if (googleTagId && !document.getElementById("googleTagScript")) {
+    const s = document.createElement("script");
+    s.id = "googleTagScript";
+    s.async = true;
+    s.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(googleTagId)}`;
+    document.head.appendChild(s);
+    gtag("config", googleTagId, { send_page_view: true });
+  }
   document.addEventListener("click", (e) => {
     const link = e.target.closest("a");
     if (!link) return;

@@ -141,6 +141,12 @@
   Cache-Control: private, no-store, max-age=0
   X-Robots-Tag: noindex, nofollow
 
+# Google Search Console HTML Verification File
+/google9xKf_BSnoDkWuk8Z7DlA5KdU0-tidOeoI4TO_zasd2s.html
+  Content-Type: text/html; charset=UTF-8
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: all, noindex
+
 # Google Shopping Feed — RSS/XML with correct content type
 /google-shopping-feed.xml
   Content-Type: application/rss+xml; charset=UTF-8
