@@ -1,27 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Pride World City Pune — Research Guides &amp; Township Updates</title>
     <link>https://prideworld.city/</link>
     <atom:link href="https://prideworld.city/feed.xml" rel="self" type="application/rss+xml" />
-    <description>Official research guides, cluster launches, master plans, reviews, MahaRERA updates, and North Pune real estate intelligence for Pride World City, Charholi Budruk, Pune.</description>
+    <description>Verified research guides, cluster launches, master plans, resident evaluations, MahaRERA updates, and North Pune real estate intelligence for Pride World City, Charholi Budruk, Pune (Advisory Portal by Propsmart Realty).</description>
     <language>en-IN</language>
-    <lastBuildDate>Fri, 27 Nov 2026 16:15:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 13:30:00 +0530</lastBuildDate>
+    <item>
+      <title>Pride World City Construction Status &amp; Tower Possession Timeline [2026–2029]</title>
+      <link>https://prideworld.city/pride-world-city-construction-update-possession-timeline</link>
+      <guid isPermaLink="true">https://prideworld.city/pride-world-city-construction-update-possession-timeline</guid>
+      <pubDate>Sat, 28 Nov 2026 13:30:00 +0530</pubDate>
+      <category>Construction &amp; Possession</category>
+      <description>Phase-by-phase breakdown separating delivered OC-received societies (Kingsbury, Brooklyn, Manhattan) from active MahaRERA clusters (Valencia, Boston Central, Miami, Wellington).</description>
+      <media:content url="https://prideworld.city/assets/images/Pride_Boston_Cam_01Final.webp" medium="image" width="1920" height="867" />
+    </item>
+    <item>
+      <title>Flats in Vishrantwadi, Alandi Road &amp; Near Yerwada Commerzone IT Park [2026]</title>
+      <link>https://prideworld.city/flats-in-vishrantwadi-alandi-road-yerwada-pune</link>
+      <guid isPermaLink="true">https://prideworld.city/flats-in-vishrantwadi-alandi-road-yerwada-pune</guid>
+      <pubDate>Sat, 28 Nov 2026 13:30:00 +0530</pubDate>
+      <category>North Pune Corridors</category>
+      <description>Micro-market value analysis for buyers comparing Vishrantwadi, Tingre Nagar &amp; Yerwada IT Park vs Pride World City Charholi (12–16 mins north).</description>
+      <media:content url="https://prideworld.city/assets/images/Cam_12Final.jpg" medium="image" width="1200" height="667" />
+    </item>
+    <item>
+      <title>Maharashtra RERA Carpet Area vs Built-Up &amp; Loading % Formula Guide</title>
+      <link>https://prideworld.city/maharashtra-rera-carpet-area-loading-calculator-guide</link>
+      <guid isPermaLink="true">https://prideworld.city/maharashtra-rera-carpet-area-loading-calculator-guide</guid>
+      <pubDate>Sat, 28 Nov 2026 13:30:00 +0530</pubDate>
+      <category>MahaRERA Education</category>
+      <description>Statutory MahaRERA carpet formula, balcony inclusions, loading ratio math &amp; verified floor plan ranges from 560 to 3,200 sq. ft. in Pune.</description>
+      <media:content url="https://prideworld.city/assets/images/Master-Layout-use-this.webp" medium="image" width="1800" height="1716" />
+    </item>
+    <item>
+      <title>Pune Home Loan Eligibility (SBI, HDFC, ICICI) &amp; Stamp Duty Guide [2026]</title>
+      <link>https://prideworld.city/pune-home-loan-eligibility-sbi-hdfc-icici-stamp-duty</link>
+      <guid isPermaLink="true">https://prideworld.city/pune-home-loan-eligibility-sbi-hdfc-icici-stamp-duty</guid>
+      <pubDate>Sat, 28 Nov 2026 13:30:00 +0530</pubDate>
+      <category>Financing &amp; Stamp Duty</category>
+      <description>Illustrative income multipliers, RBI LTV bands, Pune 6% female vs 7% male stamp duty savings &amp; NRI NRE/NRO documentation guide.</description>
+      <media:content url="https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-1-1.webp" medium="image" width="1920" height="1080" />
+    </item>
+    <item>
+      <title>East vs West Facing Flat, Sunlight &amp; Vastu Orientation Guide for Pune</title>
+      <link>https://prideworld.city/east-vs-west-facing-flat-vastu-sunlight-pune</link>
+      <guid isPermaLink="true">https://prideworld.city/east-vs-west-facing-flat-vastu-sunlight-pune</guid>
+      <pubDate>Sat, 28 Nov 2026 13:30:00 +0530</pubDate>
+      <category>Architecture &amp; Vastu</category>
+      <description>How Pune monsoon winds, morning sunrise, and Vastu layouts align with East-West facing apartments including Pride Valencia.</description>
+      <media:content url="https://prideworld.city/assets/images/Valencia-Homes-Sunset-Launch-Banner.webp" medium="image" width="2035" height="773" />
+    </item>
+    <item>
+      <title>Pride World City Rent Rates, Maintenance &amp; Secondary Resale Trends [2026]</title>
+      <link>https://prideworld.city/pride-world-city-rent-maintenance-resale-price-trends</link>
+      <guid isPermaLink="true">https://prideworld.city/pride-world-city-rent-maintenance-resale-price-trends</guid>
+      <pubDate>Sat, 28 Nov 2026 13:30:00 +0530</pubDate>
+      <category>Rent &amp; Resale Data</category>
+      <description>Indicative monthly rent brackets (₹18,000 to ₹48,000+), society maintenance structure, and OC resale checklist in Charholi Pune.</description>
+      <media:content url="https://prideworld.city/assets/images/Miami-Final-Cam_05-Amenity.webp" medium="image" width="1920" height="1104" />
+    </item>
+    <item>
+      <title>North Pune Ring Road, Airport Terminal 2 &amp; Metro Connectivity Briefing</title>
+      <link>https://prideworld.city/upcoming-pune-infrastructure-ring-road-airport-metro-north-pune</link>
+      <guid isPermaLink="true">https://prideworld.city/upcoming-pune-infrastructure-ring-road-airport-metro-north-pune</guid>
+      <pubDate>Sat, 28 Nov 2026 13:30:00 +0530</pubDate>
+      <category>Infrastructure &amp; Transit</category>
+      <description>Comprehensive infrastructure map analyzing PMRDA 128-km Ring Road interchange (1.8 km), PNQ Terminal 2, and Kharadi link corridor.</description>
+      <media:content url="https://prideworld.city/assets/images/Cam_21Final.jpg" medium="image" width="1200" height="686" />
+    </item>
     <item>
       <title>Pride World City 400-Acre Civic Ecosystem: GIIS, Club Royale, Lake &amp; Pride Tech Park</title>
       <link>https://prideworld.city/pride-world-city-civic-ecosystem</link>
       <guid isPermaLink="true">https://prideworld.city/pride-world-city-civic-ecosystem</guid>
       <pubDate>Fri, 27 Nov 2026 16:15:00 +0530</pubDate>
       <category>Civic Ecosystem</category>
-      <description>Complete 15-minute metropolis infrastructure hub uniting GIIS Cambridge/CBSE school, 50,000 sq.ft Club Royale, 7-acre freshwater lake, Pride Tech Park, Town Plaza retail, hospital, and BRTS.</description>
+      <description>15-minute metropolis infrastructure hub uniting GIIS Cambridge/CBSE school, 50,000 sq.ft Club Royale, 7-acre freshwater lake, Pride Tech Park, Town Plaza retail, hospital &amp; BRTS.</description>
+      <media:content url="https://prideworld.city/assets/images/Completed_Club_charholi.webp" medium="image" width="1334" height="434" />
     </item>
     <item>
       <title>Book Pride World City Complimentary VIP Site Visit &amp; Golf Buggy Tour</title>
       <link>https://prideworld.city/pride-world-city-vip-site-visit</link>
       <guid isPermaLink="true">https://prideworld.city/pride-world-city-vip-site-visit</guid>
       <pubDate>Fri, 27 Nov 2026 16:15:00 +0530</pubDate>
-      <category>VIP Experience Desk</category>
-      <description>Schedule a complimentary sedan pickup across Pune or PNQ Airport and receive 2026 cluster cost sheets directly on WhatsApp (+91 77440 09295) &amp; email.</description>
+      <category>Advisory Desk</category>
+      <description>Schedule a complimentary sedan pickup across Pune or PNQ Airport and request 2026 cluster cost sheets via WhatsApp (+91 77440 09295) &amp; advisory form.</description>
+      <media:content url="https://prideworld.city/assets/images/W-enquiry-frm.jpg" medium="image" width="1200" height="653" />
     </item>
     <item>
       <title>Pride World City Master Plan, Floor Plans &amp; 2026 Brochure Guide</title>
@@ -29,7 +94,8 @@
       <guid isPermaLink="true">https://prideworld.city/pride-world-city-master-plan-floor-plans</guid>
       <pubDate>Fri, 27 Nov 2026 13:30:00 +0530</pubDate>
       <category>Master Plan &amp; Floor Plans</category>
-      <description>Complete 400-acre zoning map and RERA carpet area directory for 1, 2, 3, 4 &amp; 4.5 BHK residences across all 12 enclaves in Charholi (PIN 412105), Pune.</description>
+      <description>400-acre zoning map and RERA carpet area directory for 1, 2, 3, 4 &amp; 4.5 BHK residences across all enclaves in Charholi Budruk (PIN 412105), Pune.</description>
+      <media:content url="https://prideworld.city/assets/images/2-BHK-S-Boston.jpg.bv.webp" medium="image" width="800" height="601" />
     </item>
     <item>
       <title>Pride World City Charholi Reviews, Pros &amp; Cons &amp; Ownership Audit [2026]</title>
@@ -37,7 +103,8 @@
       <guid isPermaLink="true">https://prideworld.city/pride-world-city-reviews-owner-feedback</guid>
       <pubDate>Fri, 27 Nov 2026 13:30:00 +0530</pubDate>
       <category>Reviews &amp; Due Diligence</category>
-      <description>Balanced resident evaluation covering delivered 5M+ sq.ft clusters, 7-acre STP water security, airport corridor acoustics, and 5-point MahaRERA buyer checklist.</description>
+      <description>Balanced resident evaluation covering delivered 5M+ sq.ft clusters, 7-acre STP water recycling, airport corridor acoustics, and 5-point MahaRERA buyer checklist.</description>
+      <media:content url="https://prideworld.city/assets/images/Scene_01_aerial-view.webp" medium="image" width="1280" height="1600" />
     </item>
     <item>
       <title>Flats Near Bhosari &amp; Chakan MIDC in Charholi Pune [PIN 412105]</title>
@@ -46,28 +113,31 @@
       <pubDate>Fri, 27 Nov 2026 13:30:00 +0530</pubDate>
       <category>Corridors &amp; Commute</category>
       <description>Integrated gated apartments bridging Bhosari MIDC, Moshi, Alankapuram Road &amp; Chakan Auto Hub with Pune Airport (10 mins) and Kharadi IT (18 mins).</description>
+      <media:content url="https://prideworld.city/assets/images/Cam_22Final.jpg" medium="image" width="1200" height="686" />
     </item>
     <item>
-      <title>Best Real Estate Investment in Pune 2026: Charholi ROI vs Baner &amp; Kharadi</title>
+      <title>Real Estate Investment in Pune 2026: Charholi ROI vs Baner &amp; Kharadi</title>
       <link>https://prideworld.city/pune-township-investment-roi-guide</link>
       <guid isPermaLink="true">https://prideworld.city/pune-township-investment-roi-guide</guid>
       <pubDate>Fri, 27 Nov 2026 13:30:00 +0530</pubDate>
       <category>Pune Investment ROI</category>
-      <description>Macro Pune ROI comparison: how Charholi (₹6,800–₹8,200/sq.ft, 4.8%–6% gross rental yield) outperforms saturated East and West Pune hubs.</description>
+      <description>Macro Pune ROI comparison: how Charholi (₹6,800–₹8,200/sq.ft, 4.8%–6% gross rental yield estimate) compares with saturated East and West Pune hubs.</description>
+      <media:content url="https://prideworld.city/assets/images/Enscape_2024-11-25-19-03-09_Enscape-scene-1-1.webp" medium="image" width="1920" height="1080" />
     </item>
     <item>
-      <title>Pride Valencia New Launch — 100% East-West Sun-Side 2 &amp; 3 BHK Homes</title>
+      <title>Pride Valencia New Launch — East-West Sun-Side 2 &amp; 3 BHK Homes</title>
       <link>https://prideworld.city/valencia</link>
       <guid isPermaLink="true">https://prideworld.city/valencia</guid>
       <pubDate>Wed, 25 Nov 2026 00:00:00 +0530</pubDate>
-      <description>New Launch inside Pride World City spanning 5.9 acres across 5 high-rise towers, starting ₹92.49 L* All Inclusive. MahaRERA: P52100052309.</description>
+      <description>New Launch inside Pride World City spanning 5.9 acres across 5 high-rise towers, starting ₹92.49 L* Base Indicative. MahaRERA: P52100052309.</description>
+      <media:content url="https://prideworld.city/assets/images/Twilight-Valencia-Apartment-Launch-Banner.webp.bv.webp" medium="image" width="1740" height="904" />
     </item>
     <item>
-      <title>Pride World City Complete 36-Question FAQ Encyclopedia</title>
+      <title>Pride World City Complete 37-Question FAQ Encyclopedia</title>
       <link>https://prideworld.city/faq</link>
       <guid isPermaLink="true">https://prideworld.city/faq</guid>
       <pubDate>Wed, 25 Nov 2026 00:15:00 +0530</pubDate>
-      <description>Authoritative answers on all 12 clusters, carpet areas, Pune Airport distances, MahaRERA IDs, and rental yields.</description>
+      <description>Comprehensive answers on all clusters, carpet areas, Pune Airport distances, MahaRERA IDs, and rental yields.</description>
     </item>
     <item>
       <title>Pride World City vs Life Republic, Ganga New Town, Kumar Princetown &amp; Godrej Pune (2026 Comparison)</title>
@@ -75,7 +145,7 @@
       <guid isPermaLink="true">https://prideworld.city/pride-world-city-vs-pune-townships</guid>
       <pubDate>Wed, 25 Nov 2026 00:30:00 +0530</pubDate>
       <category>Township Comparison</category>
-      <description>Unbiased 2026 comparison of Pune's top residential townships: Pride World City Charholi vs Kolte Patil Life Republic Hinjawadi vs Ganga New Town Dhanori vs Kumar Princetown.</description>
+      <description>2026 comparison of Pune residential developments: Pride World City Charholi vs Life Republic Hinjawadi vs Ganga New Town Dhanori vs Kumar Princetown.</description>
     </item>
     <item>
       <title>Pride World City 2026 Price List, Cost Sheet Breakdown, Stamp Duty, GST &amp; Bank Loans</title>
@@ -83,7 +153,7 @@
       <guid isPermaLink="true">https://prideworld.city/pride-world-city-price-list-cost-sheet-guide</guid>
       <pubDate>Wed, 25 Nov 2026 00:30:00 +0530</pubDate>
       <category>Pricing &amp; Financial Planning</category>
-      <description>Complete financial guide to Pride World City Charholi prices. 1, 2, 3, 4 &amp; 4.5 BHK cost sheet components, token/EOI amounts, construction-linked payment plan, stamp duty &amp; maintenance charges.</description>
+      <description>Financial guide to Pride World City Charholi prices: 1–4.5 BHK cost sheet components, construction-linked payment plan, stamp duty &amp; maintenance charges.</description>
     </item>
     <item>
       <title>Pride World City Resale Flats, Ready Possession &amp; Rental Yield Report (2026)</title>
@@ -91,7 +161,7 @@
       <guid isPermaLink="true">https://prideworld.city/pride-world-city-resale-rental-yield-guide</guid>
       <pubDate>Wed, 25 Nov 2026 00:30:00 +0530</pubDate>
       <category>Investment &amp; Rental Intelligence</category>
-      <description>Insider guide on Pride World City ready possession &amp; resale flats in Kingsbury, Brooklyn &amp; Manhattan. Check monthly rental ranges for 1, 2 &amp; 3 BHK units and 4.8%-6% yield drivers.</description>
+      <description>Guide on Pride World City ready possession &amp; resale flats in Kingsbury, Brooklyn &amp; Manhattan, indicative rental ranges &amp; 4.8%-6% gross yield drivers.</description>
     </item>
     <item>
       <title>Which Cluster Should You Buy at Pride World City? Valencia vs Miami vs Wellington vs Montreal</title>
@@ -99,15 +169,15 @@
       <guid isPermaLink="true">https://prideworld.city/which-cluster-to-buy-pride-world-city</guid>
       <pubDate>Wed, 25 Nov 2026 00:30:00 +0530</pubDate>
       <category>Buyer Decision Guide</category>
-      <description>Buyer decision matrix comparing every enclave at Pride World City: Valencia sun-side homes, Miami waterfront, Wellington 7-acre podium, Montreal duplexes, and Boston 2X 2 BHKs.</description>
+      <description>Decision matrix comparing enclaves at Pride World City: Valencia sun-side homes, Miami waterfront, Wellington 7-acre podium, Montreal duplexes, and Boston 2X 2 BHKs.</description>
     </item>
     <item>
-      <title>How Pune Airport Terminal 2, 128-km Ring Road &amp; Kharadi Link Drive Charholi Appreciation</title>
+      <title>How Pune Airport Terminal 2, 128-km Ring Road &amp; Kharadi Link Drive Charholi Growth</title>
       <link>https://prideworld.city/charholi-airport-ring-road-infrastructure-report</link>
       <guid isPermaLink="true">https://prideworld.city/charholi-airport-ring-road-infrastructure-report</guid>
       <pubDate>Wed, 25 Nov 2026 00:30:00 +0530</pubDate>
       <category>Infrastructure &amp; Growth Catalysts</category>
-      <description>Infrastructure catalyst report for Charholi Budruk &amp; North Pune real estate. Impact of Pune Airport Terminal 2, PMRDA Ring Road, and 8-lane Kharadi corridor on property appreciation.</description>
+      <description>Infrastructure catalyst report for Charholi Budruk &amp; North Pune real estate covering Airport T2, PMRDA Ring Road, and Kharadi corridor.</description>
     </item>
     <item>
       <title>Pride World City Complete 12-Cluster MahaRERA List &amp; Possession Status Matrix</title>
@@ -115,7 +185,7 @@
       <guid isPermaLink="true">https://prideworld.city/pride-world-city-maharera-possession-status</guid>
       <pubDate>Wed, 25 Nov 2026 20:45:00 +0530</pubDate>
       <category>MahaRERA Compliance</category>
-      <description>Verified statutory MahaRERA registrations across all 12 clusters (P52100052309, PR1260002600188, P52100054534) plus ready vs under-construction phases.</description>
+      <description>Verified statutory MahaRERA registrations across all clusters (P52100052309, PR1260002600188, P52100054534) plus ready vs under-construction phases.</description>
     </item>
     <item>
       <title>Pune Stamp Duty (6% Female Rebate), GST &amp; Home Loan EMI Calculator</title>
@@ -123,7 +193,7 @@
       <guid isPermaLink="true">https://prideworld.city/pride-world-city-emi-stamp-duty-calculator</guid>
       <pubDate>Wed, 25 Nov 2026 20:45:00 +0530</pubDate>
       <category>Buyer Advisory Tools</category>
-      <description>Interactive financial tool estimating Maharashtra stamp duty, zero-GST OC savings, and bank EMI across Valencia, Boston, Wellington, Miami, and Kingsbury.</description>
+      <description>Interactive financial tool estimating Maharashtra stamp duty, OC-ready GST exemption*, and illustrative bank EMI across Valencia, Boston, Wellington, Miami, and Kingsbury.</description>
     </item>
     <item>
       <title>Charholi Property Price Trends &amp; North Pune Micro-Market Dataset (2026)</title>
@@ -139,7 +209,7 @@
       <guid isPermaLink="true">https://prideworld.city/charholi-vs-wagholi-property-investment</guid>
       <pubDate>Wed, 25 Nov 2026 20:45:00 +0530</pubDate>
       <category>Corridor Comparisons</category>
-      <description>Side-by-side infrastructure, water reliability, airport commute, and yield benchmarks across Pune's top residential corridors.</description>
+      <description>Side-by-side infrastructure, water reliability, airport commute, and yield benchmarks across Pune residential corridors.</description>
     </item>
     <item>
       <title>GIIS School, Club Royale 7-Acre Lake &amp; Town Plaza Township Ecosystem Guides</title>

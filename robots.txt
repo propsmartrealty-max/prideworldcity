@@ -100,6 +100,13 @@ Allow: /flats-near-bhosari-chakan-midc-charholi
 Allow: /pune-township-investment-roi-guide
 Allow: /pride-world-city-civic-ecosystem
 Allow: /pride-world-city-vip-site-visit
+Allow: /flats-in-vishrantwadi-alandi-road-yerwada-pune
+Allow: /maharashtra-rera-carpet-area-loading-calculator-guide
+Allow: /pune-home-loan-eligibility-sbi-hdfc-icici-stamp-duty
+Allow: /east-vs-west-facing-flat-vastu-sunlight-pune
+Allow: /pride-world-city-construction-update-possession-timeline
+Allow: /pride-world-city-rent-maintenance-resale-price-trends
+Allow: /upcoming-pune-infrastructure-ring-road-airport-metro-north-pune
 Allow: /opensearch.xml
 Allow: /sitemap.xml
 
