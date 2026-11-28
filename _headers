@@ -140,3 +140,55 @@
 /api/*
   Cache-Control: private, no-store, max-age=0
   X-Robots-Tag: noindex, nofollow
+
+# Google Shopping Feed — RSS/XML with correct content type
+/google-shopping-feed.xml
+  Content-Type: application/rss+xml; charset=UTF-8
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  X-Robots-Tag: all, noarchive
+  Access-Control-Allow-Origin: *
+
+# Google Merchant Center CSV Feed
+/google-merchant-center-feed.csv
+  Content-Type: text/csv; charset=UTF-8
+  Cache-Control: public, max-age=3600
+  Access-Control-Allow-Origin: *
+
+# KML Location File
+/pride-world-city-locations.kml
+  Content-Type: application/vnd.google-earth.kml+xml
+  Cache-Control: public, max-age=86400
+  Access-Control-Allow-Origin: *
+
+# News Sitemap
+/news-sitemap.xml
+  Content-Type: application/xml; charset=UTF-8
+  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
+  X-Robots-Tag: noindex
+  Access-Control-Allow-Origin: *
+
+# AI Facts JSON — open access for LLM grounding
+/ai-facts.json
+  Content-Type: application/json; charset=UTF-8
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Access-Control-Allow-Origin: *
+  Vary: Accept-Encoding
+
+# LLMs.txt — LLM grounding files
+/llms.txt
+  Content-Type: text/plain; charset=UTF-8
+  Cache-Control: public, max-age=3600
+  Access-Control-Allow-Origin: *
+
+/llms-full.txt
+  Content-Type: text/plain; charset=UTF-8
+  Cache-Control: public, max-age=3600
+  Access-Control-Allow-Origin: *
+
+# API endpoint — CORS open for structured data consumers
+/api/facts
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, OPTIONS
+  Access-Control-Allow-Headers: Content-Type, Accept
+  Cache-Control: public, max-age=300, stale-while-revalidate=3600
+  Content-Type: application/json; charset=UTF-8

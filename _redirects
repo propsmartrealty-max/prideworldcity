@@ -12,3 +12,43 @@
 /master-plan /pride-world-city-master-plan-floor-plans 301
 /reviews /pride-world-city-reviews-owner-feedback 301
 /calculator /pride-world-city-emi-stamp-duty-calculator 301
+
+# Airport & Corridor shortcuts
+/airport /lohegaon-real-estate-airport-road-flats-pune 301
+/lohegaon /lohegaon-real-estate-airport-road-flats-pune 301
+/dhanori /flats-in-lohegaon-dhanori-pune 301
+/airport-road /airport-road-pune-flats-investment-guide 301
+/corridor /charholi-lohegaon-airport-road-property-investment 301
+
+# Township editorial shortcuts
+/community /pride-world-city-community-living-review 301
+/green /pride-world-city-green-spaces-biodiversity-park 301
+/water /pride-world-city-water-security-lake-stp 301
+/connectivity /pride-world-city-connectivity-guide 301
+/commute /pride-world-city-connectivity-guide 301
+
+# Cluster shortcuts
+/boston-review /pride-boston-central-2x-advantage-review 301
+/wellington-review /pride-wellington-7-acre-lake-resort-living 301
+/montreal-review /pride-montreal-smart-home-4bhk-duplex-guide 301
+/miami-review /pride-miami-waterfront-art-deco-review 301
+
+# Buyer guide shortcuts
+/buying-guide /pride-world-city-faqs-buying-process 301
+/buying /pride-world-city-faqs-buying-process 301
+/charholi-faqs /charholi-property-faqs-2026 301
+/pune-faqs /pune-real-estate-faqs-2026 301
+/pune-guide /pune-real-estate-faqs-2026 301
+
+# Google Shopping & Merchant Center feeds
+/shopping /google-shopping-feed.xml 301
+/merchant /google-merchant-center-feed.csv 301
+/locations /pride-world-city-locations.kml 301
+/map /pride-world-city-connectivity-guide 301
+
+# Common spelling/abbreviation redirects
+/pwc /  301
+/pride /  301
+/charholi / 301
+/400acres / 301
+/township / 301

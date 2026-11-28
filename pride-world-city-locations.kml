@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Pride World City — Key Locations</name>
+    <description>Pride World City Charholi Budruk, Pune — Key landmarks, clusters and connectivity points</description>
+    <Placemark>
+      <name>Pride World City Main Gate</name>
+      <description>Main entrance to 400-acre Pride World City township, Charholi Budruk, Pune 412105. Authorized channel partner: Propsmart Realty +91 77440 09295</description>
+      <Point><coordinates>73.9553,18.6219,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Club Royale — 50,000 Sq.Ft Clubhouse</name>
+      <description>Club Royale amenity complex inside Pride World City: Olympic pool, gymnasium, squash courts, billiards, rooftop lounge.</description>
+      <Point><coordinates>73.9558,18.6225,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>7-Acre Natural Lake — Pride World City</name>
+      <description>7-acre natural lake and promenade at Pride World City Charholi. Butterfly garden, bird habitat, rain harvesting reservoir.</description>
+      <Point><coordinates>73.9548,18.6215,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Pune International Airport (Lohegaon)</name>
+      <description>Pune International Airport — 6 km / 10 minutes from Pride World City main gate via Lohegaon-Charholi Road.</description>
+      <Point><coordinates>73.9197,18.5821,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Kharadi EON IT Park</name>
+      <description>Kharadi EON IT Park — 11 km / 18 minutes from Pride World City. 150+ IT companies, 60,000+ employees.</description>
+      <Point><coordinates>73.9477,18.5531,0</coordinates></Point>
+    </Placemark>
+  </Document>
+</kml>

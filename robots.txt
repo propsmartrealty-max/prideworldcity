@@ -1,173 +1,192 @@
 # ==============================================================================
-# Pride World City - Enterprise Search & Multi-Engine AI Overview Governance
-# Production Host: https://prideworld.city/
+# Pride World City — Enterprise Search, AI & Multi-Engine Bot Governance
+# Production: https://prideworld.city/ | Updated: 2026-11-28
+# Google Web Standards Compliant | RFC 9309 Robots Exclusion Protocol
 # ==============================================================================
 
-# 1. Primary Search Engine Crawlers (Google, Bing, Apple, DuckDuckGo)
+# ── 1. Google Primary Crawlers ──────────────────────────────────────────────
 User-agent: Googlebot
 User-agent: Googlebot-Image
+User-agent: Googlebot-Video
 User-agent: Googlebot-Mobile
-User-agent: Bingbot
-User-agent: Applebot
-User-agent: Slurp
-User-agent: DuckDuckBot
+User-agent: Googlebot-News
+User-agent: Google-InspectionTool
+User-agent: APIs-Google
+User-agent: AdsBot-Google
+User-agent: AdsBot-Google-Mobile
+User-agent: Google-Read-Aloud
+User-agent: Google-Site-Verification
 Allow: /
 Allow: /assets/
 Allow: /css/
 Allow: /js/
 Allow: /data/
-Allow: /llms.txt
-Allow: /llms-full.txt
-Allow: /ai.txt
-Allow: /ai-facts.json
-Allow: /.well-known/
 Allow: /api/facts
 Allow: /feed.xml
 Allow: /sitemap.xml
+Allow: /news-sitemap.xml
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /ai-facts.json
+Allow: /ai.txt
+Allow: /robots.txt
+Allow: /.well-known/
+Allow: /opensearch.xml
+Allow: /google-shopping-feed.xml
+Allow: /google-merchant-center-feed.csv
+Allow: /pride-world-city-locations.kml
+Allow: /site.webmanifest
+Disallow: /scratch/
+Disallow: /*.py$
+Disallow: /private/
+Crawl-delay: 1
 
-# 2. Generative AI Search, Deep Research & Answer Engines (ChatGPT, Claude, Gemini, Perplexity, Meta, Apple, Copilot)
-User-agent: OAI-SearchBot
-User-agent: ChatGPT-User
-User-agent: GPTBot
+# ── 2. Google AI, Extended & Structured Data Crawlers ───────────────────────
 User-agent: Google-Extended
 User-agent: Google-CloudVertexBot
 User-agent: Gemini-Deep-Research
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: GoogleOther-Video
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /ai-facts.json
+Allow: /ai.txt
+Allow: /feed.xml
+Allow: /sitemap.xml
+Allow: /api/facts
+Disallow: /scratch/
+
+# ── 3. Bing & Microsoft Crawlers ────────────────────────────────────────────
+User-agent: Bingbot
+User-agent: MSNBot
+User-agent: MSNBot-Media
+User-agent: BingPreview
+User-agent: MicrosoftPreview
+User-agent: Adidxbot
+Allow: /
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: /sitemap.xml
+Allow: /feed.xml
+Disallow: /scratch/
+Crawl-delay: 1
+
+# ── 4. Apple, DuckDuckGo, Yahoo, Yandex ─────────────────────────────────────
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: DuckDuckBot
+User-agent: Slurp
+User-agent: YandexBot
+User-agent: YandexImages
+User-agent: YandexMobileBot
+User-agent: YandexMedia
+Allow: /
+Disallow: /scratch/
+Crawl-delay: 1
+
+# ── 5. AI Answer Engines & LLM Crawlers (ChatGPT, Claude, Perplexity, Gemini)
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
 User-agent: PerplexityBot
 User-agent: Perplexity-User
 User-agent: ClaudeBot
 User-agent: Claude-SearchBot
 User-agent: Claude-User
 User-agent: anthropic-ai
-User-agent: Applebot-Extended
-User-agent: DuckAssistBot
-User-agent: Meta-ExternalAgent
-User-agent: Meta-ExternalFetcher
-User-agent: MistralAI-User
-User-agent: YouBot
 User-agent: cohere-ai
-User-agent: Amazonbot
+User-agent: Cohere-AI
+User-agent: AI2Bot
+User-agent: Diffbot
+User-agent: Omgilibot
+User-agent: Omgili
+User-agent: YouBot
+User-agent: Teoma
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /ai-facts.json
 Allow: /ai.txt
-Allow: /ai-facts.json
-Allow: /openapi.json
-Allow: /.well-known/
-Allow: /api/facts
 Allow: /feed.xml
-Allow: /valencia
-Allow: /miami
-Allow: /wellington
-Allow: /montreal
-Allow: /boston
-Allow: /kingsbury
-Allow: /brooklyn
-Allow: /manhattan
-Allow: /atlantic
-Allow: /notting-hill
-Allow: /long-island
-Allow: /soho
-Allow: /pride-tech-park
-Allow: /charholi-pune-real-estate
-Allow: /1-bhk-flats-in-charholi-pune
-Allow: /2-bhk-flats-in-charholi-pune
-Allow: /3-bhk-flats-in-charholi-pune
-Allow: /duplex-and-4-bhk-homes-pune
-Allow: /flats-in-lohegaon-dhanori-pune
-Allow: /flats-near-pune-airport-viman-nagar
-Allow: /flats-near-kharadi-eon-it-park
-Allow: /nri-real-estate-investment-pune
-Allow: /global-indian-international-school-pride-world-city
-Allow: /club-royale-and-7-acre-lake-charholi
-Allow: /town-plaza-and-hospital-charholi
-Allow: /pride-world-city-maharera-possession-status
-Allow: /dy-patil-knowledge-city-charholi-flats
-Allow: /pride-world-city-sample-flat-virtual-tour
-Allow: /charholi-vs-wagholi-property-investment
-Allow: /charholi-vs-moshi-dudulgaon-real-estate
-Allow: /charholi-vs-dhanori-lohegaon-flats
-Allow: /pride-world-city-vs-amanora-magarpatta
-Allow: /flats-near-pune-metro-ring-road-charholi
-Allow: /2-bhk-flats-under-80-lakhs-pune
-Allow: /ready-to-move-flats-in-charholi-pune
-Allow: /pride-world-city-emi-stamp-duty-calculator
-Allow: /charholi-ready-reckoner-rate-and-price-trends
-Allow: /faq
-Allow: /articles
-Allow: /pride-world-city-master-plan-floor-plans
-Allow: /pride-world-city-reviews-owner-feedback
-Allow: /flats-near-bhosari-chakan-midc-charholi
-Allow: /pune-township-investment-roi-guide
-Allow: /pride-world-city-civic-ecosystem
-Allow: /pride-world-city-vip-site-visit
-Allow: /flats-in-vishrantwadi-alandi-road-yerwada-pune
-Allow: /maharashtra-rera-carpet-area-loading-calculator-guide
-Allow: /pune-home-loan-eligibility-sbi-hdfc-icici-stamp-duty
-Allow: /east-vs-west-facing-flat-vastu-sunlight-pune
-Allow: /pride-world-city-construction-update-possession-timeline
-Allow: /pride-world-city-rent-maintenance-resale-price-trends
-Allow: /upcoming-pune-infrastructure-ring-road-airport-metro-north-pune
-Allow: /pride-world-city-valencia-vs-miami-vs-wellington
-Allow: /pride-world-city-2-bhk-vs-3-bhk-cost-sheet-comparison
-Allow: /flats-near-viman-nagar-kalyani-nagar-koregaon-park-pune
-Allow: /senior-citizen-retirement-friendly-township-pune
-Allow: /pet-friendly-flats-township-with-park-pune
-Allow: /it-professionals-housing-kharadi-magarpatta-eon-hadapsar-pune
-Allow: /first-time-home-buyer-checklist-maharera-pune
-Allow: /charholi-vs-kharadi-vs-baner-vs-hinjawadi-pune-real-estate
-Allow: /pride-world-city-clubhouse-sports-swimming-pool-amenities
-Allow: /pride-world-city-photos-gallery-3d-renders-aerial-views
-Allow: /opensearch.xml
 Allow: /sitemap.xml
-
-# 3. General Public Bots
-User-agent: *
-Allow: /
-Allow: /ai-facts.json
-Allow: /openapi.json
-Allow: /.well-known/
 Allow: /api/facts
-Allow: /lohegaon-real-estate-airport-road-flats-pune
-Allow: /charholi-lohegaon-airport-road-property-investment
-Allow: /dhanori-lohegaon-charholi-property-comparison-airport-pune
-Allow: /airport-road-pune-flats-investment-guide
-Allow: /pride-world-city-community-living-review
-Allow: /pride-world-city-green-spaces-biodiversity-park
-Allow: /pride-world-city-water-security-lake-stp
-Allow: /pride-world-city-connectivity-guide
-Allow: /pride-boston-central-2x-advantage-review
-Allow: /pride-wellington-7-acre-lake-resort-living
-Allow: /pride-montreal-smart-home-4bhk-duplex-guide
-Allow: /pride-miami-waterfront-art-deco-review
-Allow: /pride-world-city-faqs-buying-process
-Allow: /charholi-property-faqs-2026
-Allow: /pune-real-estate-faqs-2026
-Disallow: /api/lead
-Disallow: /api/geo
-Disallow: /functions/
-Disallow: /google-ads-page-feed.csv
 Disallow: /scratch/
-Disallow: /tmp/
 
-# 4. Block Aggressive SEO Scrapers & Unwanted Harvest Bots
-User-agent: Bytespider
-User-agent: PetalBot
-User-agent: CCBot
-User-agent: Diffbot
-User-agent: omgili
-User-agent: omgilibot
-User-agent: MJ12bot
+# ── 6. Social Media & Sharing Crawlers ──────────────────────────────────────
+User-agent: facebookexternalhit
+User-agent: Facebot
+User-agent: Twitterbot
+User-agent: LinkedInBot
+User-agent: WhatsApp
+User-agent: Googlebot-AdsBot
+User-agent: Slackbot
+User-agent: Slackbot-LinkExpanding
+User-agent: Discordbot
+User-agent: TelegramBot
+User-agent: Pinterest
+User-agent: Pinterestbot
+Allow: /
+Allow: /assets/
+Disallow: /scratch/
+
+# ── 7. Property & Real Estate Aggregators ───────────────────────────────────
+User-agent: 99acresbot
+User-agent: MagicBricksBot
+User-agent: HousingBot
+User-agent: NoBrokerBot
+User-agent: Squarefoot
+Allow: /
+Allow: /sitemap.xml
+Allow: /google-shopping-feed.xml
+Allow: /google-merchant-center-feed.csv
+Disallow: /scratch/
+
+# ── 8. Performance & SEO Audit Bots ─────────────────────────────────────────
+User-agent: GTmetrix
+User-agent: PageSpeed
+User-agent: Lighthouse
+User-agent: Chrome-Lighthouse
+User-agent: Screaming Frog SEO Spider
 User-agent: AhrefsBot
 User-agent: SemrushBot
+User-agent: MJ12bot
 User-agent: DotBot
 User-agent: BLEXBot
-User-agent: DataForSeoBot
-Disallow: /
+Allow: /
+Disallow: /scratch/
+Crawl-delay: 2
 
-# 5. Canonical Host, Sitemap & AI Grounding Declarations
-Host: https://prideworld.city
+# ── 9. Web Archive & Research ───────────────────────────────────────────────
+User-agent: ia_archiver
+User-agent: archive.org_bot
+User-agent: Wayback
+Allow: /
+
+# ── 10. All Other Bots — Default Allow ──────────────────────────────────────
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: /sitemap.xml
+Allow: /feed.xml
+Allow: /news-sitemap.xml
+Allow: /llms.txt
+Allow: /ai-facts.json
+Allow: /api/facts
+Disallow: /scratch/
+Disallow: /*.py$
+Disallow: /private/
+Crawl-delay: 2
+
+# ── Sitemap Declarations ─────────────────────────────────────────────────────
 Sitemap: https://prideworld.city/sitemap.xml
-# LLMs.txt: https://prideworld.city/llms.txt
-# LLMs-Full: https://prideworld.city/llms-full.txt
-# AI-Policy: https://prideworld.city/ai.txt
-# AI-Facts-JSON: https://prideworld.city/ai-facts.json
+Sitemap: https://prideworld.city/news-sitemap.xml
+Sitemap: https://prideworld.city/feed.xml
+
+# ── Google Site Verification (via DNS TXT record — preferred) ───────────────
+# google-site-verification: Use Google Search Console → DNS verification → TXT record
+# No HTML meta verification tag needed with Cloudflare DNS verification
