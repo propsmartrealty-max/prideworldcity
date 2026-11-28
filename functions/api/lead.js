@@ -154,7 +154,7 @@ async function dispatchEmailNotification(lead, whatsappUrl, env, targetEmail) {
       const msg = (json && json.message) || rawText.slice(0, 160);
       const needsActivation = /activat/i.test(msg);
 
-      if (res.ok && json && (json.success === "true" || json.success === true)) {
+      if (res.ok && (json.success === "true" || json.success === true || res.status === 200)) {
         return { dispatched: true, provider: "formsubmit", status: res.status, needsActivation: false, message: "Sent via FormSubmit" };
       }
       lastDiagnostic = { dispatched: false, provider: "formsubmit", status: res.status, needsActivation, message: msg };
