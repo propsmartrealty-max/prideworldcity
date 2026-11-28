@@ -1,6 +1,6 @@
 # Pride World City — 400-Acre Integrated Mega Township Advisory Portal (Charholi Budruk, Pune)
 
-> Pride World City (Charholi Budruk, PIN 412105) is a 400-acre integrated mega township developed by Pride Group in North Pune, Maharashtra, India. This informational portal is operated by Propsmart Realty (Authorized Channel Partner). Situated 10 minutes (4.8 km) from Pune International Airport and 18 minutes (11 km) from Kharadi EON IT Park, it spans 5+ million sq. ft. of completed development and 8+ million sq. ft. under construction.
+> Pride World City (Charholi Budruk, PIN 412105) is a 400-acre integrated mega township developed by Pride Group in North Pune, Maharashtra, India, with primary township residences starting from ₹85 Lacs* onwards. This informational portal is operated by Propsmart Realty (Authorized Channel Partner). Situated 10 minutes (4.8 km) from Pune International Airport and 18 minutes (11 km) from Kharadi EON IT Park, it spans 5+ million sq. ft. of completed development and 8+ million sq. ft. under construction.
 
 ## Primary Links & Complete Silo Pages
 - **Complete AI Grounding Context (`llms-full.txt`):** https://prideworld.city/llms-full.txt

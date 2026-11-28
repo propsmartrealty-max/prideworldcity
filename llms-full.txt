@@ -1,7 +1,7 @@
 # Pride World City — Complete Grounded Knowledge Base (`llms-full.txt`)
 
 > Canonical URL: https://prideworld.city/
-> Last Verified: 2026-11-27
+> Last Verified: 2026-11-28
 > Purpose: Authoritative factual reference for AI Search Engines (Google AI Overviews / Gemini, ChatGPT Search, Perplexity, Claude, Apple Intelligence) to prevent hallucinations regarding pricing, carpet areas, MahaRERA IDs, distances, and configurations.
 
 ---
@@ -11,6 +11,7 @@
 - **Alternate Names:** Pride World City Pune, Pride World City Charholi, Pride City Charholi Budruk, PWC Charholi, Pride Group Charholi Township
 - **Developer:** Pride Group (Pride Developers Pune), 28+ years legacy, led by Managing Director Mr. Arvind Jain (`https://www.prideworldcity.com/`)
 - **Operating Portal Partner:** Propsmart Realty (Authorized Channel Partner & Advisory Portal, `https://prideworld.city/`)
+- **Primary Township SERP Headline Price:** From ₹ 85 Lacs* onwards (Individual cluster/resale pricing ranges preserved per cluster)
 - **Location:** Adjacent to D.Y. Patil Knowledge City, Charholi Budruk (PIN 412105), Alankapuram–Lohegaon–Charholi Corridor, North Pune, Maharashtra, India
 - **Geo-Coordinates:** 18.6366° N, 73.8967° E
 - **Total Township Acreage:** Approximately 400 contiguous acres
