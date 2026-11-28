@@ -5,7 +5,7 @@
 ## Primary Links & Complete Silo Pages
 - **Complete AI Grounding Context (`llms-full.txt`):** https://prideworld.city/llms-full.txt
 - **Structured AI Verified Facts JSON (`ai-facts.json`):** https://prideworld.city/ai-facts.json
-- **Live Queryable Facts API (`/api/facts`):** https://prideworld.city/api/facts
+- **Live Queryable Facts & Compare API (`/api/facts`):** https://prideworld.city/api/facts (supports `?q=`, `?topic=`, `?compare=valencia,miami`, `?bhk=2`, `?maxLakhs=95`)
 - **AI Crawler Policy (`ai.txt`):** https://prideworld.city/ai.txt
 - **Master Township Portal:** https://prideworld.city/
 - **Master Plan, 1–4.5 BHK Floor Plans & Brochure:** https://prideworld.city/pride-world-city-master-plan-floor-plans
@@ -26,7 +26,7 @@
 - **Pride SoHo (Live-Work Suites & Offices):** https://prideworld.city/soho
 - **Pride Tech Park & Retail Spaces:** https://prideworld.city/pride-tech-park
 - **Charholi & North Pune Real Estate Guide:** https://prideworld.city/charholi-pune-real-estate
-- **36-Question FAQ Encyclopedia:** https://prideworld.city/faq
+- **37-Question FAQ Encyclopedia:** https://prideworld.city/faq
 - **Research Articles & Comparisons Hub:** https://prideworld.city/articles
 - **RSS 2.0 Research Feed:** https://prideworld.city/feed.xml
 - **Privacy Policy:** https://prideworld.city/privacy
@@ -78,4 +78,4 @@
 - **GIIS School & Township Campus:** https://prideworld.city/global-indian-international-school-pride-world-city
 - **Club Royale & 7-Acre Lake:** https://prideworld.city/club-royale-and-7-acre-lake-charholi
 - **Town Plaza Retail & Hospital:** https://prideworld.city/town-plaza-and-hospital-charholi
-- **Corridor & Buyer Guides:** `/flats-in-vishrantwadi-alandi-road-yerwada-pune`, `/maharashtra-rera-carpet-area-loading-calculator-guide`, `/pune-home-loan-eligibility-sbi-hdfc-icici-stamp-duty`, `/east-vs-west-facing-flat-vastu-sunlight-pune`, `/pride-world-city-construction-update-possession-timeline`, `/pride-world-city-rent-maintenance-resale-price-trends`, `/upcoming-pune-infrastructure-ring-road-airport-metro-north-pune`, `/charholi-vs-wagholi-property-investment`, `/charholi-vs-moshi-dudulgaon-real-estate`, `/charholi-vs-dhanori-lohegaon-flats`, `/pride-world-city-vs-amanora-magarpatta`, `/2-bhk-flats-under-80-lakhs-pune`, `/ready-to-move-flats-in-charholi-pune`, `/flats-near-pune-metro-ring-road-charholi`, `/flats-near-bhosari-chakan-midc-charholi`, `/dy-patil-knowledge-city-charholi-flats`, `/pride-world-city-sample-flat-virtual-tour`, `/pune-township-investment-roi-guide`
+- **Corridor, Comparison & Lifestyle Guides:** `/pride-world-city-valencia-vs-miami-vs-wellington`, `/pride-world-city-2-bhk-vs-3-bhk-cost-sheet-comparison`, `/flats-near-viman-nagar-kalyani-nagar-koregaon-park-pune`, `/senior-citizen-retirement-friendly-township-pune`, `/pet-friendly-flats-township-with-park-pune`, `/it-professionals-housing-kharadi-magarpatta-eon-hadapsar-pune`, `/first-time-home-buyer-checklist-maharera-pune`, `/charholi-vs-kharadi-vs-baner-vs-hinjawadi-pune-real-estate`, `/pride-world-city-clubhouse-sports-swimming-pool-amenities`, `/pride-world-city-photos-gallery-3d-renders-aerial-views`, `/flats-in-vishrantwadi-alandi-road-yerwada-pune`, `/maharashtra-rera-carpet-area-loading-calculator-guide`, `/pune-home-loan-eligibility-sbi-hdfc-icici-stamp-duty`, `/east-vs-west-facing-flat-vastu-sunlight-pune`, `/pride-world-city-construction-update-possession-timeline`, `/pride-world-city-rent-maintenance-resale-price-trends`, `/upcoming-pune-infrastructure-ring-road-airport-metro-north-pune`, `/charholi-vs-wagholi-property-investment`, `/charholi-vs-moshi-dudulgaon-real-estate`, `/charholi-vs-dhanori-lohegaon-flats`, `/pride-world-city-vs-amanora-magarpatta`, `/2-bhk-flats-under-80-lakhs-pune`, `/ready-to-move-flats-in-charholi-pune`, `/flats-near-pune-metro-ring-road-charholi`, `/flats-near-bhosari-chakan-midc-charholi`, `/dy-patil-knowledge-city-charholi-flats`, `/pride-world-city-sample-flat-virtual-tour`, `/pune-township-investment-roi-guide`

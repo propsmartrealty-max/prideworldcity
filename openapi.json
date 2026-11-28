@@ -18,7 +18,7 @@
             "name": "topic",
             "in": "query",
             "required": false,
-            "schema": { "type": "string", "enum": ["all", "clusters", "connectivity", "market", "ecosystem", "contact"] }
+            "schema": { "type": "string", "enum": ["all", "clusters", "pricing", "rera", "connectivity", "market", "compare", "ecosystem", "contact"] }
           },
           {
             "name": "q",
@@ -26,6 +26,27 @@
             "required": false,
             "schema": { "type": "string" },
             "description": "Optional cluster slug or keyword (e.g. valencia, miami, kingsbury, maharera)"
+          },
+          {
+            "name": "compare",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string" },
+            "description": "Comma-separated cluster slugs to compare side-by-side (e.g. valencia,miami,wellington)"
+          },
+          {
+            "name": "bhk",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string" },
+            "description": "Filter matching clusters by configuration bedroom count (1, 2, 3, 4, 4.5, or commercial)"
+          },
+          {
+            "name": "maxLakhs",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "number" },
+            "description": "Filter matching clusters with indicative entry price at or below INR Lakhs threshold (e.g. 95)"
           }
         ],
         "responses": {

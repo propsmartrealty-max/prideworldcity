@@ -107,6 +107,16 @@ Allow: /east-vs-west-facing-flat-vastu-sunlight-pune
 Allow: /pride-world-city-construction-update-possession-timeline
 Allow: /pride-world-city-rent-maintenance-resale-price-trends
 Allow: /upcoming-pune-infrastructure-ring-road-airport-metro-north-pune
+Allow: /pride-world-city-valencia-vs-miami-vs-wellington
+Allow: /pride-world-city-2-bhk-vs-3-bhk-cost-sheet-comparison
+Allow: /flats-near-viman-nagar-kalyani-nagar-koregaon-park-pune
+Allow: /senior-citizen-retirement-friendly-township-pune
+Allow: /pet-friendly-flats-township-with-park-pune
+Allow: /it-professionals-housing-kharadi-magarpatta-eon-hadapsar-pune
+Allow: /first-time-home-buyer-checklist-maharera-pune
+Allow: /charholi-vs-kharadi-vs-baner-vs-hinjawadi-pune-real-estate
+Allow: /pride-world-city-clubhouse-sports-swimming-pool-amenities
+Allow: /pride-world-city-photos-gallery-3d-renders-aerial-views
 Allow: /opensearch.xml
 Allow: /sitemap.xml
 
